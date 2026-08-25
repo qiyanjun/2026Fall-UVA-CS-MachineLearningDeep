@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Recent deep learning on Text
+title: Deep Learning on Text - from BOW to Attention
 lecture: S3-deepNNtext
 lectureVersion: current
 video: <a href="https://youtu.be/iTgy525nBq4">M1</a> + <a href="https://youtu.be/w22S24kFMmA">M2</a> +   <a href="https://youtu.be/5UGmLbAvUH0">M3</a>  
-notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb">Keras Notebook on DNN text </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a> 
+notes:
 categories: 1D (Text)
 tags:
 - Nonlinear
@@ -15,14 +15,7 @@ tags:
 ---
 
 
-- Notebook to try: 
-
-<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb">L15 Keras Notebook on DNN text </a> 
-
-- Extra reading: 
-<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a> 
-
-### In this lecture, we cover: 
+### In this lecture, we cover:
 - What is NLP?
 - Typical NLP tasks / Challenges / Pipeline
 - f() on natural language
@@ -30,11 +23,9 @@ tags:
   + Word2Vec (2013-2016) • (GloVe/ FastText)
   + Recurrent NN (2014-2016) • LSTM
   + Seq2Seq
-  + Attention 
-  + Self-Attention (2016 – now )
-  + Transformer (attention only Seq2Seq)
-  + BERT / RoBERTa/ XLNet/ GPT-2 / ...
+  + Attention
 
+*(Self-attention, Transformers, and the BERT/GPT family of pretrained models are covered in depth later in this section, in "LLM Architecture and Training.")*
 
 
 # Study Guide: Deep Neural Networks for Natural Language Processing
@@ -52,9 +43,7 @@ tags:
 5. Describe the core characteristic of Recurrent Neural Networks (RNNs) and explain how this feature makes them suitable for processing sequence data.
 6. Explain the purpose of the Encoder and Decoder components within a Seq2Seq architecture for a task like machine translation.
 7. What is the core idea behind the "Attention Mechanism" in sequence-to-sequence models?
-8. How does the Transformer model's architecture fundamentally differ from that of a Recurrent Neural Network?
-9. Describe the Masked Language Model (MLM) pre-training objective used by BERT.
-10. Differentiate between the CBOW and SkipGram models within the Word2Vec framework.
+8. Differentiate between the CBOW and SkipGram models within the Word2Vec framework.
 
 ---
 
@@ -74,11 +63,7 @@ tags:
 
 7. **The Attention Mechanism provides a weight for each input word for every single output timestep.** This allows the model to create a context vector (C1) that is a weighted sum of the hidden encodings from the input, effectively letting the model focus on the most relevant parts of the input sequence when generating an output.
 
-8. **The Transformer model's architecture is fundamentally different because it contains no recurrence.** Instead of processing sequences step-by-step like an RNN, it relies entirely on self-attention mechanisms to map a sequence to itself.
-
-9. **The Masked Language Model (MLM) is a pre-training objective where some input tokens are masked with a unique [MASK] token.** The model is then trained as a denoising autoencoder to predict these original masked tokens based on their surrounding context.
-
-10. **In Word2Vec, the Continuous Bag-of-Words (CBOW) model predicts the current input token based on its surrounding context tokens.** Conversely, the SkipGram model does the opposite, predicting the surrounding context tokens based on the current input token.
+8. **In Word2Vec, the Continuous Bag-of-Words (CBOW) model predicts the current input token based on its surrounding context tokens.** Conversely, the SkipGram model does the opposite, predicting the surrounding context tokens based on the current input token.
 
 ---
 
@@ -86,15 +71,11 @@ tags:
 
 **Instructions:** Prepare a detailed, essay-format response for each of the following prompts. (Answers not provided).
 
-1. **Trace the evolution of natural language representation in machine learning as outlined in the course material, beginning with pre-2012 methods like Bag of Words and culminating in modern approaches like Transformer-based contextual embeddings.** Discuss the key innovations and limitations at each major stage (BOW, Word2Vec, RNN/LSTM, Transformers).
+1. **Trace the evolution of natural language representation in machine learning as outlined in the course material, from pre-2012 methods like Bag of Words through Word2Vec and RNN/LSTM sequence models to attention-augmented Seq2Seq.** Discuss the key innovations and limitations at each major stage.
 
-2. **Compare and contrast the architectural philosophies of Recurrent Neural Networks (like LSTM) and Transformer models for processing sequential data.** What are the fundamental differences in how they handle sequences, and what specific advantages did the introduction of self-attention in Transformers provide over recurrence?
+2. **Discuss the primary challenges inherent in Natural Language Processing, specifically ambiguity, scale, and the dynamic nature of language.** Using examples from the source, explain how deep learning approaches attempt to address these challenges more effectively than classic NLP pipeline components.
 
-3. **Discuss the primary challenges inherent in Natural Language Processing, specifically ambiguity, scale, and the dynamic nature of language.** Using examples from the source, explain how modern deep learning approaches attempt to address these challenges more effectively than classic NLP pipeline components.
-
-4. **Explain the concept of the Seq2Seq (Encoder-Decoder) architecture and its wide range of applications in generative NLP tasks.** How does the integration of an attention mechanism enhance the performance and interpretability of these models, particularly in a complex task like machine translation?
-
-5. **The source mentions several landmark pre-trained models, including BERT, ALBERT, and XLNet.** Describe the concept of pre-training and fine-tuning. Explain the specific training innovations introduced by ALBERT (Sentence Order Prediction) and XLNet (Permutation Language Model) as attempts to improve upon the original BERT framework.
+3. **Explain the concept of the Seq2Seq (Encoder-Decoder) architecture and its wide range of applications in generative NLP tasks.** How does the integration of an attention mechanism enhance the performance and interpretability of these models, particularly in a complex task like machine translation?
 
 ---
 
@@ -102,26 +83,16 @@ tags:
 
 | Term | Definition |
 |------|------------|
-| **ALBERT** | A "lite" version of BERT that proposes the Sentence Order Prediction (SOP) task to replace Next Sentence Prediction (NSP), making the model focus more on the semantic coherence between sentences. |
 | **Attention Mechanism** | A technique used in sequence models where, for each output timestep, a weighted sum of the hidden encodings of the input sequence is calculated. This allows the model to focus on the most relevant parts of the input. |
 | **Bag of Words (BOW)** | A text representation method that removes word position information and represents a document as a collection of its word counts. It is not applicable to many NLP tasks because it cannot represent word compositions. |
-| **BERT** | Bidirectional Encoder Representations from Transformers. A pre-trained model for sentence embedding whose architecture is a Transformer's encoder stack. It is trained using a Masked Language Model (MLM) objective. |
 | **CBOW (Continuous Bag-of-Words)** | A Word2Vec model that predicts an input token based on its surrounding context tokens. |
 | **Co-reference Resolution** | An NLP task that involves determining if different expressions in a text refer to the same entity (e.g., determining if "Chris" and "Mr. Robin" are the same person). |
 | **Decoder** | In a Seq2Seq model, the component (typically an RNN) that takes the hidden state from the encoder as input and generates the output sequence. |
 | **Encoder** | In a Seq2Seq model, the component (typically an RNN) that processes the input sentence and encodes it into a single hidden state or feature vector. |
-| **GPT (Generative Pre-Training)** | A pre-trained model from OpenAI. The GPT-2 version has 1.5 billion parameters and was trained on millions of web pages. |
 | **Long Short-Term Memory (LSTM)** | A type of Recurrent Neural Network (RNN) invented by Schmidhuber in 1997. It is highly successful in language modeling and sequence learning problems. |
-| **Masked Language Model (MLM)** | A pre-training objective used by BERT, where some input tokens are masked and the model is trained to predict the original tokens based on their context. It functions as a Denoising Auto Encoder. |
 | **Natural Language Processing (NLP)** | A field of computer science, AI, and linguistics concerned with the interactions between computers and human languages, aiming for a deep understanding of language structure and meaning. |
 | **One-hot vector** | A basic method for representing a word as a binary vector whose length is the size of the vocabulary. It has a '1' in the position of the word's ID and '0's elsewhere, but it is extremely high-dimensional and sparse. |
-| **Permutation Language Model (PLM)** | The pre-training objective for XLNet, which learns bidirectional contexts by permuting the factorization order of the sequence. |
 | **Recurrent Neural Network (RNN)** | A type of neural network with loops, allowing information to persist. This architecture allows RNNs to operate over sequences of vectors with variable length. |
-| **Self-Attention** | An attention mechanism that creates attention layers mapping from a sequence to itself, forming the core component of the Transformer model. |
-| **Sentence Order Prediction (SOP)** | A pre-training task used by ALBERT where the model must determine if two sentences are in their correct original order, which forces it to learn about semantic coherence. |
 | **Seq2Seq** | An Encoder-Decoder architecture used for sequence-to-sequence generation tasks like machine translation, dialogue generation, and question answering. |
 | **SkipGram** | A Word2Vec model that predicts context tokens based on a given input token. |
-| **Transformer** | A sequence model from Google Brain that contains no recurrence and relies entirely on self-attention mechanisms. It is a Seq2Seq model that uses encoder self-attention, decoder self-attention, and encoder-decoder attention. |
 | **Word2Vec** | A technique to learn distributed representations of words (word embeddings). It includes the CBOW and SkipGram models. |
-| **XLNet** | A pre-trained language model that builds on Transformer-XL (adding recurrence between segments) and uses a Permutation Language Model to learn bidirectional contexts. |
-

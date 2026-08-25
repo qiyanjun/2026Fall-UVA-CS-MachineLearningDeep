@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  Section 3 - Deep on 1D Sequence Type (e.g. Language Text)
+title:  Section 3 - Language, LLMs and Agents
 lectureVersion: current
 ---

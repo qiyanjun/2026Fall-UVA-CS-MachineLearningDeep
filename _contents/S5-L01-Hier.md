@@ -6,8 +6,10 @@ lectureVersion: current
 video: <a href="https://youtu.be/mxrcPHWCZAI">M1</a> + <a href="https://youtu.be/2K6gXLf4Em4">M2</a>  
 notes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_linkage_comparison.html#sphx-glr-auto-examples-cluster-plot-linkage-comparison-py"> compare Hier clusterings</a>
 categories: tabular
+background: true
 tags:
 - 4Unsupervised
+- background
 ---
 
 # Summary: 

@@ -7,7 +7,7 @@ video:
 notes: 
 categories: structured
 tags:
-- notSupervised
+- 4Unsupervised
 - RL
 - 5Theory
 ---

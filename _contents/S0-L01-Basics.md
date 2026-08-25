@@ -7,8 +7,10 @@ extraContent: S0-linalg-extra.pdf
 notes: <a href="https://www.khanacademy.org/math/multivariable-calculus">Khanacademy Math</a> +  <a href="http://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf">CMU study note</a>
 video:  <a href="https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks">Python Data Science Code tutorials</a>
 categories: prerequisite 
+background: true
 tags:
 - 1Basic
+- background
 ---
 
 

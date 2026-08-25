@@ -10,6 +10,6 @@ categories: tabular
 extra: true
 tags:
 - 3Classification
-- Gaussian 
+- Gaussian
 - Generative
 ---
