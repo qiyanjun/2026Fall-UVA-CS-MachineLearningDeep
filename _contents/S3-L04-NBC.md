@@ -8,7 +8,7 @@ extraContent:
 notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
 morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf">Multinomial MLE</a> 
 categories: 1D (Text)
-background: true
+extra: true
 tags:
 - 3Classification
 - Generative

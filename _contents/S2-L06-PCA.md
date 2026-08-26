@@ -8,6 +8,7 @@ morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a>
 video:  <a href="https://youtu.be/-Fk4b1PPoEA"> M1 </a> 
 categories: 2d (vision)
 lectureVersion: current
+extra: true
 tags:
 - DimenReduct
 ---
