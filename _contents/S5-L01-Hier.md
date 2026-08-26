@@ -1,4 +1,5 @@
 ---
+LOrder: 480
 layout: post
 title: Clustering Hier
 lecture: S5-clustering1-Hier
@@ -9,7 +10,7 @@ categories: tabular
 background: true
 tags:
 - 4Unsupervised
-- background
+- Background
 ---
 
 # Summary: 

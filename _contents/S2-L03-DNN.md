@@ -1,4 +1,5 @@
 ---
+LOrder: 180
 layout: post
 title: NN and Deep Learning
 lecture: S2-deepNNBasics

@@ -1,4 +1,5 @@
 ---
+LOrder: 210
 layout: post
 title:  pyTorch + Keras
 lecture: S2-L0-Keras
@@ -8,6 +9,6 @@ video:
 categories: library
 platform: true
 tags:
-- platform
+- Platform
 ---
 

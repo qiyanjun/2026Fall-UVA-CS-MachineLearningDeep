@@ -1,4 +1,5 @@
 ---
+LOrder: 70
 layout: post
 title: GD and SGD for LR
 lecture: S1-LROptimization

@@ -1,4 +1,5 @@
 ---
+LOrder: 200
 layout: post
 title:  Huggingface 
 lecture: S3-hf-intro-2025-1016
@@ -8,7 +9,7 @@ video: M1
 platform: true
 categories: library
 tags:
-- platform
+- Platform
 ---
 
 

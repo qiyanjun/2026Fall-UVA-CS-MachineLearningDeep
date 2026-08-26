@@ -1,4 +1,5 @@
 ---
+LOrder: 290
 layout: post
 title: Gaussian GBC 
 lecture: S3-GaussianGBC

@@ -1,6 +1,7 @@
 ---
+LOrder: 510
 layout: post
-title: Clustering GMM
+title: "Clustering: EM Algorithm"
 lecture: S5-EMextra
 lectureVersion: current
 video:  

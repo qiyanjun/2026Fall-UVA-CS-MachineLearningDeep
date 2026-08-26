@@ -1,4 +1,5 @@
 ---
+LOrder: 270
 layout: post
 title:  Generative Classification
 lecture: S3-GenerativeBayesClassify

@@ -1,4 +1,5 @@
 ---
+LOrder: 20
 layout: post
 title:  Algebra Review
 lecture: S0-AlgbReview
@@ -10,7 +11,7 @@ categories: prerequisite
 background: true
 tags:
 - 1Basic
-- background
+- Background
 ---
 
 

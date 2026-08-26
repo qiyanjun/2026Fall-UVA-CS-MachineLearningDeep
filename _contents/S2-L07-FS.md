@@ -1,4 +1,5 @@
 ---
+LOrder: 230
 layout: post
 title: Feature Selection 
 lecture: S3-feaSelc
@@ -8,7 +9,7 @@ video: (Extra <a href="https://youtu.be/rL82C_sH0xI"> M2 </a> +<a href="https://
 notes: S3-QuizReview +  <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.4 and Ch3.3</a> + <a href="https://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-as-part-of-a-pipeline"> API </a> 
 categories: tabular
 tags:
-- DimenReduct
+- DimensionReduction
 - ModelSelection
 ---
 

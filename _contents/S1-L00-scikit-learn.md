@@ -1,4 +1,5 @@
 ---
+LOrder: 40
 layout: post
 title: Scikit-learn 
 lecture: S0-scikit-learn-self-study
@@ -10,5 +11,5 @@ platform: true
 categories: library
 tags:
 - 1Basic
-- platform
+- Platform
 ---

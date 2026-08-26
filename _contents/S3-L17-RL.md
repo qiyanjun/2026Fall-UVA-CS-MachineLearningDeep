@@ -1,4 +1,5 @@
 ---
+LOrder: 320
 layout: post
 title: deep RL Gym
 lecture: S5_RL_Gyms
@@ -9,6 +10,7 @@ categories: library
 platform: true
 tags:
 - RL
+- Platform
 ---
 
 

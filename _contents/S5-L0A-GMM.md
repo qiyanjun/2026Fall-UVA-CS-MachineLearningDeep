@@ -1,4 +1,5 @@
 ---
+LOrder: 500
 layout: post
 title: Clustering GMM
 lecture: S5-clustering3-GMM

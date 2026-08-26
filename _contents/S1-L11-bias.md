@@ -1,4 +1,5 @@
 ---
+LOrder: 130
 layout: post
 title: Bias Variance Tradeoff
 lecture: S1-biasVariance

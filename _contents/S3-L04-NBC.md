@@ -1,4 +1,5 @@
 ---
+LOrder: 280
 layout: post
 title: NaiveBC on Text 
 lecture: S3-NBCtext 
@@ -12,7 +13,6 @@ extra: true
 tags:
 - 3Classification
 - Generative
-- background
 ---
 
 - Notebook to run:  

@@ -1,4 +1,5 @@
 ---
+LOrder: 160
 layout: post
 title: ProbReview + MLE  
 lecture:  S2-MLE
@@ -11,7 +12,7 @@ categories: basics
 background: true
 tags:
 - 1Basic
-- background
+- Background
 ---
 
 

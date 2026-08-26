@@ -1,4 +1,5 @@
 ---
+LOrder: 80
 layout: post
 title: LR with basis
 lecture: S1-LRSelectExtend

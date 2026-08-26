@@ -1,4 +1,5 @@
 ---
+LOrder: 490
 layout: post
 title: Clustering Partition
 lecture: S5-clustering2-kMeans

@@ -1,4 +1,5 @@
 ---
+LOrder: 110
 layout: post
 title: KNN and Theory
 lecture: S1-KNN

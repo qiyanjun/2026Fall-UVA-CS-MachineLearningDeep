@@ -1,4 +1,5 @@
 ---
+LOrder: 190
 layout: post
 title: CNN 
 lecture: S2-deepImageCNN
@@ -6,7 +7,7 @@ lectureVersion: current
 video: <a href="https://youtu.be/foOw7tTDZq0"> M1</a>+ <a href="https://youtu.be/wwg3-8g-8no"> M2</a>
 extraContent:  S2-PCA
 notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> Keras notebook</a> + <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a>
-categories: 2d (vision)
+categories: 2D (Vision)
 tags:
 - 3Classification
 - Nonlinear

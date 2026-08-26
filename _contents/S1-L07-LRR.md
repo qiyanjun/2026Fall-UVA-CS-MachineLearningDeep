@@ -1,4 +1,5 @@
 ---
+LOrder: 100
 layout: post
 title: Linear Prediction with Regularization
 lecture: S1-lrRegularized

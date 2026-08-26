@@ -1,4 +1,5 @@
 ---
+LOrder: 330
 layout: post
 title: LLM Architecture and Training
 lecture:
@@ -11,7 +12,8 @@ tags:
 - 6LLMAgents
 - Deep
 - Generative
-- LLM
+- Architecture
+- Training
 ---
 
 ### In this lecture, we cover:

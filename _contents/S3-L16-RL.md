@@ -1,4 +1,5 @@
 ---
+LOrder: 310
 layout: post
 title: Reinforcement Learning
 lecture: S5_RL22 
@@ -7,9 +8,7 @@ video:
 notes: 
 categories: structured
 tags:
-- 4Unsupervised
 - RL
-- 5Theory
 ---
 
 

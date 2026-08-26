@@ -1,5 +1,6 @@
 ---
+LOrder: 520
 layout: post
-title:  Section 5 - Wrap Up
+title:  Section 6 - Wrap Up
 lectureVersion: current
 ---

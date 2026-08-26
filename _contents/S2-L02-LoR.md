@@ -1,4 +1,5 @@
 ---
+LOrder: 170
 layout: post
 title: Logistic and NN
 lecture: S2-LogisticRegression
