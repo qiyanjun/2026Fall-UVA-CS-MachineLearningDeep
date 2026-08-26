@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  Section 3 - Language, LLMs and Agents
+title:  Section 3 - Deep Learning for Language, LLMs and Agents
 lectureVersion: current
 ---

@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  Section 4 - More Advanced Supervsied on Tabular Type
+title:  Section 4 - More Advanced Classic ML on Tabular Inputs
 lectureVersion: current
 ---
