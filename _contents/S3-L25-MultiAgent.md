@@ -8,6 +8,7 @@ extraContent:
 notes:
 video:
 categories: LLM/Agents
+extra: true
 tags:
 - 6LLMAgents
 - MultiAgent
