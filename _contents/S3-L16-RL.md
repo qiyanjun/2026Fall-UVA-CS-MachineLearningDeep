@@ -2,7 +2,7 @@
 LOrder: 310
 layout: post
 title: Reinforcement Learning
-lecture: S5_RL22 
+lecture: S5_RL22
 lectureVersion: current
 video: 
 notes: 

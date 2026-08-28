@@ -2,7 +2,7 @@
 LOrder: 10
 layout: post
 title: Introduction
-lecture: S0-Intro
+lecture: S0-L1-Intro
 lectureVersion: current
 extraContent: 
 notes: <a href="http://cs231n.github.io/python-numpy-tutorial/"> Numpy Tutorial </a>
