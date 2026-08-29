@@ -1,0 +1,37 @@
+{% assign post = include.post %}
+
+{% assign vcount = 0 %}
+{% if post.video contains 'Original</a>' or post.video contains 'AI-Clone</a>' %}
+  {% assign vparts = post.video | split: '  |  ' %}
+  {% assign vcount = vparts | size %}
+{% endif %}
+
+{% assign rcount = 0 %}
+{% assign ccount = 0 %}
+{% assign combined = '' %}
+{% if post.notes %}{% assign combined = combined | append: post.notes %}{% endif %}
+{% if post.morenotes %}{% assign combined = combined | append: ' ' | append: post.morenotes %}{% endif %}
+{% assign linkparts = combined | split: '<a href="' %}
+{% assign linkpartcount = linkparts | size %}
+{% if linkpartcount > 1 %}
+  {% for part in linkparts limit: linkpartcount offset: 1 %}
+    {% assign urlpart = part | split: '"' | first %}
+    {% if urlpart contains 'notebook' or urlpart contains 'ipynb' or urlpart contains 'github.com' %}
+      {% assign ccount = ccount | plus: 1 %}
+    {% else %}
+      {% assign rcount = rcount | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if post.extraContent %}
+  {% assign rcount = rcount | plus: 1 %}
+{% endif %}
+
+{% if post.notebooks %}
+  {% assign nbparts = post.notebooks | split: '<a href="' %}
+  {% assign nbpartcount = nbparts | size %}
+  {% if nbpartcount > 1 %}
+    {% assign ccount = ccount | plus: nbpartcount | minus: 1 %}
+  {% endif %}
+{% endif %}

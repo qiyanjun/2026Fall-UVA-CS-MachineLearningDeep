@@ -12,10 +12,10 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
   <li>Feel free to email me, when you find my typos or have comments. The covered materials are by no means an exhaustive list of machine learning, but are contents that we have taught or plan to teach in my machine learning introductory course.
 </li>
   <li>
-    Please pay attention to special dates:  <font color="#990000"><b>(1008)</b></font> Midterm Exam;   <font color="#990000"><b>(1208)</b></font> Final Exam;    <font color="#990000"><b>(1208)</b></font> Last lesson day of Fall 2026. <font color="#990000"><b>(1006, 1103, 1126)</b></font> no class, reading/ election/ holidays days;
+    Please pay attention to special dates:  <span class="callout">(1008)</span> Midterm Exam;   <span class="callout">(1208)</span> Final Exam;    <span class="callout">(1208)</span> Last lesson day of Fall 2026. <span class="callout">(1006, 1103, 1126)</span> no class, reading/ election/ holidays days;
   </li>
   <br>
-  <li><p style="color:blue;">Disclaimer: it is quite hard to make important topics of machine learning fit on a one-semester schedule.  We aim to make the course reasonably digestible in an introductory manner. We try to focus on a modularity view by introducing important variables to digest machine learning into chunks regarding data/ representation / loss-functions / optimizations / model characteristics. That said, our goals here are to highlight the most foundational design choices in machine learning about algorithm designs,  workflows, what to learn and how to learn it, and to expose the trade-offs in those choices. We think this teaching style provides students with context concerning those choices and helps them build a much deeper understanding. </p>
+  <li><p class="disclaimer">Disclaimer: it is quite hard to make important topics of machine learning fit on a one-semester schedule.  We aim to make the course reasonably digestible in an introductory manner. We try to focus on a modularity view by introducing important variables to digest machine learning into chunks regarding data/ representation / loss-functions / optimizations / model characteristics. That said, our goals here are to highlight the most foundational design choices in machine learning about algorithm designs,  workflows, what to learn and how to learn it, and to expose the trade-offs in those choices. We think this teaching style provides students with context concerning those choices and helps them build a much deeper understanding. </p>
  </li>
 </ul>
 </div>
@@ -32,17 +32,18 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
 <h2>  Course Schedule and Notes  </h2>
 
 
-<p><font color="#990000"><b>The lectures' schedule below is tentative and is continually subject to change; We will move at whatever pace we find comfortable.&nbsp;</b></font>&nbsp;</p>
+<p><span class="callout">The lectures' schedule below is tentative and is continually subject to change; We will move at whatever pace we find comfortable.&nbsp;</span>&nbsp;</p>
 
 <p>
 Full video playlists (every lecture, all modules):
 &nbsp;<a href="https://www.youtube.com/playlist?list=PLHj6AQSqIUkOiQ6DfCOjs1Jc7ltXwuG9Z" target="_blank">Original Recordings</a>
 &nbsp;|&nbsp;
-<a href="https://www.youtube.com/playlist?list=PLMmpnvLjnh0I" target="_blank">AI-Clone Recordings</a>
+<a href="https://www.youtube.com/playlist?list=PLMmpnvLjnh0I" target="_blank">AI-Clone Recordings (filler cleaned up</a>
 </p>
 
 <div class="posts">
 
+<div class="table-scroll">
 <table id="datatab3"  summary="Table of Lectures" border="1">
 <tr>
  <h3><b>
@@ -53,7 +54,7 @@ Full video playlists (every lecture, all modules):
   <th>Title / Post</th>
   <th>Lecture PDF</th>
   <th>Focus</th>
-  <th>Resources</th>
+  <th class="resources-col">Resources</th>
   </b>
   </h3>
 </tr>
@@ -77,34 +78,34 @@ Full video playlists (every lecture, all modules):
 
 {% if currentTag == 0 %}
   {% unless post.lectureVersion contains 'current'  %}
-    <tr><td align="center" bgcolor="#fff48f"  colspan="8">
-      <font color="#990000"><b>WE ARE HERE</b></font></td>
+    <tr><td align="center" class="row-highlight"  colspan="8">
+      <span class="callout">WE ARE HERE</span></td>
     </tr>
     {% assign currentTag=currentTag | plus:1 %}
   {% endunless %}
 {% endif %}
 
 {% if  post.title contains "Section" %}
-  <tr><td align="center" bgcolor="#bafdfb"  colspan="8">
-      <font color="#990000"><h3><b>{{ post.title }}</b>
-      </h3></font></td>
+  <tr><td align="center" class="row-section"  colspan="8">
+      <h3 class="callout"><b>{{ post.title }}</b>
+      </h3></td>
     </tr>
 {% else %}
 
 {% if  post.extra  %}
-  <tr bgcolor="#cccdc2" >
+  <tr class="row-extra" >
   <td >Extra </td>
   <td >Extra </td>
   <td></td>
   <td></td>
 {% elsif post.background %}
-  <tr bgcolor="#c9defc" >
+  <tr class="row-background" >
   <td >Background </td>
   <td >Background </td>
   <td></td>
   <td></td>
 {% elsif post.platform %}
-  <tr bgcolor="#81de76" >
+  <tr class="row-platform" >
   <td >Platform </td>
   <td >Platform </td>
   <td></td>
@@ -138,46 +139,12 @@ Full video playlists (every lecture, all modules):
 {% endif %}
 
 
-<td align="center"><font color="#990000"><b>{{ post.categories }} </b></font></td>
+<td align="center"><span class="callout">{{ post.categories }} </span></td>
 
 
-{% assign vcount = 0 %}
-{% if post.video contains 'Original</a>' or post.video contains 'AI-Clone</a>' %}
-  {% assign vparts = post.video | split: '  |  ' %}
-  {% assign vcount = vparts | size %}
-{% endif %}
+{% include resource-stats.html post=post %}
 
-{% assign rcount = 0 %}
-{% assign ccount = 0 %}
-{% assign combined = '' %}
-{% if post.notes %}{% assign combined = combined | append: post.notes %}{% endif %}
-{% if post.morenotes %}{% assign combined = combined | append: ' ' | append: post.morenotes %}{% endif %}
-{% assign linkparts = combined | split: '<a href="' %}
-{% assign linkpartcount = linkparts | size %}
-{% if linkpartcount > 1 %}
-  {% for part in linkparts limit: linkpartcount offset: 1 %}
-    {% assign urlpart = part | split: '"' | first %}
-    {% if urlpart contains 'notebook' or urlpart contains 'ipynb' or urlpart contains 'github.com' %}
-      {% assign ccount = ccount | plus: 1 %}
-    {% else %}
-      {% assign rcount = rcount | plus: 1 %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-{% if post.extraContent %}
-  {% assign rcount = rcount | plus: 1 %}
-{% endif %}
-
-{% if post.notebooks %}
-  {% assign nbparts = post.notebooks | split: '<a href="' %}
-  {% assign nbpartcount = nbparts | size %}
-  {% if nbpartcount > 1 %}
-    {% assign ccount = ccount | plus: nbpartcount | minus: 1 %}
-  {% endif %}
-{% endif %}
-
-<td>
+<td class="resources-col">
 <a href="{{ site.baseurl }}{{ post.url }}">
 {% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
 {% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
@@ -196,8 +163,9 @@ Full video playlists (every lecture, all modules):
 {% endfor %}
 
 </table>
+</div>
 
 
-<div style="position: fixed; bottom: 76px; right:10px; width: 88px; height: 36px; background-color: #FFCF79;">
-<a style="position: fixed; bottom:80px; right:10px;" href="#topPage" title="Back to Top">BackTop</a>
+<div class="back-to-top-box">
+<a class="back-to-top-link" href="#topPage" title="Back to Top">BackTop</a>
 </div>

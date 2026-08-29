@@ -373,6 +373,63 @@ tbody tr:nth-child(odd) th {
   line-height: 1.5;
 }
 
+/* Red-bold emphasis text (dates, warnings, section titles) */
+.callout {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Blue disclaimer / caveat text */
+.disclaimer {
+  color: #1a56c4;
+}
+
+/* Syllabus-table row highlights */
+.row-highlight {
+  background-color: #fff48f;
+}
+.row-section {
+  background-color: #bafdfb;
+}
+.row-extra {
+  background-color: #cccdc2;
+}
+.row-background {
+  background-color: #c9defc;
+}
+.row-platform {
+  background-color: #81de76;
+}
+
+/* Horizontally-scrollable wrapper for wide tables on small screens */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Resources column: give it enough room that "N videos · N readings ·
+   N coding-reads" stays on one line, instead of wrapping and stretching
+   every other cell in the row */
+.resources-col {
+  min-width: 260px;
+  white-space: nowrap;
+}
+
+/* Fixed back-to-top button */
+.back-to-top-box {
+  position: fixed;
+  bottom: 76px;
+  right: 10px;
+  width: 88px;
+  height: 36px;
+  background-color: #FFCF79;
+}
+.back-to-top-link {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;

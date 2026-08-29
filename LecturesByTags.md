@@ -26,14 +26,13 @@ Click on a tag to see relevant list of lectures.
 
 <!--- for each tag, get a table of index -->
 
-
+<div class="table-scroll">
 <table id="datatab3" summary="Table of Lectures" border="1">
 <tr>
  <h3><b>
   <th>Title</th>
   <th>Lecture</th>
-  <th>Notes</th>
-  <th>Video</th>
+  <th class="resources-col">Resources</th>
   </b>
   </h3>
 </tr>
@@ -45,11 +44,7 @@ Click on a tag to see relevant list of lectures.
  
   <tr>
 
-  {% if t contains "0Logistics" %}
   <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} </a></td>
-  {% else %}
-  <td>{{ post.title }}</td>
-  {% endif %}
 
   {% if post.lecture %}
   <td><a href="{{ site.baseurl }}/Lectures/{{ post.lecture }}.pdf"  target="_blank">Slide</a></td>
@@ -57,10 +52,18 @@ Click on a tag to see relevant list of lectures.
   <td></td>
   {% endif %}
 
+  {% include resource-stats.html post=post %}
 
-
-  <td>{{ post.notes }} </td> 
-  <td> {{ post.video }}</td> 
+  <td class="resources-col">
+  <a href="{{ site.baseurl }}{{ post.url }}">
+  {% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
+  {% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
+  {% if rcount > 0 %}{{ rcount }} reading{% if rcount != 1 %}s{% endif %}{% endif %}
+  {% if rcount > 0 and ccount > 0 %} &middot; {% endif %}
+  {% if ccount > 0 %}{{ ccount }} coding-read{% if ccount != 1 %}s{% endif %}{% endif %}
+  {% if vcount == 0 and rcount == 0 and ccount == 0 %}&mdash;{% endif %}
+  </a>
+  </td>
 
   </tr>
 
@@ -68,6 +71,7 @@ Click on a tag to see relevant list of lectures.
   {% endif %}
 {% endfor %}
 </table>
+</div>
 
 <!--- for each tag, present its posts in orders -->
 
@@ -75,6 +79,6 @@ Click on a tag to see relevant list of lectures.
 {% endfor %}
 
 
-<div style="position: fixed; bottom: 76px; right:10px; width: 88px; height: 36px; background-color: #FFCF79;">
-<a style="position: fixed; bottom:80px; right:10px;" href="#topPage" title="Back to Top">BackTop</a>
+<div class="back-to-top-box">
+<a class="back-to-top-link" href="#topPage" title="Back to Top">BackTop</a>
 </div>

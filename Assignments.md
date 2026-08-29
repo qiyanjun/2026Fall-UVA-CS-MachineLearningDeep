@@ -18,6 +18,7 @@ TBD.
 TBD.
  
 
+<div class="table-scroll">
 <table id="datatab3" summary="Five Assignments" border="1">
 <tr>
  <h3><b>
@@ -71,6 +72,7 @@ TBD.
   <td>10%</td>
 </tr>
 </table>
+</div>
 
 
 
