@@ -372,6 +372,17 @@ tbody tr:nth-child(odd) th {
   margin-bottom: .35rem;
   line-height: 1.5;
 }
+.video-legend {
+  margin: 0 0 .5rem;
+  font-size: .9rem;
+  color: #666;
+}
+.video-list li {
+  list-style: none;
+}
+.video-list {
+  padding-left: 0;
+}
 
 /* Red-bold emphasis text (dates, warnings, section titles) */
 .callout {
