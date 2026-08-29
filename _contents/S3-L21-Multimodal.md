@@ -5,7 +5,7 @@ title: Multimodal and Vision-Language Models
 lecture:
 lectureVersion: current
 extraContent:
-notes:
+notes: 'Radford et al. (2021), <a href="https://arxiv.org/abs/2103.00020" target="_blank">Learning Transferable Visual Models From Natural Language Supervision</a> · Dosovitskiy et al. (2021), <a href="https://arxiv.org/abs/2010.11929" target="_blank">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</a> · Liu et al. (2023), <a href="https://arxiv.org/abs/2304.08485" target="_blank">Visual Instruction Tuning</a>'
 video:
 categories: LLM/Agents
 tags:

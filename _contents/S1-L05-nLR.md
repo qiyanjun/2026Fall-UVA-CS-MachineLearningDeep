@@ -4,22 +4,17 @@ layout: post
 title: LR with basis
 lecture: S1-LRSelectExtend
 lectureVersion: current 
-extraContent: S1-nonparametric
-notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb">L5_Poly_Regression.ipynb</a>
-morenotes: <a href="https://stat.ethz.ch/~stahel/courses/cheming/nlreg10E.pdf"> NonLinearR </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a>
-video: <a href="https://youtu.be/oIQX1uXU_Bk">M1</a> + <a href="https://youtu.be/R8I_ReNucV8">M2</a>
+notes: 'James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 7: Moving Beyond Linearity</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/linear_model.html" target="_blank">Polynomial Regression: Extending Linear Models with Basis Functions</a>'
+morenotes: <a href="https://stat.ethz.ch/~stahel/courses/cheming/nlreg10E.pdf"> NonLinearR </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb">L5_Poly_Regression.ipynb</a>
+video: <b>M1</b> <a href="https://youtu.be/oIQX1uXU_Bk" target="_blank">Original</a> · <a href="https://youtu.be/-RBj2DPwT_Y" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/R8I_ReNucV8" target="_blank">Original</a> · <a href="https://youtu.be/NpHbr0AeIZA" target="_blank">AI-Clone</a>
 categories: tabular
 tags:
 - 2Regression
 - Nonlinear
 - ModelSelection
 - Local
+notebooks: '<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">notebook/L5-Poly-Regression.ipynb</a> · <a href="/2026Fall-UVA-CS-MachineLearningDeep//notebook/L5-RBF-regressionLR.ipynb" target="_blank">notebook/L5-RBF-regressionLR.ipynb</a>'
 ---
-
-- Notebook Resources: [notebook/L5-Poly-Regression.ipynb](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb)
-
-
-- Notebook Resources: [notebook/L5-RBF-regressionLR.ipynb]({{ site.baseurl }}/notebook/L5-RBF-regressionLR.ipynb)
 
 
 # Understanding Linear Regression with Basis Functions Expansion 

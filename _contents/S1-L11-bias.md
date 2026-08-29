@@ -3,23 +3,16 @@ LOrder: 130
 layout: post
 title: Bias Variance Tradeoff
 lecture: S1-biasVariance
-extraContent: S1-Tibshirani-modelbasics 
 lectureVersion: current
-notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook/">notebook validation and learning curves </a>
-morenotes: <a href="http://www.cs.cmu.edu/~wcohen/10-601/bias-variance.pdf"> Useful BiasVar </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ESL Ch7</a>
-video: <a href="https://youtu.be/i97APPgE0Xk"> M1</a> + <a href="https://youtu.be/QjUyLPnIQPE"> M2</a> 
+notes: 'Scott Fortmann-Roe (2012), <a href="https://scott.fortmann-roe.com/docs/BiasVariance.html" target="_blank">Understanding the Bias-Variance Tradeoff</a> · James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 2.2: Assessing Model Accuracy</a>'
+morenotes: <a href="http://www.cs.cmu.edu/~wcohen/10-601/bias-variance.pdf"> Useful BiasVar </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ESL Ch7</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook/">notebook validation and learning curves </a>
+video: <b>M1</b> <a href="https://youtu.be/i97APPgE0Xk" target="_blank">Original</a> · <a href="https://youtu.be/JzfaZ1sWik4" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/QjUyLPnIQPE" target="_blank">Original</a> · <a href="https://youtu.be/5QMsv-atbRI" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/AKGPVhpyCE8" target="_blank">Original</a> · <a href="https://youtu.be/dBYrQjt2cgs" target="_blank">AI-Clone</a>
 categories: theory
 tags:
 - 5Theory
 - Local
+notebooks: '<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L6-Hyperparameters-and-Model-Validation.ipynb</a> · <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L9-LearningCurves.ipynb" target="_blank">notebook/L9-LearningCurves.ipynb</a>'
 ---
-
-
-
-- Notebook Resources: [notebook/L6-Hyperparameters-and-Model-Validation.ipynb](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb)
-
-
-- Notebook Resources: [notebook/L9-LearningCurves.ipynb](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L9-LearningCurves.ipynb)
 
 
 # Study Guide: The Bias-Variance Tradeoff

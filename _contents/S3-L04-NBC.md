@@ -4,10 +4,10 @@ layout: post
 title: NaiveBC on Text 
 lecture: S3-NBCtext
 lectureVersion: current
-video:  <a href="https://youtu.be/fPv3nD3uwWw"> M1</a> +<a href="https://youtu.be/kfXHwam-RPs"> M2</a> + (Extra <a href="https://youtu.be/uoB3olc_eRw"> M3</a>  +<a href="https://youtu.be/qMNRD3uJRFs"> M4</a>)  
+video: <b>M1</b> <a href="https://youtu.be/fPv3nD3uwWw" target="_blank">Original</a> · <a href="https://youtu.be/McyumBcLJGo" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/kfXHwam-RPs" target="_blank">Original</a> · <a href="https://youtu.be/Jl1DLWYrKhc" target="_blank">AI-Clone</a>  |  <b>Extra M3</b> <a href="https://youtu.be/uoB3olc_eRw" target="_blank">Original</a> · <a href="https://youtu.be/1CWoG6fyb5M" target="_blank">AI-Clone</a>  |  <b>Extra M4</b> <a href="https://youtu.be/qMNRD3uJRFs" target="_blank">Original</a> · <a href="https://youtu.be/SfYRp3t9Ias" target="_blank">AI-Clone</a>
 extraContent:   
-notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
-morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf">Multinomial MLE</a> 
+notes: 'Jurafsky & Martin (2026), <a href="https://web.stanford.edu/~jurafsky/slp3/B.pdf" target="_blank">Speech and Language Processing, Appendix B: Naive Bayes, Text Classification, and Sentiment</a> · Manning, Raghavan & Schütze (2008), <a href="https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf" target="_blank">Introduction to Information Retrieval, Ch. 13: Text Classification and Naive Bayes</a>'
+morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf">Multinomial MLE</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
 categories: 1D (Text)
 extra: true
 tags:

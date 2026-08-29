@@ -4,7 +4,8 @@ layout: post
 title:  Huggingface 
 lecture: S3-hf-intro-2025-1016
 lectureVersion: current
-notes: <a href="https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-pytorch.pdf"> S2-L0-pytorch </a> 
+notes: 'Wolf et al. (2020), <a href="https://aclanthology.org/2020.emnlp-demos.6.pdf" target="_blank">Transformers: State-of-the-Art Natural Language Processing</a> · Hugging Face (2022), <a href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank">The Hugging Face LLM Course, Ch. 1: Introduction to Transformer Models</a>'
+morenotes: <a href="https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-pytorch.pdf"> S2-L0-pytorch </a> 
 video: M1
 platform: true
 categories: library

@@ -5,8 +5,9 @@ title:  RF and Boosting
 lecture: S4-DT-Ensemble
 lectureVersion: current
 extraContent: S4-DT-moreBoosting
-notes: <a href="https://github.com/dmlc/xgboost"> xgboost </a> 
-video: <a href="https://youtu.be/NuxS9SycZG8">M1</a> + <a href="https://youtu.be/m52bovS_eNA">M2</a> + <a href="https://youtu.be/sRLyzg5hmuM">M3</a>  + <a href="https://youtu.be/VwFTEW_NM4o">M4</a>  
+notes: 'Freund & Schapire (1997), <a href="https://www.face-rec.org/algorithms/Boosting-Ensemble/decision-theoretic_generalization.pdf" target="_blank">A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting</a> · Chen & Guestrin (2016), <a href="https://arxiv.org/abs/1603.02754" target="_blank">XGBoost: A Scalable Tree Boosting System</a>'
+morenotes: <a href="https://github.com/dmlc/xgboost"> xgboost </a>
+video: <b>M1</b> <a href="https://youtu.be/NuxS9SycZG8" target="_blank">Original</a> · <a href="https://youtu.be/GIUESzPEXIU" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/m52bovS_eNA" target="_blank">Original</a> · <a href="https://youtu.be/Xf2QuLLYVQQ" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/sRLyzg5hmuM" target="_blank">Original</a> · <a href="https://youtu.be/J7ETp2vZNHE" target="_blank">AI-Clone</a>  |  <b>M4</b> <a href="https://youtu.be/VwFTEW_NM4o" target="_blank">Original</a> · <a href="https://youtu.be/xS4q6LnM-tc" target="_blank">AI-Clone</a>
 categories: tabular
 tags:
 - 3Classification

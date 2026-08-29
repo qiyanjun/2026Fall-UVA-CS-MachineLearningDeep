@@ -5,7 +5,7 @@ title: Prompting, RAG and Fine-tuning
 lecture:
 lectureVersion: current
 extraContent:
-notes:
+notes: 'Wei et al. (2022), <a href="https://arxiv.org/abs/2201.11903" target="_blank">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> · Lewis et al. (2020), <a href="https://arxiv.org/abs/2005.11401" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a> · Hu et al. (2021), <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA: Low-Rank Adaptation of Large Language Models</a>'
 video:
 categories: LLM/Agents
 tags:

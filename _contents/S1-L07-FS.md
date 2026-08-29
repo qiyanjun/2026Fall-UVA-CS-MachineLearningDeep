@@ -5,8 +5,9 @@ title: Feature Selection
 lecture: S3-feaSelc
 extra: true
 lectureVersion: current
-video: (Extra <a href="https://youtu.be/rL82C_sH0xI"> M2 </a> +<a href="https://youtu.be/aT8Q6DTW1rM"> M3 </a>)
-notes: S3-QuizReview +  <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.4 and Ch3.3</a> + <a href="https://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-as-part-of-a-pipeline"> API </a> 
+video: (<b>Extra M2</b> <a href="https://youtu.be/rL82C_sH0xI" target="_blank">Original</a> · <a href="https://youtu.be/AnQPAPqwgi0" target="_blank">AI-Clone</a>  |  <b>Extra M3</b> <a href="https://youtu.be/aT8Q6DTW1rM" target="_blank">Original</a> · <a href="https://youtu.be/0TaeJZt1Km0" target="_blank">AI-Clone</a>)
+notes: Isabelle Guyon & André Elisseeff (2003), <a href="https://www.jmlr.org/papers/volume3/guyon03a/guyon03a.pdf" target="_blank">An Introduction to Variable and Feature Selection</a> · Hastie, Tibshirani & Friedman, <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 3.3-3.4</a>
+morenotes: S3-QuizReview +  <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.4 and Ch3.3</a> + <a href="https://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-as-part-of-a-pipeline"> API </a>
 categories: tabular
 tags:
 - DimensionReduction

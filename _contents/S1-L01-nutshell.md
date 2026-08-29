@@ -5,8 +5,9 @@ title: Machine Learning in a Nutshell
 lecture: S0-L2-nutshell
 lectureVersion: current
 extraContent: 
-notes: <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py">two modes running example</a> 
-video:   <a href="https://youtu.be/CmIJoUoYJGk"  target="_blank">M1</a> / <a href="https://youtu.be/SboSRvUFKVM"  target="_blank">M2</a> / <a href="https://youtu.be/RA_MdNwfDOI"  target="_blank">M3</a>
+notes: 'Tom M. Mitchell (1997), <a href="https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf" target="_blank">Machine Learning, Ch. 1: Well-Posed Learning Problems</a> · Pedro Domingos (2012), <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank">A Few Useful Things to Know about Machine Learning</a>'
+morenotes: <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py">two modes running example</a>
+video: <b>M1</b> <a href="https://youtu.be/CmIJoUoYJGk" target="_blank">Original</a> · <a href="https://youtu.be/xUjzVVtxXqo" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/SboSRvUFKVM" target="_blank">Original</a> · <a href="https://youtu.be/SFUQ8hPuqpA" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/RA_MdNwfDOI" target="_blank">Original</a> · <i>AI-Clone not yet available</i>
 categories: basics
 tags:
 - 1Basic

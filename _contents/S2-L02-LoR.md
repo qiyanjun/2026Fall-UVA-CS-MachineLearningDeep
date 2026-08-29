@@ -5,8 +5,9 @@ title: Logistic and NN
 lecture: S2-LogisticRegression
 lectureVersion: current
 extraContent:  S2-LogisticRegression
-video: <a href="https://youtu.be/L8URtfxH7lM"> M1</a> + <a href="https://youtu.be/xDDoBO2TXmI"> M2</a> 
-notes: <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html"> compare classifiers </a> 
+video: <b>M1</b> <a href="https://youtu.be/L8URtfxH7lM" target="_blank">Original</a> · <a href="https://youtu.be/3J1i4IyM5sU" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/xDDoBO2TXmI" target="_blank">Original</a> · <a href="https://youtu.be/JO05eWLdchY" target="_blank">AI-Clone</a>
+notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 4.4: Logistic Regression</a> · Jurafsky & Martin (2025), <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank">Speech and Language Processing, Ch. 4: Logistic Regression and Text Classification</a>'
+morenotes: <a href="https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html"> compare classifiers </a> 
 categories: structured
 tags:
 - 3Classification

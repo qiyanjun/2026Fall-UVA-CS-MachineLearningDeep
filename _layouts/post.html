@@ -5,45 +5,101 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
 
-  {% assign post = page  %} 
- <ul>
+  {% assign post = page  %}
+
   {% if post.lecture %}
-  <li><a href="{{ site.baseurl }}/Lectures/{{ post.lecture }}.pdf"  target="_blank">Lecture: 
-  {{ post.lecture }}</a></li>
-  <li>Version: {{ post.lectureVersion }}</li>
+  <section class="lecture-section">
+    <h3>Slides</h3>
+    <ul class="lecture-list">
+      <li><a href="{{ site.baseurl }}/Lectures/{{ post.lecture }}.pdf" target="_blank">{{ post.lecture }}</a> <em>(version: {{ post.lectureVersion }})</em></li>
+    </ul>
+  </section>
   {% endif %}
 
-
-  {% if post.extraContent %}
-  <td><a href="{{ site.baseurl }}/Lectures/{{ post.extraContent }}.pdf"  target="_blank"> Notes: {{ post.extraContent }}</a></td>
-  {% else %}
-    <td></td>
+  {% if post.video contains 'Original</a>' or post.video contains 'AI-Clone</a>' %}
+  {% assign video_clean = post.video | remove: '(' | remove: ')' %}
+  {% assign video_parts = video_clean | split: '  |  ' %}
+  <section class="lecture-section">
+    <h3>Videos</h3>
+    <ul class="lecture-list">
+      {% for part in video_parts %}
+      <li>{{ part | strip }}</li>
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
-
 
   {% if post.notes %}
-  <li>Required Read: {{ post.notes }} </li>
+  {% assign notes_norm = post.notes | replace: ' + ', ' · ' | replace: '+<a', ' · <a' | replace: '+ <a', ' · <a' %}
+  {% assign notes_parts = notes_norm | split: ' · ' %}
+  <section class="lecture-section">
+    <h3>Readings</h3>
+    <ul class="lecture-list">
+      {% for part in notes_parts %}
+        {% assign trimmed = part | strip %}
+        {% if trimmed != '' %}
+        <li>{{ trimmed }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 
-  {% if post.video %}
-  <li>Recorded Videos: {{ post.video }} </li>
+  {% if post.morenotes %}
+  {% assign morenotes_norm = post.morenotes | replace: ' + ', ' · ' | replace: '+<a', ' · <a' | replace: '+ <a', ' · <a' %}
+  {% assign morenotes_parts = morenotes_norm | split: ' · ' %}
+  <section class="lecture-section">
+    <h3>Extra Readings</h3>
+    <ul class="lecture-list">
+      {% for part in morenotes_parts %}
+        {% assign trimmed = part | strip %}
+        {% if trimmed != '' %}
+        <li>{{ trimmed }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 
   {% if post.extraContent %}
-  <li>Advanced Read: <a href="{{ site.baseurl }}/Lectures/{{ post.extraContent }}.pdf"  target="_blank">   {{ post.extraContent }} </a></li>
+  <section class="lecture-section">
+    <h3>Advanced Read</h3>
+    <ul class="lecture-list">
+      <li><a href="{{ site.baseurl }}/Lectures/{{ post.extraContent }}.pdf" target="_blank">{{ post.extraContent }}</a></li>
+    </ul>
+  </section>
   {% endif %}
 
- {% if post.morenotes %}
-  <li>Extra Notes to Read: {{ post.morenotes }} </li>
+  {% if post.notebooks %}
+  {% assign notebooks_parts = post.notebooks | split: ' · ' %}
+  <section class="lecture-section">
+    <h3>Notebook Resources</h3>
+    <ul class="lecture-list">
+      {% for part in notebooks_parts %}
+        {% assign trimmed = part | strip %}
+        {% if trimmed != '' %}
+        <li>{{ trimmed }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 
-</ul>
+  {% if post.categories %}
+  <section class="lecture-section">
+    <h3>Category</h3>
+    <span class="button">{{ post.categories }}</span>
+  </section>
+  {% endif %}
 
-
-
-  {% for temp in post.tags %}
-    <a class="button" href="{{ site.baseurl }}/LecturesByTags/#{{temp | replace:" ","-" }}">{{ temp }}</a>
-  {% endfor %}
+  {% if post.tags %}
+  <section class="lecture-section">
+    <h3>Tags</h3>
+    {% for temp in post.tags %}
+      <a class="button" href="{{ site.baseurl }}/LecturesByTags/#{{temp | replace:" ","-" }}">{{ temp }}</a>
+    {% endfor %}
+  </section>
+  {% endif %}
 
 <br>
 

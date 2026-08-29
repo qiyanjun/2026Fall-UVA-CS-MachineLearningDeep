@@ -4,8 +4,9 @@ layout: post
 title: SVM, Kernel
 lecture:  S4-SVM-kerneltrick
 lectureVersion: current
-notes: <a href="https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf"> Practical Guide </a>
-video: <a href="https://youtu.be/LmWuFIHSnAc">M1</a> + <a href="https://youtu.be/CHB4dxkBiDI">M2</a> + <a href="https://youtu.be/e6Q-BlN9mIE">M3</a> + (Extra <a href="https://youtu.be/So3YKq57nkg">M4</a>)     
+notes: 'Daumé III (2017), <a href="https://ciml.info/dl/v0_99/ciml-v0_99-ch11.pdf" target="_blank">A Course in Machine Learning, Ch. 11: Kernel Methods</a> · Schölkopf & Smola (2002), <a href="https://direct.mit.edu/books/monograph/1821/Learning-with-KernelsSupport-Vector-Machines" target="_blank">Learning with Kernels: Support Vector Machines, Regularization, Optimization, and Beyond</a>'
+morenotes: <a href="https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf"> Practical Guide </a>
+video: <b>M1</b> <a href="https://youtu.be/LmWuFIHSnAc" target="_blank">Original</a> · <a href="https://youtu.be/cAAERb6JIRA" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/CHB4dxkBiDI" target="_blank">Original</a> · <a href="https://youtu.be/Our-ThhKHM4" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/e6Q-BlN9mIE" target="_blank">Original</a> · <a href="https://youtu.be/0rxWifvpBog" target="_blank">AI-Clone</a>  |  <b>Extra M4</b> <a href="https://youtu.be/So3YKq57nkg" target="_blank">Original</a> · <a href="https://youtu.be/cYCax1DSgwQ" target="_blank">AI-Clone</a>
 categories: tabular
 extra: true
 tags:

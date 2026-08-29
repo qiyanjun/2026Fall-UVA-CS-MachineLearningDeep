@@ -5,7 +5,8 @@ title: LLM Architecture and Training
 lecture:
 lectureVersion: current
 extraContent:
-notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb">Keras Notebook on BERT for Text </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a>
+notes: Vaswani et al. (2017), <a href="https://arxiv.org/abs/1706.03762" target="_blank">Attention Is All You Need</a> · Alammar (2018), <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">The Illustrated Transformer</a>
+morenotes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb">Keras Notebook on BERT for Text </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a>
 video:
 categories: LLM/Agents
 tags:

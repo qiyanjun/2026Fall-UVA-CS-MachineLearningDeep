@@ -34,6 +34,13 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
 
 <p><font color="#990000"><b>The lectures' schedule below is tentative and is continually subject to change; We will move at whatever pace we find comfortable.&nbsp;</b></font>&nbsp;</p>
 
+<p>
+Full video playlists (every lecture, all modules):
+&nbsp;<a href="https://www.youtube.com/playlist?list=PLHj6AQSqIUkOiQ6DfCOjs1Jc7ltXwuG9Z" target="_blank">Original Recordings</a>
+&nbsp;|&nbsp;
+<a href="https://www.youtube.com/playlist?list=PLMmpnvLjnh0I" target="_blank">AI-Clone Recordings</a>
+</p>
+
 <div class="posts">
 
 <table id="datatab3"  summary="Table of Lectures" border="1">
@@ -46,8 +53,7 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
   <th>Title / Post</th>
   <th>Lecture PDF</th>
   <th>Focus</th>
-  <th>Video (Split2Modules)</th>
-  <th>Study Note</th>
+  <th>Resources</th>
   </b>
   </h3>
 </tr>
@@ -71,7 +77,7 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
 
 {% if currentTag == 0 %}
   {% unless post.lectureVersion contains 'current'  %}
-    <tr><td align="center" bgcolor="#fff48f"  colspan="9">
+    <tr><td align="center" bgcolor="#fff48f"  colspan="8">
       <font color="#990000"><b>WE ARE HERE</b></font></td>
     </tr>
     {% assign currentTag=currentTag | plus:1 %}
@@ -79,7 +85,7 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
 {% endif %}
 
 {% if  post.title contains "Section" %}
-  <tr><td align="center" bgcolor="#bafdfb"  colspan="9">
+  <tr><td align="center" bgcolor="#bafdfb"  colspan="8">
       <font color="#990000"><h3><b>{{ post.title }}</b>
       </h3></font></td>
     </tr>
@@ -135,9 +141,50 @@ desc: 'Website for 2026 Fall -UVA-CS Machine Learning: Machine learning Foundati
 <td align="center"><font color="#990000"><b>{{ post.categories }} </b></font></td>
 
 
-<td>{{ post.video }} </td>
+{% assign vcount = 0 %}
+{% if post.video contains 'Original</a>' or post.video contains 'AI-Clone</a>' %}
+  {% assign vparts = post.video | split: '  |  ' %}
+  {% assign vcount = vparts | size %}
+{% endif %}
 
-<td>{{ post.notes }} </td>
+{% assign rcount = 0 %}
+{% assign ccount = 0 %}
+{% assign combined = '' %}
+{% if post.notes %}{% assign combined = combined | append: post.notes %}{% endif %}
+{% if post.morenotes %}{% assign combined = combined | append: ' ' | append: post.morenotes %}{% endif %}
+{% assign linkparts = combined | split: '<a href="' %}
+{% assign linkpartcount = linkparts | size %}
+{% if linkpartcount > 1 %}
+  {% for part in linkparts limit: linkpartcount offset: 1 %}
+    {% assign urlpart = part | split: '"' | first %}
+    {% if urlpart contains 'notebook' or urlpart contains 'ipynb' or urlpart contains 'github.com' %}
+      {% assign ccount = ccount | plus: 1 %}
+    {% else %}
+      {% assign rcount = rcount | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if post.extraContent %}
+  {% assign rcount = rcount | plus: 1 %}
+{% endif %}
+
+{% if post.notebooks %}
+  {% assign nbparts = post.notebooks | split: '<a href="' %}
+  {% assign nbpartcount = nbparts | size %}
+  {% if nbpartcount > 1 %}
+    {% assign ccount = ccount | plus: nbpartcount | minus: 1 %}
+  {% endif %}
+{% endif %}
+
+<td>
+{% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
+{% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
+{% if rcount > 0 %}{{ rcount }} reading{% if rcount != 1 %}s{% endif %}{% endif %}
+{% if rcount > 0 and ccount > 0 %} &middot; {% endif %}
+{% if ccount > 0 %}{{ ccount }} coding-read{% if ccount != 1 %}s{% endif %}{% endif %}
+{% if vcount == 0 and rcount == 0 and ccount == 0 %}&mdash;{% endif %}
+</td>
 
 
 </tr>

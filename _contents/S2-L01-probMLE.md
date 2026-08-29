@@ -5,9 +5,9 @@ title: ProbReview + MLE
 lecture:  S2-MLE
 lectureVersion: current
 extraContent: S2-MLE 
-video: <a href="https://youtu.be/RIvdfYIHT1I"> M1</a> 
-notes: <a href="https://www.youtube.com/watch?v=aDW44NPhNw0&list=PLs8w1Cdi-zvY9ICoYqu1XV0YoTQgShXw2">Error Metrics</a>
-morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf"> MLE </a>  / <a href="https://medium.com/@rrfd/what-is-maximum-likelihood-estimation-examples-in-python-791153818030"> MLE code</a>
+video: <b>M1</b> <a href="https://youtu.be/RIvdfYIHT1I" target="_blank">Original</a> · <a href="https://youtu.be/l78hirhUWuM" target="_blank">AI-Clone</a>
+notes: 'Murphy (2022), <a href="https://probml.github.io/pml-book/book1.html" target="_blank">Probabilistic Machine Learning: An Introduction, Ch. 4: Statistics</a> · Brooks-Bartlett (2018), <a href="https://medium.com/data-science/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1" target="_blank">Probability Concepts Explained: Maximum Likelihood Estimation</a>'
+morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf"> MLE </a>  / <a href="https://medium.com/@rrfd/what-is-maximum-likelihood-estimation-examples-in-python-791153818030"> MLE code</a> + <a href="https://www.youtube.com/watch?v=aDW44NPhNw0&list=PLs8w1Cdi-zvY9ICoYqu1XV0YoTQgShXw2">Error Metrics</a>
 categories: basics
 background: true
 tags:

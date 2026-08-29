@@ -4,8 +4,9 @@ layout: post
 title: NN and Deep Learning
 lecture: S2-deepNNBasics
 lectureVersion: current
-video: <a href="https://youtu.be/BW9aQ0uCWJI">M1</a>+ <a href="https://youtu.be/rxwDm3R6gp0">M2</a>+   <a href="https://youtu.be/viVhuJmCobI">M3</a>
-notes: <a href="https://github.com/afshinea/stanford-cs-230-deep-learning"> DNN Cheatsheets </a> 
+video: <b>M1</b> <a href="https://youtu.be/BW9aQ0uCWJI" target="_blank">Original</a> · <a href="https://youtu.be/ReLB9nc45lY" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/rxwDm3R6gp0" target="_blank">Original</a> · <a href="https://youtu.be/ol2tqQetIcQ" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/viVhuJmCobI" target="_blank">Original</a> · <a href="https://youtu.be/YJDBxVdX3E8" target="_blank">AI-Clone</a>  |  <b>M4</b> <a href="https://youtu.be/-B37QghuoL8" target="_blank">Original</a> · <a href="https://youtu.be/i9JgfAJqGh4" target="_blank">AI-Clone</a>
+notes: 'Goodfellow, Bengio & Courville (2016), <a href="https://www.deeplearningbook.org/contents/mlp.html" target="_blank">Deep Learning, Ch. 6: Deep Feedforward Networks</a> · Nielsen (2015), <a href="http://neuralnetworksanddeeplearning.com/chap1.html" target="_blank">Neural Networks and Deep Learning, Ch. 1</a>'
+morenotes: <a href="https://github.com/afshinea/stanford-cs-230-deep-learning"> DNN Cheatsheets </a>
 categories: structured
 tags:
 - 3Classification

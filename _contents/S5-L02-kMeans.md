@@ -5,8 +5,9 @@ title: Clustering Partition
 lecture: S5-clustering2-kMeans
 lectureVersion: current
 extraContent: S5-EMextra
-video: <a href="https://youtu.be/239r6zlZYhY">M1</a> + <a href="https://youtu.be/OFKKeVhCQfA">M2</a> 
-notes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"> compare clusterings </a> 
+video: <b>M1</b> <a href="https://youtu.be/239r6zlZYhY" target="_blank">Original</a> · <a href="https://youtu.be/rH9xlO_aHmk" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/OFKKeVhCQfA" target="_blank">Original</a> · <a href="https://youtu.be/3LA4jYvJ_Vo" target="_blank">AI-Clone</a>
+notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 14.3: Cluster Analysis</a> · Harris, <a href="https://www.naftaliharris.com/blog/visualizing-k-means-clustering/" target="_blank">Visualizing K-Means Clustering</a>'
+morenotes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"> compare clusterings </a>
 categories: tabular
 tags:
 - 4Unsupervised

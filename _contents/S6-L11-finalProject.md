@@ -4,7 +4,7 @@ layout: post
 title: Review for Final exam
 lecture: S6-review
 lectureVersion: next
-video: <a href="https://youtu.be/fz5ExB0XP5E"> video</a>  
+video: <b>Video</b> <a href="https://youtu.be/fz5ExB0XP5E" target="_blank">Original</a> · <a href="https://youtu.be/GuirQX7zSuk" target="_blank">AI-Clone</a>
 notes:  review for final exam + extra- <a href="https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master/en">[ML Cheatsheets]</a> 
 background: true
 tags:

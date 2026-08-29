@@ -5,8 +5,9 @@ title: Quick survey of recent deep learning
 lecture: S3-deepNNSurvey
 lectureVersion: current
 extraContent: S3-25recentLLM-extra
-video: <a href="https://youtu.be/tjIJVfwSrgs"> M1</a> + <a href="https://youtu.be/Z2Pq6QokCco"> M2</a> + <a href="https://youtu.be/l58pIDazkQU"> M3</a> + <a href="https://youtu.be/gjXxOVly83s">M4</a> 
-notes: <a href="https://github.com/afshinea/stanford-cs-230-deep-learning"> DNN Cheatsheets </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a> 
+video: <b>M1</b> <a href="https://youtu.be/tjIJVfwSrgs" target="_blank">Original</a> · <a href="https://youtu.be/VlRvDEgGlio" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/Z2Pq6QokCco" target="_blank">Original</a> · <a href="https://youtu.be/RKjZQ0sVkH8" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/l58pIDazkQU" target="_blank">Original</a> · <a href="https://youtu.be/akDRFnuW8I8" target="_blank">AI-Clone</a>  |  <b>M4</b> <a href="https://youtu.be/gjXxOVly83s" target="_blank">Original</a> · <a href="https://youtu.be/Mo0qGBHNO3k" target="_blank">AI-Clone</a>
+notes: Goodfellow, Bengio & Courville (2016), <a href="https://www.deeplearningbook.org/" target="_blank">Deep Learning</a> · LeCun, Bengio & Hinton (2015), <a href="https://www.nature.com/articles/nature14539" target="_blank">Deep Learning (Nature review)</a>
+morenotes: <a href="https://github.com/afshinea/stanford-cs-230-deep-learning"> DNN Cheatsheets </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf"> [Recent LLM-survey] </a> 
 extra: true
 categories: survey
 tags:

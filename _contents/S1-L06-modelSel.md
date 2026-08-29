@@ -5,18 +5,18 @@ title: Workflow for model selection
 lecture: S1-ModelSelect
 lectureVersion: current
 extraContent: 
-notes: <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html"> hyperpara select notebook </a> + <a href="http://scikit-learn.org/stable/model_selection.html">flow API </a> 
-morenotes: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a>
-video: <a href="https://youtu.be/QJC-GbMP95E"> M1</a>
+notes: 'James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 5: Resampling Methods</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank">Cross-validation: Evaluating Estimator Performance</a>'
+morenotes: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a> + <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html"> hyperpara select notebook </a> + <a href="http://scikit-learn.org/stable/model_selection.html">flow API </a>
+video: <b>M1</b> <a href="https://youtu.be/QJC-GbMP95E" target="_blank">Original</a> · <a href="https://youtu.be/Ds_-H8e4Qzc" target="_blank">AI-Clone</a>
 categories: tabular
 tags:
 - 2Regression
 - Nonlinear
 - ModelSelection
 - Local
+notebooks: '<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L6-Hyperparameters-and-Model-Validation.ipynb</a>'
 ---
 
-- Notebook Resources: [notebook/L6-Hyperparameters-and-Model-Validation.ipynb](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb)
 
 # Model Selection and Validation Study Guide
 
