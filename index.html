@@ -178,12 +178,14 @@ Full video playlists (every lecture, all modules):
 {% endif %}
 
 <td>
+<a href="{{ site.baseurl }}{{ post.url }}">
 {% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
 {% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
 {% if rcount > 0 %}{{ rcount }} reading{% if rcount != 1 %}s{% endif %}{% endif %}
 {% if rcount > 0 and ccount > 0 %} &middot; {% endif %}
 {% if ccount > 0 %}{{ ccount }} coding-read{% if ccount != 1 %}s{% endif %}{% endif %}
 {% if vcount == 0 and rcount == 0 and ccount == 0 %}&mdash;{% endif %}
+</a>
 </td>
 
 
