@@ -4,7 +4,7 @@ layout: post
 title: Deep Learning on Text - from BOW to Attention
 lecture: S3-deepNNtext
 lectureVersion: current
-video: <b>M1</b> <a href="https://youtu.be/iTgy525nBq4" target="_blank">Original</a> · <a href="https://youtu.be/sxxi5PpV0sQ" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/w22S24kFMmA" target="_blank">Original</a> · <a href="https://youtu.be/kJkAD_3qL5A" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/5UGmLbAvUH0" target="_blank">Original</a> · <a href="https://youtu.be/LpRefJFoPsI" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/iTgy525nBq4" target="_blank">Original</a> · <a href="https://youtu.be/sxxi5PpV0sQ" target="_blank">AI-Clone</a> · <a href="https://youtu.be/DbtOGRrXorA" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/w22S24kFMmA" target="_blank">Original</a> · <a href="https://youtu.be/kJkAD_3qL5A" target="_blank">AI-Clone</a> · <a href="https://youtu.be/CplyalZ3wfM" target="_blank">Author-Voice</a>  |  <b>M3</b> <a href="https://youtu.be/5UGmLbAvUH0" target="_blank">Original</a> · <a href="https://youtu.be/LpRefJFoPsI" target="_blank">AI-Clone</a> · <a href="https://youtu.be/Yhbcdf5NCLc" target="_blank">Author-Voice</a>
 notes: 'Jurafsky & Martin (2026), <a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf" target="_blank">Speech and Language Processing, Ch. 5: Embeddings</a> · Olah (2015), <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">Understanding LSTM Networks</a>'
 categories: 1D (Text)
 tags:

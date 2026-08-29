@@ -6,7 +6,7 @@ lecture: S1-KNN
 lectureVersion: current
 extraContent: S1-KNN
 notes: 'Thomas Cover & Peter Hart (1967), <a href="https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf" target="_blank">Nearest Neighbor Pattern Classification</a> · Hal Daumé III (2017), <a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning, Ch. 3: Geometry and Nearest Neighbors</a>'
-video: <b>M1</b> <a href="https://youtu.be/fjF9z8-N0Yw" target="_blank">Original</a> · <a href="https://youtu.be/Ftni4QRl5g0" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/IcMNLwjK93k" target="_blank">Original</a> · <a href="https://youtu.be/VHNAL44QAng" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/fjF9z8-N0Yw" target="_blank">Original</a> · <a href="https://youtu.be/Ftni4QRl5g0" target="_blank">AI-Clone</a> · <a href="https://youtu.be/PnxZe5Mji_k" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/IcMNLwjK93k" target="_blank">Original</a> · <a href="https://youtu.be/VHNAL44QAng" target="_blank">AI-Clone</a> · <a href="https://youtu.be/28xh0FivbaE" target="_blank">Author-Voice</a>
 categories: tabular
 tags:
 - 3Classification

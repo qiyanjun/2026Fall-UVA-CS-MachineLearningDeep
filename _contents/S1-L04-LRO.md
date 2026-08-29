@@ -7,7 +7,7 @@ lectureVersion: current
 extraContent:
 morenotes: <a href="https://arxiv.org/abs/1609.04747"> more SGD </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.2</a> + <a href="https://nbviewer.jupyter.org/github/dtnewman/gradient_descent/blob/master/stochastic_gradient_descent.ipynb"> SGD Jupyter notebook </a> + <a href="https://numpy.org/doc/stable/reference/routines.linalg.html"> numpy linalg </a>
 notes: Léon Bottou (2010), <a href="https://leon.bottou.org/publications/pdf/compstat-2010.pdf" target="_blank">Large-Scale Machine Learning with Stochastic Gradient Descent</a> · Sebastian Ruder (2016), <a href="https://www.ruder.io/optimizing-gradient-descent/" target="_blank">An Overview of Gradient Descent Optimization Algorithms</a>
-video: <b>M1</b> <a href="https://youtu.be/QkZIpjvtQic" target="_blank">Original</a> · <a href="https://youtu.be/QK34fBvrRaU" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/7hDLwyRAjIQ" target="_blank">Original</a> · <a href="https://youtu.be/h5L2poPBcFI" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/QkZIpjvtQic" target="_blank">Original</a> · <a href="https://youtu.be/QK34fBvrRaU" target="_blank">AI-Clone</a> · <a href="https://youtu.be/4OUhTeldrIs" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/7hDLwyRAjIQ" target="_blank">Original</a> · <a href="https://youtu.be/h5L2poPBcFI" target="_blank">AI-Clone</a> · <a href="https://youtu.be/x4ySfJl6L3Y" target="_blank">Author-Voice</a>
 categories: tabular
 tags:
 - 2Regression

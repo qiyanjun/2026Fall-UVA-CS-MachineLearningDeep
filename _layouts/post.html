@@ -2,8 +2,26 @@
 layout: default
 ---
 
+{% assign Lidx = 0 %}
+{% assign LcounterTmp = 0 %}
+{% for p in site.contents %}
+  {% unless p.title contains "Section" or p.extra or p.background or p.platform %}
+    {% assign LcounterTmp = LcounterTmp | plus: 1 %}
+    {% if p.url == page.url %}
+      {% assign Lidx = LcounterTmp %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+{% if Lidx > 0 %}
+  {% if Lidx < 10 %}
+    {% assign LidxStr = 'L0' | append: Lidx %}
+  {% else %}
+    {% assign LidxStr = 'L' | append: Lidx %}
+  {% endif %}
+{% endif %}
+
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">{% if LidxStr %}{{ LidxStr }}: {% endif %}{{ page.title }}</h1>
 
   {% include lecture-sections.html post=page %}
 

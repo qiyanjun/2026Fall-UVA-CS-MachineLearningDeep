@@ -4,7 +4,7 @@ layout: post
 title: DecisionTree and Bagging
 lecture: S4-DecisionTree
 lectureVersion: current
-video: <b>M1</b> <a href="https://youtu.be/JKcTiyvIpp8" target="_blank">Original</a> · <a href="https://youtu.be/Wfc-BFw2o3I" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/iKTxnJU0L1E" target="_blank">Original</a> · <a href="https://youtu.be/0qhC6DoLVnE" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/WaWTw07Luzs" target="_blank">Original</a> · <a href="https://youtu.be/SQSxXbYFFTI" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/JKcTiyvIpp8" target="_blank">Original</a> · <a href="https://youtu.be/Wfc-BFw2o3I" target="_blank">AI-Clone</a> · <a href="https://youtu.be/b8prnd2sFlE" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/iKTxnJU0L1E" target="_blank">Original</a> · <a href="https://youtu.be/0qhC6DoLVnE" target="_blank">AI-Clone</a> · <a href="https://youtu.be/uLDSAzmi8cg" target="_blank">Author-Voice</a>  |  <b>M3</b> <a href="https://youtu.be/WaWTw07Luzs" target="_blank">Original</a> · <a href="https://youtu.be/SQSxXbYFFTI" target="_blank">AI-Clone</a> · <a href="https://youtu.be/3lFnVcObQZk" target="_blank">Author-Voice</a>
 notes: 'Daumé III (2017), <a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning, Ch. 1: Decision Trees</a> · Olah (2015), <a href="https://colah.github.io/posts/2015-09-Visual-Information/" target="_blank">Visual Information Theory</a>'
 categories: tabular
 tags:

@@ -7,7 +7,7 @@ lectureVersion: current
 extraContent: 
 notes: 'Domingos (2012), <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank">A Few Useful Things to Know about Machine Learning</a> · Goodfellow, Bengio & Courville (2016), <a href="https://www.deeplearningbook.org/contents/intro.html" target="_blank">Deep Learning, Ch. 1: Introduction</a>'
 morenotes: <a href="http://cs231n.github.io/python-numpy-tutorial/"> Numpy Tutorial </a>
-video: <b>M1</b> <a href="https://youtu.be/Yg41rT9ILEg" target="_blank">Original</a> · <a href="https://youtu.be/uymGoqVAL4E" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/vzSWAu3tQh8" target="_blank">Original</a> · <a href="https://youtu.be/xuRuPh2czwI" target="_blank">AI-Clone</a>  |  <b>M3</b> <a href="https://youtu.be/OK1cuwZc7Rc" target="_blank">Original</a> · <a href="https://youtu.be/95vZ3QsoRt8" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/Yg41rT9ILEg" target="_blank">Original</a> · <a href="https://youtu.be/uymGoqVAL4E" target="_blank">AI-Clone</a> · <a href="https://youtu.be/4yOQuOLh690" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/vzSWAu3tQh8" target="_blank">Original</a> · <a href="https://youtu.be/xuRuPh2czwI" target="_blank">AI-Clone</a> · <a href="https://youtu.be/4VIagTVXkCM" target="_blank">Author-Voice</a>  |  <b>M3</b> <a href="https://youtu.be/OK1cuwZc7Rc" target="_blank">Original</a> · <a href="https://youtu.be/95vZ3QsoRt8" target="_blank">AI-Clone</a> · <a href="https://youtu.be/r8BCuItWpns" target="_blank">Author-Voice</a>
 categories: basics
 tags:
 - 1Basic

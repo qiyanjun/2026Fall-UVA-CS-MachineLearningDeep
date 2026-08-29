@@ -75,6 +75,7 @@ Full video playlists (every lecture, all modules):
 
 {% for post in sorted %}
 
+{% assign LidxStr = '' %}
 
 {% if currentTag == 0 %}
   {% unless post.lectureVersion contains 'current'  %}
@@ -112,6 +113,11 @@ Full video playlists (every lecture, all modules):
   <td></td>
 {% else %}
   {% assign counter=counter | plus:1 %}
+  {% if counter < 10 %}
+    {% assign LidxStr = 'L0' | append: counter %}
+  {% else %}
+    {% assign LidxStr = 'L' | append: counter %}
+  {% endif %}
   <tr >
   <td>{{ ddates[counter] }} </td>
   <td>{{ dweeks[counter] }}</td>
@@ -146,6 +152,7 @@ Full video playlists (every lecture, all modules):
 
 <td class="resources-col">
 <a href="{{ site.baseurl }}{{ post.url }}">
+{% if LidxStr != '' %}{{ LidxStr }} &middot; {% endif %}
 {% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
 {% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
 {% if rcount > 0 %}{{ rcount }} reading{% if rcount != 1 %}s{% endif %}{% endif %}

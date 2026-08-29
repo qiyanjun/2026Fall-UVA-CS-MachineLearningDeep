@@ -6,7 +6,7 @@ lecture: S1-lrRegularized
 lectureVersion: current
 extraContent: 
 morenotes: <a href="http://www.stat.cmu.edu/~ryantibs/datamining/lectures/16-modr1.pdf"> More Ridge </a> 
-video: <b>M1</b> <a href="https://youtu.be/w3XwJc8JR1M" target="_blank">Original</a> · <a href="https://youtu.be/oN-XhFxAq7w" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/n2c8l0zxvYQ" target="_blank">Original</a> · <a href="https://youtu.be/V08QQqHGHPQ" target="_blank">AI-Clone</a>  |  <b>Extra M3</b> <a href="https://youtu.be/BJ83zwSoJzY" target="_blank">Original</a> · <a href="https://youtu.be/-o8B82K4jjs" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/w3XwJc8JR1M" target="_blank">Original</a> · <a href="https://youtu.be/oN-XhFxAq7w" target="_blank">AI-Clone</a> · <a href="https://youtu.be/vh0k_3LKF-A" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/n2c8l0zxvYQ" target="_blank">Original</a> · <a href="https://youtu.be/V08QQqHGHPQ" target="_blank">AI-Clone</a> · <a href="https://youtu.be/BxNuj6D88cI" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/BJ83zwSoJzY" target="_blank">Original</a> · <a href="https://youtu.be/-o8B82K4jjs" target="_blank">AI-Clone</a> · <a href="https://youtu.be/yQCrmu05CJE" target="_blank">Author-Voice</a>
 notes: 'Hastie, Tibshirani & Friedman, <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 3.4: Shrinkage Methods</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/linear_model.html" target="_blank">Ridge Regression and Classification</a>'
 categories: tabular
 tags:

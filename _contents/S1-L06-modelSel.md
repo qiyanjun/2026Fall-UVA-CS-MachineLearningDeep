@@ -7,7 +7,7 @@ lectureVersion: current
 extraContent: 
 notes: 'James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 5: Resampling Methods</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank">Cross-validation: Evaluating Estimator Performance</a>'
 morenotes: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a> + <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html"> hyperpara select notebook </a> + <a href="http://scikit-learn.org/stable/model_selection.html">flow API </a>
-video: <b>M1</b> <a href="https://youtu.be/QJC-GbMP95E" target="_blank">Original</a> · <a href="https://youtu.be/Ds_-H8e4Qzc" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/QJC-GbMP95E" target="_blank">Original</a> · <a href="https://youtu.be/Ds_-H8e4Qzc" target="_blank">AI-Clone</a> · <a href="https://youtu.be/Dzzqk7N-KzI" target="_blank">Author-Voice</a>
 categories: tabular
 tags:
 - 2Regression

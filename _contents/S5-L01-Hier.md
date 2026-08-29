@@ -4,7 +4,7 @@ layout: post
 title: Clustering Hier
 lecture: S5-clustering1-Hier
 lectureVersion: current
-video: <b>M1</b> <a href="https://youtu.be/mxrcPHWCZAI" target="_blank">Original</a> · <a href="https://youtu.be/zfpsDvEXFc0" target="_blank">AI-Clone</a>  |  <b>M2</b> <a href="https://youtu.be/2K6gXLf4Em4" target="_blank">Original</a> · <a href="https://youtu.be/K57m5pLhmkk" target="_blank">AI-Clone</a>
+video: <b>M1</b> <a href="https://youtu.be/mxrcPHWCZAI" target="_blank">Original</a> · <a href="https://youtu.be/zfpsDvEXFc0" target="_blank">AI-Clone</a> · <a href="https://youtu.be/ZvAXKgiGmGg" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/2K6gXLf4Em4" target="_blank">Original</a> · <a href="https://youtu.be/K57m5pLhmkk" target="_blank">AI-Clone</a> · <a href="https://youtu.be/nicrQU0-4YE" target="_blank">Author-Voice</a>
 notes: Manning, Raghavan & Schütze (2008), <a href="https://nlp.stanford.edu/IR-book/html/htmledition/hierarchical-clustering-1.html" target="_blank">Hierarchical Clustering (Introduction to Information Retrieval, Ch. 17)</a> · Pai (2021), <a href="https://towardsdatascience.com/hierarchical-clustering-explained-e59b13846da8/" target="_blank">Hierarchical Clustering Explained</a>
 morenotes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_linkage_comparison.html#sphx-glr-auto-examples-cluster-plot-linkage-comparison-py"> compare Hier clusterings</a>
 categories: tabular
