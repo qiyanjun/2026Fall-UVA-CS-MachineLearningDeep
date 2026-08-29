@@ -401,10 +401,19 @@ tbody tr:nth-child(odd) th {
   background-color: #81de76;
 }
 
-/* Horizontally-scrollable wrapper for wide tables on small screens */
+/* Horizontally-scrollable wrapper for wide tables on small screens.
+   On wide screens, break out of the narrow `.container` max-width so
+   these tables get the full space next to the sidebar instead of being
+   squeezed into an ~800-1000px column and forced to scroll. */
 .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 50em) {
+  .table-scroll {
+    max-width: none;
+    width: calc(100vw - 12rem - 2rem);
+  }
 }
 
 /* Resources column: give it enough room that "N videos · N readings ·
