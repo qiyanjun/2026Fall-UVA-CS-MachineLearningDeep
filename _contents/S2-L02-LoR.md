@@ -11,8 +11,6 @@ morenotes: <a href="https://scikit-learn.org/stable/auto_examples/classification
 categories: structured
 tags:
 - 3Classification
-- Nonlinear
-- Deep
 - Linear
 - Discriminative
 ---

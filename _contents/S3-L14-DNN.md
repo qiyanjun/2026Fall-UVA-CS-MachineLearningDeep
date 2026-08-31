@@ -17,6 +17,7 @@ tags:
 - Discriminative
 - 4Unsupervised
 - Generative
+- RL
 ---
 
 ### Extra reaing: 

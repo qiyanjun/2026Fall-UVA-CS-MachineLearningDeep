@@ -12,6 +12,7 @@ lectureVersion: current
 extra: true
 tags:
 - DimensionReduction
+- 4Unsupervised
 ---
 
 

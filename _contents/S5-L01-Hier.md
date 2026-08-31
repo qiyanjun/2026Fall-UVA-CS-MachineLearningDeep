@@ -10,7 +10,6 @@ morenotes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_l
 categories: tabular
 tags:
 - 4Unsupervised
-- Background
 ---
 
 # Summary: 

@@ -12,6 +12,8 @@ platform: true
 tags:
 - RL
 - Platform
+- 6LLMAgents
+- Training
 ---
 
 

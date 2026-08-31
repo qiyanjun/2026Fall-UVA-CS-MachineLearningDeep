@@ -10,7 +10,6 @@ notes: Isabelle Guyon & André Elisseeff (2003), <a href="https://www.jmlr.org/p
 morenotes: S3-QuizReview +  <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.4 and Ch3.3</a> + <a href="https://scikit-learn.org/stable/modules/feature_selection.html#feature-selection-as-part-of-a-pipeline"> API </a>
 categories: tabular
 tags:
-- DimensionReduction
 - ModelSelection
 ---
 

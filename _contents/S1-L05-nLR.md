@@ -11,7 +11,6 @@ categories: tabular
 tags:
 - 2Regression
 - Nonlinear
-- ModelSelection
 - Local
 notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">notebook/L5-Poly-Regression.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">notebook/L5-RBF-regressionLR.ipynb</a>'
 ---

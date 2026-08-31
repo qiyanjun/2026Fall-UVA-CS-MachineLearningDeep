@@ -10,7 +10,6 @@ categories: 1D (Text)
 tags:
 - Nonlinear
 - Deep
-- Discriminative
 - 4Unsupervised
 - Generative
 ---

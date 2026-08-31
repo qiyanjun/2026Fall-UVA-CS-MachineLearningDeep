@@ -11,6 +11,7 @@ tags:
 - 3Classification
 - Ensemble
 - 5Theory
+- Discriminative
 ---
 
 # Summary: 
