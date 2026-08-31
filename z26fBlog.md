@@ -13,12 +13,27 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - This course will offer a total of 12 quiz opportunities; your final grade will be using the top 10 quiz grades you achieve. We have quiz mostly on Thursdays. (There is also a Q0 PreQuiz in week 1 for screening purposes only; it is ungraded and not counted.)
 - We share a few code examples showcasing course lecture contents in code, please check out [Here](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook)
 - Please slack DM TAs or me for any questions or concerns. (we are super slow in emails and much faster with Slack DMs!)  
-- For sick day reschedule (with doctor note) and SDAC issues, please email to: TBD
+- For sick day reschedule (with doctor note) and SDAC issues, please email to: yanjun@virginia.edu 
 - I have included all past quiz and their answers in ([Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz.pdf)) 
 - I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S6-QA25.pdf)))
 
 
 # 2026 Fall Course Annoucement: 
+
+
+
+
+## Aug 31 on TA office hours and communication with TAs
+
+- communication with TA via Course Slack Space / Slack Link will be shared by TA Kefan: 
+
+- **Peng Wang** (pw7nc@virginia.edu): 2 hours — Fri 3pm-5pm (Rice Hall, to come)
+- **Kefan Song** (ks8vf@virginia.edu): 2 hours — Wed 3pm-5pm (Rice 442)
+- **Giti Doolabi** (dye7jx@virginia.edu): 2 hours — Mon 3pm-5pm (Rice 442)
+
+
+<hr>
+
 
 
 ## Aug 31 on Quiz1
@@ -31,6 +46,21 @@ This Thursday's quiz will cover last week's two lectures:
 
 <hr>
 
+## On another Q0-plus
+
+Dear Class: 
+
+To get you prepared for the math foundations of the machine learning, I will host another Quiz-0-plus next Tuesday. 
+Please review the following two notes to get yourself more prepare for the updated Q0. 
+
+[Notes1](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-AlgbReview.pdf)
+[Notes2](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdfLinks to an external site)
+
+
+-  TA will send our our course Slack invites! 
+
+
+<hr>
 
 ---
 
