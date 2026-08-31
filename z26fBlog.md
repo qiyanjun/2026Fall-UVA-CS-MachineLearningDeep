@@ -18,8 +18,23 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S6-QA25.pdf)))
 
 
+# 2026 Fall Course Annoucement: 
+
+
+## Aug 31 on Quiz1
+
+This Thursday's quiz will cover last week's two lectures:
+
+- [Introduction](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S0-L00-Intro/)
+- [Machine Learning in a Nutshell](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S1-L01-nutshell/)
+
+
+<hr>
+
 
 ---
+
+# We include last Fall's course annoucement to provide a reference of last Fall's content and learning flow. 
 
 
 ## Dec. 1st on Quiz14/Q15 / Final review 
