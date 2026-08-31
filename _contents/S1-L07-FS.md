@@ -2,7 +2,7 @@
 LOrder: 230
 layout: post
 title: Feature Selection 
-lecture: S3-feaSelc
+lecture: S1-feaSelc
 extra: true
 lectureVersion: current
 video: (<b>Extra M2</b> <a href="https://youtu.be/rL82C_sH0xI" target="_blank">Original</a> · <a href="https://youtu.be/AnQPAPqwgi0" target="_blank">AI-Clone</a> · <a href="https://youtu.be/pMtlb-JoR-c" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/aT8Q6DTW1rM" target="_blank">Original</a> · <a href="https://youtu.be/0TaeJZt1Km0" target="_blank">AI-Clone</a> · <a href="https://youtu.be/siYkOA_yv9Q" target="_blank">Author-Voice</a>)

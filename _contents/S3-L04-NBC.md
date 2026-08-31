@@ -7,7 +7,7 @@ lectureVersion: current
 video: <b>M1</b> <a href="https://youtu.be/fPv3nD3uwWw" target="_blank">Original</a> · <a href="https://youtu.be/McyumBcLJGo" target="_blank">AI-Clone</a> · <a href="https://youtu.be/x2r_wDVNdNY" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/kfXHwam-RPs" target="_blank">Original</a> · <a href="https://youtu.be/Jl1DLWYrKhc" target="_blank">AI-Clone</a> · <a href="https://youtu.be/d9eVee89l-o" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/uoB3olc_eRw" target="_blank">Original</a> · <a href="https://youtu.be/1CWoG6fyb5M" target="_blank">AI-Clone</a> · <a href="https://youtu.be/IhnfSuY78Rk" target="_blank">Author-Voice</a>  |  <b>Extra M4</b> <a href="https://youtu.be/qMNRD3uJRFs" target="_blank">Original</a> · <a href="https://youtu.be/SfYRp3t9Ias" target="_blank">AI-Clone</a> · <a href="https://youtu.be/HWdiWIqJNAk" target="_blank">Author-Voice</a>
 extraContent:   
 notes: 'Jurafsky & Martin (2026), <a href="https://web.stanford.edu/~jurafsky/slp3/B.pdf" target="_blank">Speech and Language Processing, Appendix B: Naive Bayes, Text Classification, and Sentiment</a> · Manning, Raghavan & Schütze (2008), <a href="https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf" target="_blank">Introduction to Information Retrieval, Ch. 13: Text Classification and Naive Bayes</a>'
-morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf">Multinomial MLE</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
+morenotes: <a href="http://statweb.stanford.edu/~susan/courses/s200/lectures/lect11.pdf">Multinomial MLE</a> + <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
 categories: 1D (Text)
 extra: true
 tags:
@@ -17,7 +17,7 @@ tags:
 
 - Notebook to run:  
 
-<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">L16 text NBC notebook</a> 
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">L16 text NBC notebook</a> 
 
 
 # Study Guide: Naïve Bayes Classifier for Text Classification

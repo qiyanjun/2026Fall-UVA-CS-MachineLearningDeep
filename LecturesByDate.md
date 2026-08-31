@@ -11,12 +11,23 @@ desc: "2026 Fall  UVa CS Machine Learning Lectures Organized by Given Order"
 
 ----  ----  
 {% assign sorted = site.contents   %}
+{% assign counter = 0 %}
 {% for post in sorted %}
+
+{% assign LidxStr = '' %}
+{% unless post.title contains "Section" or post.extra or post.background or post.platform %}
+  {% assign counter = counter | plus: 1 %}
+  {% if counter < 10 %}
+    {% assign LidxStr = 'L0' | append: counter %}
+  {% else %}
+    {% assign LidxStr = 'L' | append: counter %}
+  {% endif %}
+{% endunless %}
 
   <div class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
+        {% if LidxStr != '' %}{{ LidxStr }}: {% endif %}{{ post.title }}
       </a>
     </h1>
 

@@ -41,10 +41,29 @@ Click on a tag to see relevant list of lectures.
   {% assign counter = 1 %}
   {% for post in site.contents %}
     {% if post.tags contains tag %}
- 
+
+  {% assign LidxStr = '' %}
+  {% unless post.title contains "Section" or post.extra or post.background or post.platform %}
+    {% assign Ltmp = 0 %}
+    {% assign Lidx = 0 %}
+    {% for p in site.contents %}
+      {% unless p.title contains "Section" or p.extra or p.background or p.platform %}
+        {% assign Ltmp = Ltmp | plus: 1 %}
+        {% if p.url == post.url %}
+          {% assign Lidx = Ltmp %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+    {% if Lidx < 10 %}
+      {% assign LidxStr = 'L0' | append: Lidx %}
+    {% else %}
+      {% assign LidxStr = 'L' | append: Lidx %}
+    {% endif %}
+  {% endunless %}
+
   <tr>
 
-  <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} </a></td>
+  <td><a href="{{ site.baseurl }}{{ post.url }}">{% if LidxStr != '' %}{{ LidxStr }}: {% endif %}{{ post.title }} </a></td>
 
   {% if post.lecture %}
   <td><a href="{{ site.baseurl }}/Lectures/{{ post.lecture }}.pdf"  target="_blank">Slide</a></td>

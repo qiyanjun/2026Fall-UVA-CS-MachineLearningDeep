@@ -5,9 +5,9 @@ title: CNN
 lecture: S2-deepImageCNN
 lectureVersion: current
 video: <b>M1</b> <a href="https://youtu.be/foOw7tTDZq0" target="_blank">Original</a> · <a href="https://youtu.be/gj92q2R5foQ" target="_blank">AI-Clone</a> · <a href="https://youtu.be/BFacOv9zWPE" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/wwg3-8g-8no" target="_blank">Original</a> · <a href="https://youtu.be/c_0ym5SRYLs" target="_blank">AI-Clone</a> · <a href="https://youtu.be/JBwTZ09_78o" target="_blank">Author-Voice</a>
-extraContent:  S2-PCA
+extraContent:  S2-dim-PCA
 notes: 'Karpathy, Li & Johnson (2016), <a href="https://cs231n.github.io/convolutional-networks/" target="_blank">CS231n: Convolutional Neural Networks for Visual Recognition</a> · Olah (2014), <a href="https://colah.github.io/posts/2014-07-Conv-Nets-Modular/" target="_blank">Conv Nets: A Modular Perspective</a>'
-morenotes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> Keras notebook</a> + <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a>
+morenotes: <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> Keras notebook</a> + <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-PCA-extra.pdf"> [PCA extra slides] </a>
 categories: 2D (Vision)
 tags:
 - 3Classification
@@ -18,7 +18,7 @@ tags:
 
 
 # Notebooks to run and experienc: 
-- <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> L13 Keras notebook</a>  
+- <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> L13 Keras notebook</a>  
 - <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a>
 
 

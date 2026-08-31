@@ -14,7 +14,7 @@ tags:
 - Optimization
 - Regularization
 - ModelSelection
-notebooks: '<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L7_regularizedRegression_06_Linear_Regression.ipynb" target="_blank">notebook/L7_regularizedRegression_06_Linear_Regression.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L7_regularizedRegression_06_Linear_Regression.ipynb" target="_blank">notebook/L7_regularizedRegression_06_Linear_Regression.ipynb</a>'
 ---
 
 

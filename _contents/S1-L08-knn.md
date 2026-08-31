@@ -13,7 +13,7 @@ tags:
 - 5Theory
 - Local
 - ModelSelection
-notebooks: '<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L8_Knearest.ipynb" target="_blank">notebook/L8_Knearest.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L8_Knearest.ipynb" target="_blank">notebook/L8_Knearest.ipynb</a>'
 ---
 
 

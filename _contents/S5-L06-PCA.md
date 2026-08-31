@@ -2,10 +2,10 @@
 LOrder: 220
 layout: post
 title: PCA, Feature Selection
-lecture: S2-dimReduce
-extraContent:  S2-PCA
+lecture: S5-dimReduce
+extraContent:  S2-dim-PCA
 notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 14.5: Principal Components, Curves and Surfaces</a> · Powell & Lehe, <a href="https://setosa.io/ev/principal-component-analysis/" target="_blank">Principal Component Analysis Explained Visually</a>'
-morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a> + <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=24">Great PCA Video</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a>
+morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a> + <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=24">Great PCA Video</a> + <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-PCA-extra.pdf"> [PCA extra slides] </a>
 video: <b>M1</b> <a href="https://youtu.be/-Fk4b1PPoEA" target="_blank">Original</a> · <a href="https://youtu.be/gqmuIEyMWEg" target="_blank">AI-Clone</a> · <a href="https://youtu.be/7w4nlUhMH9Y" target="_blank">Author-Voice</a>
 categories: 2D (Vision)
 lectureVersion: current
@@ -17,7 +17,7 @@ tags:
 
 - Notebook to try: 
 
-<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a>
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a>
 
 
 # Study Guide: Dimensionality Reduction and PCA
@@ -28,7 +28,7 @@ tags:
 
 ## running notebook 
 
-<a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a>
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA Notebook </a>
 
 
 

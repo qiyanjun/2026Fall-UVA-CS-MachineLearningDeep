@@ -2,9 +2,9 @@
 LOrder: 60
 layout: post
 title: Linear Regression
-lecture: S1-LinearReg
+lecture: S1-L3-LinearReg
 lectureVersion: next
-extraContent:
+extraContent: S1-L3-extra
 notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 3: Linear Methods for Regression</a> · Powell & Lehe, <a href="https://setosa.io/ev/ordinary-least-squares-regression/" target="_blank">Ordinary Least Squares Regression, Explained Visually</a>'
 morenotes: <a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html">linear regression coderun</a>
 video: <b>M1</b> <a href="https://youtu.be/0n2WzBzgzOE" target="_blank">Original</a> · <a href="https://youtu.be/3LiGR1SK09E" target="_blank">AI-Clone</a> · <a href="https://youtu.be/qQL9avfe6UU" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/dArbWu7pfYc" target="_blank">Original</a> · <a href="https://youtu.be/izOijEDXVyg" target="_blank">AI-Clone</a> · <a href="https://youtu.be/mjklRzTQZoI" target="_blank">Author-Voice</a>  |  <b>M3</b> <a href="https://youtu.be/m1xIIvLu3Tw" target="_blank">Original</a> · <a href="https://youtu.be/FxeQwF11a0c" target="_blank">AI-Clone</a> · <a href="https://youtu.be/0c9woHSQURA" target="_blank">Author-Voice</a>  |  <b>M4</b> <a href="https://youtu.be/4wXFrsM-Zbw" target="_blank">Original</a> · <a href="https://youtu.be/9qm18HrRPQg" target="_blank">AI-Clone</a> · <a href="https://youtu.be/JdOlkUWL_74" target="_blank">Author-Voice</a>
@@ -13,7 +13,7 @@ tags:
 - 2Regression
 - Linear
 - 1Basic
-notebooks: '<a href="/2026Fall-UVA-CS-MachineLearningDeep//notebook/L3_plot_ols.ipynb" target="_blank">notebook/L3_plot_ols.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L3_plot_ols.ipynb" target="_blank">notebook/L3_plot_ols.ipynb</a>'
 ---
 
 
