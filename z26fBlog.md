@@ -46,7 +46,7 @@ This Thursday's quiz will cover last week's two lectures:
 
 <hr>
 
-## On another Q0-plus
+## Aug 19th On another Q0-plus
 
 Dear Class: 
 

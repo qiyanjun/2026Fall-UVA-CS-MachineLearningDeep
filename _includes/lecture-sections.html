@@ -14,7 +14,7 @@
 {% assign video_parts = video_clean | split: '  |  ' %}
 <section class="lecture-section">
   <h3>Videos</h3>
-  <p class="video-legend"><b>Original</b> &mdash; the unedited, as-taught-live lecture capture. <b>AI-Clone</b> &mdash; the same lecture with an AI voice clone and filler words cleaned up. <b>Author-Voice</b> &mdash; a condensed re-narration in the instructor's own cloned voice.</p>
+  <p class="video-legend"><b>Original</b> &mdash; the unedited, as-taught-live lecture capture. <b>AI-Clone</b> &mdash; the same lecture with an AI voice clone and filler words cleaned up. <b>Author-Voice</b> &mdash; a condensed and cleaned re-narration in the instructor's own cloned voice.</p>
   <ul class="lecture-list video-list">
     {% for part in video_parts %}
     {% assign part_bracketed = part | strip | replace: '<a href="', '[ <a href="' | replace: '</a>', '</a> ]' %}
