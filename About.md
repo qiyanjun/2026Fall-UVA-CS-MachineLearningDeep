@@ -76,12 +76,12 @@ desc: "Information for 2026 Fall  UVa CS Machine Learning, Math Foundations and 
 
 + #### TA office hours and communication with TAs 
   - communication with TA via Course Slack Space / Slack Link Shared via Course maillist
-  - instructor email TBD
+  - instructor email: yanjun@virginia.edu
   - instructor office hour TBD
-  - Prof Qi: Monday 3:30pm-5pm
-  - TA1: TBD
-  - TA2: TBD
-  - TA3: TBD
+  - Prof Qi: Tue. 5pm-6pm
+  - **Peng Wang** (pw7nc@virginia.edu): Fri 3pm-5pm (Rice Hall 204)
+  - **Kefan Song** (ks8vf@virginia.edu): Wed 3pm-5pm (Rice 442)
+  - **Giti Doolabi** (dye7jx@virginia.edu): Mon 3pm-5pm (Rice 442)
 
 
 

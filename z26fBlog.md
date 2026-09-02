@@ -27,7 +27,7 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 
 - communication with TA via Course Slack Space / Slack Link will be shared by TA Kefan: 
 
-- **Peng Wang** (pw7nc@virginia.edu): 2 hours — Fri 3pm-5pm (Rice Hall, to come)
+- **Peng Wang** (pw7nc@virginia.edu): 2 hours — Fri 3pm-5pm (Rice Hall 204)
 - **Kefan Song** (ks8vf@virginia.edu): 2 hours — Wed 3pm-5pm (Rice 442)
 - **Giti Doolabi** (dye7jx@virginia.edu): 2 hours — Mon 3pm-5pm (Rice 442)
 
