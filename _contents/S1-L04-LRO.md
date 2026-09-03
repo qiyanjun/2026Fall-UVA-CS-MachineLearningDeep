@@ -2,7 +2,7 @@
 LOrder: 70
 layout: post
 title: GD and SGD for LR
-lecture: S1-LROptimization
+lecture: S1-L4-LROptimization
 lectureVersion: current
 extraContent:
 morenotes: <a href="https://arxiv.org/abs/1609.04747"> more SGD </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch3.2</a> + <a href="https://colab.research.google.com/github/dtnewman/gradient_descent/blob/master/stochastic_gradient_descent.ipynb"> SGD Jupyter notebook </a> + <a href="https://numpy.org/doc/stable/reference/routines.linalg.html"> numpy linalg </a>
