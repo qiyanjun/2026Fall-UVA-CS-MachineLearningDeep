@@ -3,7 +3,7 @@ LOrder: 60
 layout: post
 title: Linear Regression
 lecture: S1-L3-LinearReg
-lectureVersion: next
+lectureVersion: current
 extraContent: S1-L3-extra
 notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 3: Linear Methods for Regression</a> · Powell & Lehe, <a href="https://setosa.io/ev/ordinary-least-squares-regression/" target="_blank">Ordinary Least Squares Regression, Explained Visually</a>'
 morenotes: <a href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html">linear regression coderun</a>
