@@ -3,7 +3,7 @@ LOrder: 100
 layout: post
 title: Linear Prediction with Regularization
 lecture: S1-lrRegularized
-lectureVersion: current
+lectureVersion: next
 extraContent: 
 morenotes: <a href="http://www.stat.cmu.edu/~ryantibs/datamining/lectures/16-modr1.pdf"> More Ridge </a> 
 video: <b>M1</b> <a href="https://youtu.be/w3XwJc8JR1M" target="_blank">Original</a> · <a href="https://youtu.be/oN-XhFxAq7w" target="_blank">AI-Clone</a> · <a href="https://youtu.be/vh0k_3LKF-A" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/n2c8l0zxvYQ" target="_blank">Original</a> · <a href="https://youtu.be/V08QQqHGHPQ" target="_blank">AI-Clone</a> · <a href="https://youtu.be/BxNuj6D88cI" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/BJ83zwSoJzY" target="_blank">Original</a> · <a href="https://youtu.be/-o8B82K4jjs" target="_blank">AI-Clone</a> · <a href="https://youtu.be/yQCrmu05CJE" target="_blank">Author-Voice</a>
