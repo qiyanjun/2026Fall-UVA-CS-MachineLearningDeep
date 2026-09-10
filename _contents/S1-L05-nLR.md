@@ -2,7 +2,7 @@
 LOrder: 80
 layout: post
 title: LR with basis
-lecture: S1-LRSelectExtend
+lecture: S1-L5-LRSelectExtend
 lectureVersion: current 
 notes: 'James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 7: Moving Beyond Linearity</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/linear_model.html" target="_blank">Polynomial Regression: Extending Linear Models with Basis Functions</a>'
 morenotes: <a href="https://stat.ethz.ch/~stahel/courses/cheming/nlreg10E.pdf"> NonLinearR </a> + <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a> + <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb">L5_Poly_Regression.ipynb</a>
@@ -12,7 +12,7 @@ tags:
 - 2Regression
 - Nonlinear
 - Local
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">notebook/L5-Poly-Regression.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">notebook/L5-RBF-regressionLR.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">notebook/L5_Poly_Regression.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">notebook/L5-RBF-regressionLR.ipynb</a>'
 ---
 
 

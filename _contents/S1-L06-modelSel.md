@@ -2,8 +2,8 @@
 LOrder: 90
 layout: post
 title: Workflow for model selection
-lecture: S1-ModelSelect
-lectureVersion: next
+lecture: S1-L6-ModelSelect
+lectureVersion: current
 extraContent: 
 notes: 'James, Witten, Hastie & Tibshirani (2021), <a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning, Ch. 5: Resampling Methods</a> · scikit-learn, <a href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank">Cross-validation: Evaluating Estimator Performance</a>'
 morenotes: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">ELS Ch5 </a> + <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.03-hyperparameters-and-model-validation.html"> hyperpara select notebook </a> + <a href="http://scikit-learn.org/stable/model_selection.html">flow API </a>
@@ -12,7 +12,7 @@ categories: tabular
 tags:
 - 2Regression
 - ModelSelection
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L6-Hyperparameters-and-Model-Validation.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L6_Hyperparameters_and_Model_Validation.ipynb</a>'
 ---
 
 

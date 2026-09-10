@@ -14,8 +14,8 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - We share a few code examples showcasing course lecture contents in code, please check out [Here](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook)
 - Please slack DM TAs or me for any questions or concerns. (we are super slow in emails and much faster with Slack DMs!)  
 - For sick day reschedule (with doctor note) and SDAC issues, please email to: yanjun@virginia.edu 
-- I have included all past quiz and their answers in ([Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz.pdf)) 
-- I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S6-QA25.pdf)))
+- I have included all past quiz and their answers in ([Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz25.pdf)) 
+- I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)))
 
 
 # 2026 Fall Course Annoucement: 
@@ -53,7 +53,7 @@ Dear Class: 
 To get you prepared for the math foundations of the machine learning, I will host another Quiz-0-plus next Tuesday. 
 Please review the following two notes to get yourself more prepare for the updated Q0. 
 
-[Notes1](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-AlgbReview.pdf)
+[Notes1](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-L0-AlgbReview.pdf)
 [Notes2](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdfLinks to an external site)
 
 
@@ -74,9 +74,9 @@ Dear students:
 -  You can treat Q14 / Q15 as study guides...
 
 - We have prepared three review documents to help you prepare for final exam: 
-  + all past quiz and their answers in [Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz.pdf)) 
-  + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S6-QA25.pdf)) 
-  + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content.pdf))
+  + all past quiz and their answers in [Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz25.pdf)) 
+  + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)) 
+  + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf))
 
 - I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L04-RL/) 
 
@@ -225,7 +225,7 @@ If you struggle with HW1, please contact TA ASAP
 Grades will be released by next Tuesday class time
 We have posted its guide from TA in Canvas 
 
-- Here is the review of Q4 and recent QA on L5-L8 [Review-Part2](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-Quiz-QA-part2.pdf)
+- Here is the review of Q4 and recent QA on L5-L8 [Review-Part2](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)
 
 
 
@@ -250,7 +250,7 @@ This week please cover the following two sessions / Quiz 5 will cover these topi
 
 1. Included all past quiz and their answers in 
 
-https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz-QA.pdf 
+https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf 
 
 2. This week's reading includes the following two: 
 
@@ -285,9 +285,9 @@ For tomorrow’s in-person class, we will have the second quiz Q2 to cover topic
 <hr>
 
 ## Sep 4 on Readings for  0904-0911
-- L3: Whole lecture https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S1-LinearReg.pdf
+- L3: Whole lecture https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S1-L3-LinearReg.pdf
 - Related Videos listed in: https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S1-L02-LR/
-- L4 (page1-60) : https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S1-LROptimization.pdf
+- L4 (page1-60) : https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S1-L4-LROptimization.pdf
 - Related videos listed in: https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S1-L04-LRO/
 
 This is the first real algorithm you will learn in this course. So it may seem like a lot. Please be patient and let the instructors know if you have any questions or need anything.  
@@ -307,8 +307,8 @@ This is the first real algorithm you will learn in this course. So it may seem l
 ##  Sep 2 on Quiz1
 
 First two lectures have been updated at:
-- L0:  [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-AlgbReview.pdf) 
-- L1: [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-Intro.pdf)
+- L0:  [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-L0-AlgbReview.pdf) 
+- L1: [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-L1-Intro.pdf)
 - This Thursday's Quiz-1 will cover: 
   + L0 (not including extra slide pages) 
   + L1 (page 1- page 40) 
@@ -320,7 +320,7 @@ First two lectures have been updated at:
 
 ## Aug 29 on Lecture 1 + Grading policy
 
-- Here is the updated slide deck for our lecture one: [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-Intro.pdf)
+- Here is the updated slide deck for our lecture one: [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-L1-Intro.pdf)
 - The updated grading policy: [Here](Assignments.md)
 
 
