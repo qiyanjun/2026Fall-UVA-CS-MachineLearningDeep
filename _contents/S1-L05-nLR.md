@@ -16,6 +16,11 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 ---
 
 
+- Notebooks to run (opens in Google Colab):
+
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">L5 Polynomial Regression notebook</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">L5 RBF Regression notebook</a>
+
+
 # Understanding Linear Regression with Basis Functions Expansion 
 
 ## Study Guide
