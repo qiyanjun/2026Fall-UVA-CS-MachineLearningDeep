@@ -2,7 +2,7 @@
 LOrder: 100
 layout: post
 title: Linear Prediction with Regularization
-lecture: S1-lrRegularized
+lecture: S1-L7-lrRegularized
 lectureVersion: next
 extraContent: 
 morenotes: <a href="http://www.stat.cmu.edu/~ryantibs/datamining/lectures/16-modr1.pdf"> More Ridge </a> 
