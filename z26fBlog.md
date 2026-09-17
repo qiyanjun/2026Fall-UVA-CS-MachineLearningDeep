@@ -10,7 +10,7 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - Two easy pages to go through the course materials: 
   1. [course contents shown like a blog](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//LecturesByDate/) 
   2. [course important announcements shown like a blog](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//z26fBlog/) 
-- This course will offer a total of 12 quiz opportunities; your final grade will be using the top 10 quiz grades you achieve. We have quiz mostly on Thursdays. (There is also a Q0 PreQuiz in week 1 for screening purposes only; it is ungraded and not counted.)
+- This course will offer a total of 12 quiz opportunities; your final grade will be using the top 10 quiz grades you achieve. We have quiz mostly on Thursdays, and each quiz covers the previous week's two lectures (never that same week's material). (There is also a Q0 PreQuiz in week 1 for screening purposes only; it is ungraded and not counted.)
 - We share a few code examples showcasing course lecture contents in code, please check out [Here](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook)
 - Please slack DM TAs or me for any questions or concerns. (we are super slow in emails and much faster with Slack DMs!)  
 - For sick day reschedule (with doctor note) and SDAC issues, please email to: yanjun@virginia.edu 

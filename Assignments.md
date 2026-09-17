@@ -94,8 +94,7 @@ TBD.
 
 ### About in-class Quizzess (15%)
 + Quizz dates will show on the schedule page
-+ Mostly quizzes will be on Thursdays
-+ Each quizz includes contents we cover in the previous two reading sessions.
++ **How the weekly quizzes work:** every Thursday's quiz covers the previous week's two lectures — never the material from that same week. That gives you a full week with each topic before you're tested on it.
 + Note: Q0 (week 1) is an ungraded screening PreQuiz and does not count toward the grade.
 
 **Quiz Resources**: TBD
