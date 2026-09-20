@@ -12,10 +12,10 @@ desc: "Information of Assignments for 2026 Fall  UVa CS 4774 Machine Learning"
 + Post in Canvas 
 + Coding-centered homework: each assignment functions like a mini course project, and most will have a leaderboard to rank student submissions; extra credit will be given to top-ranked submissions.
 + You will receive grading of each HWs within 10 day of each due time. A release email will send to you about the grading. (If you don’t receive such emails in time, please do email  to <br>
-TBD.
+the specific email address posted in the Canvas announcement.
 
 + Please submit all extension requests, questions, and late assignments  to <br>
-TBD.
+the specific email address posted in the Canvas announcement.
  
 
 <div class="table-scroll">

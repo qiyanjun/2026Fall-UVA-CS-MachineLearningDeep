@@ -119,7 +119,7 @@ at 11:59pm on the due date </b>.
 + Programming solutions should be placed in each student's appropriate
  Canvas  directory.
 
-+ #### All communications regarding late assignment submissions should go directly to TBD, not with the instructor.
++ #### All communications regarding late assignment submissions should go directly to the specific email address posted in the Canvas announcement, not with the instructor.
 
 + About Extensions:
   + Each student has <b>ten</b> extension days to be used at his or
