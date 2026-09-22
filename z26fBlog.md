@@ -78,7 +78,7 @@ Dear students:
   + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)) 
   + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf))
 
-- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L04-RL/) 
+- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L17-RL/) 
 
 
 Best of luck to your final exam!  
@@ -92,7 +92,7 @@ Best of luck to your final exam!
 For next Tue's Q13, it will cover: 
 
 - [Clustering Partition](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L02-kMeans/)
-- [RL](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L03-RL/)  / only slide page 1-37...  / Also this lecture will not be included in final exam. 
+- [RL](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L16-RL/)  / only slide page 1-37...  / Also this lecture will not be included in final exam. 
 
 
 
@@ -178,13 +178,13 @@ For course project:
 
 - [Neural Networks and Deep Learning](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L03-DNN/)
 - [Convolutional Neural Network (CNN)](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L04-CNN/)
-- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L06-PCA/)
+- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L06-PCA/)
 
 
 #### course website also have slide decks on
 - [Keras](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-Keras.pdf)
 - [PyTorch](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-pytorch.pdf)
-- Huggingface: [slide deck huggingface](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L20-invite-hugginface/)
+- Huggingface: [slide deck huggingface](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L05-hugginface/)
 
 
 <hr>

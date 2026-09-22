@@ -3,7 +3,7 @@ LOrder: 160
 layout: post
 title: ProbReview + MLE  
 lecture:  S2-MLE
-lectureVersion: current
+lectureVersion: next
 extraContent: S2-MLE 
 video: <b>M1</b> <a href="https://youtu.be/RIvdfYIHT1I" target="_blank">Original</a> · <a href="https://youtu.be/l78hirhUWuM" target="_blank">AI-Clone</a> · <a href="https://youtu.be/pSSZ4bQircA" target="_blank">Author-Voice</a>
 notes: 'Murphy (2022), <a href="https://probml.github.io/pml-book/book1.html" target="_blank">Probabilistic Machine Learning: An Introduction, Ch. 4: Statistics</a> · Brooks-Bartlett (2018), <a href="https://medium.com/data-science/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1" target="_blank">Probability Concepts Explained: Maximum Likelihood Estimation</a>'
