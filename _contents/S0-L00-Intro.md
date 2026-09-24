@@ -42,7 +42,7 @@ tags:
 ### Assessment Breakdown
 - **Weekly Quizzes**: 15% (top 10 of 12 quiz opportunities count, 10 minutes each, closed book via Google Form; a separate Q0 PreQuiz in week 1 is an ungraded screening quiz)
 - **Homework Assignments**: 50% (HW1-HW5, 10% each)
-- **Midterm Exam**: 15% (October 8th)
+- **Midterm Exam**: 15% (October 13th)
 - **Final Exam**: 20% (December 8th)
 - *See CourseWeb for detailed policy*
 

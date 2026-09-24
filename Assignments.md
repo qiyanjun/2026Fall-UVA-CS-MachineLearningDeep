@@ -77,7 +77,7 @@ the specific email address posted in the Canvas announcement.
 
 
 ### About Midterm Exam (15%)
-+ Date: Oct 8
++ Date: Oct 13
 + Coverage: TBD
 + Format: TBD
 
