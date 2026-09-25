@@ -1,6 +1,7 @@
 ---
 LOrder: 250
 layout: post
+exam: true
 title: Midterm Exam
 lecture:  
 lectureVersion: current

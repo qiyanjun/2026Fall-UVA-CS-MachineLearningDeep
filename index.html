@@ -62,6 +62,7 @@ BTW: we provide three versions of the previous lecture recordings, via three ful
 </tr>
 
 {% assign counter = 0 %}
+{% assign slot = 0 %}
 
 {% assign currentTag = 0 %}
 {% assign sorted = site.contents %}
@@ -114,6 +115,12 @@ BTW: we provide three versions of the previous lecture recordings, via three ful
   <td></td>
   <td></td>
 {% else %}
+  {% comment %} slot indexes the class-day date arrays; exams take a date
+  slot but are not numbered as lectures {% endcomment %}
+  {% assign slot=slot | plus:1 %}
+  {% if post.exam %}
+  <tr class="row-exam" >
+  {% else %}
   {% assign counter=counter | plus:1 %}
   {% if counter < 10 %}
     {% assign LidxStr = 'L0' | append: counter %}
@@ -121,17 +128,18 @@ BTW: we provide three versions of the previous lecture recordings, via three ful
     {% assign LidxStr = 'L' | append: counter %}
   {% endif %}
   <tr >
-  <td>{{ ddates[counter] }} </td>
-  <td>{{ dweeks[counter] }}</td>
+  {% endif %}
+  <td>{{ ddates[slot] }} </td>
+  <td>{{ dweeks[slot] }}</td>
 
-  {% if  Qdates[counter]  contains 'Q'  %}
-    <td>{{ Qdates[counter] }}</td>
+  {% if  Qdates[slot]  contains 'Q'  %}
+    <td>{{ Qdates[slot] }}</td>
   {% else %}
     <td></td>
   {% endif %}
 
-  {% if  HWdates[counter]  contains 'H'  %}
-    <td>{{ HWdates[counter] }}</td>
+  {% if  HWdates[slot]  contains 'H'  %}
+    <td>{{ HWdates[slot] }}</td>
   {% else %}
     <td></td>
   {% endif %}

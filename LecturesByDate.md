@@ -15,7 +15,7 @@ desc: "2026 Fall  UVa CS Machine Learning Lectures Organized by Given Order"
 {% for post in sorted %}
 
 {% assign LidxStr = '' %}
-{% unless post.title contains "Section" or post.extra or post.background or post.platform %}
+{% unless post.title contains "Section" or post.extra or post.background or post.platform or post.exam %}
   {% assign counter = counter | plus: 1 %}
   {% if counter < 10 %}
     {% assign LidxStr = 'L0' | append: counter %}

@@ -411,6 +411,10 @@ tbody tr:nth-child(odd) th {
 .row-platform {
   background-color: #81de76;
 }
+.row-exam {
+  background-color: #ffd84d;
+  font-weight: bold;
+}
 
 /* Horizontally-scrollable wrapper for wide tables on small screens.
    On wide screens, break out of the narrow `.container` max-width so

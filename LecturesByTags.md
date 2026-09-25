@@ -43,11 +43,11 @@ Click on a tag to see relevant list of lectures.
     {% if post.tags contains tag %}
 
   {% assign LidxStr = '' %}
-  {% unless post.title contains "Section" or post.extra or post.background or post.platform %}
+  {% unless post.title contains "Section" or post.extra or post.background or post.platform or post.exam %}
     {% assign Ltmp = 0 %}
     {% assign Lidx = 0 %}
     {% for p in site.contents %}
-      {% unless p.title contains "Section" or p.extra or p.background or p.platform %}
+      {% unless p.title contains "Section" or p.extra or p.background or p.platform or p.exam %}
         {% assign Ltmp = Ltmp | plus: 1 %}
         {% if p.url == post.url %}
           {% assign Lidx = Ltmp %}

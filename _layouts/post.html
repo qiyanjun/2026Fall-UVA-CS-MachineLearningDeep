@@ -5,7 +5,7 @@ layout: default
 {% assign Lidx = 0 %}
 {% assign LcounterTmp = 0 %}
 {% for p in site.contents %}
-  {% unless p.title contains "Section" or p.extra or p.background or p.platform %}
+  {% unless p.title contains "Section" or p.extra or p.background or p.platform or p.exam %}
     {% assign LcounterTmp = LcounterTmp | plus: 1 %}
     {% if p.url == page.url %}
       {% assign Lidx = LcounterTmp %}

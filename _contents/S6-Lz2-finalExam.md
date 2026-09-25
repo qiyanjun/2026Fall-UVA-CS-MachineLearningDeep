@@ -1,6 +1,7 @@
 ---
 LOrder: 550
 layout: post
+exam: true
 title: Final Exam
 lecture:  
 lectureVersion: current
