@@ -9,7 +9,6 @@ morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a> + <
 video: <b>M1</b> <a href="https://youtu.be/-Fk4b1PPoEA" target="_blank">Original</a> · <a href="https://youtu.be/gqmuIEyMWEg" target="_blank">AI-Clone</a> · <a href="https://youtu.be/7w4nlUhMH9Y" target="_blank">Author-Voice</a>
 categories: 2D (Vision)
 lectureVersion: current
-extra: true
 tags:
 - DimensionReduction
 - 4Unsupervised

@@ -9,6 +9,7 @@ video: <b>M1</b> <a href="https://youtu.be/Nhw1jx11zrs" target="_blank">Original
 notes: 'Daumé III (2017), <a href="http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf" target="_blank">A Course in Machine Learning, Ch. 9: Probabilistic Modeling</a> · Ng & Jordan (2001), <a href="https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf" target="_blank">On Discriminative vs. Generative Classifiers: A Comparison of Logistic Regression and Naive Bayes</a>'
 morenotes: <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L16_naiveBayes_text.ipynb">text NBC notebook</a> 
 categories: basics
+extra: true
 tags:
 - 3Classification
 - Generative
