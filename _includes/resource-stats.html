@@ -16,7 +16,10 @@
 {% if linkpartcount > 1 %}
   {% for part in linkparts limit: linkpartcount offset: 1 %}
     {% assign urlpart = part | split: '"' | first %}
-    {% if urlpart contains 'notebook' or urlpart contains 'ipynb' or urlpart contains 'github.com' %}
+    {% comment %} PDFs are readings even when hosted on GitHub or in notebook/ {% endcomment %}
+    {% if urlpart contains '.pdf' %}
+      {% assign rcount = rcount | plus: 1 %}
+    {% elsif urlpart contains 'notebook' or urlpart contains 'ipynb' or urlpart contains 'github.com' %}
       {% assign ccount = ccount | plus: 1 %}
     {% else %}
       {% assign rcount = rcount | plus: 1 %}

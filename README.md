@@ -44,7 +44,7 @@ Lectures are organized into 7 sections (`S0`–`S6`), reflected in the `_content
 |---|---|---|
 | S0 | Introduction & math prerequisites (algebra/calculus review) | 2 |
 | S1 | Basics of Supervised Learning on Tabular Data (linear/regularized regression, kNN, model selection, bias-variance) | 11 |
-| S2 | Deep Learning on 2D Grid Data / Imaging (MLE, logistic regression, NN, CNN, PyTorch/Keras/HuggingFace, PCA) | 9 |
+| S2 | Deep Learning on 2D Grid Data / Imaging (MLE, logistic regression, NN, CNN, PyTorch/HuggingFace, PCA) | 9 |
 | S3 | Deep Learning on 1D Sequence Data / Language (text NNs, generative & naive Bayes classification, recent DL/LLM survey) | 7 |
 | S4 | More Advanced Supervised Learning on Tabular Data (SVM + kernels + duality, decision trees, bagging, boosting) | 8 |
 | S5 | Unsupervised Learning (hierarchical & k-means clustering, GMM/EM, reinforcement learning) | 7 |

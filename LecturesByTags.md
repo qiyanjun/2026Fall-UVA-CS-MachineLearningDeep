@@ -78,7 +78,7 @@ Click on a tag to see relevant list of lectures.
   {% if vcount > 0 %}{{ vcount }} video{% if vcount != 1 %}s{% endif %}{% endif %}
   {% if vcount > 0 and rcount > 0 %} &middot; {% endif %}
   {% if rcount > 0 %}{{ rcount }} reading{% if rcount != 1 %}s{% endif %}{% endif %}
-  {% if rcount > 0 and ccount > 0 %} &middot; {% endif %}
+  {% if ccount > 0 and vcount > 0 or ccount > 0 and rcount > 0 %} &middot; {% endif %}
   {% if ccount > 0 %}{{ ccount }} coding-read{% if ccount != 1 %}s{% endif %}{% endif %}
   {% if vcount == 0 and rcount == 0 and ccount == 0 %}&mdash;{% endif %}
   </a>

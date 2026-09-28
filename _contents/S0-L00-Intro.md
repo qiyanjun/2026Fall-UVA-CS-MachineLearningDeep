@@ -59,7 +59,7 @@ tags:
 ### Emphasis
 - Active learning
 - Understanding core ML concepts
-- Applying models (Python, scikit-learn, Keras)
+- Applying models (Python, scikit-learn, PyTorch)
 - Analyzing performance and ethics
 - Becoming an ML tool builder
 
