@@ -8,7 +8,6 @@ extraContent:
 notes: 'Du et al. (2023), <a href="https://arxiv.org/abs/2305.14325" target="_blank">Improving Factuality and Reasoning in Language Models through Multiagent Debate</a> · Zheng et al. (2023), <a href="https://arxiv.org/abs/2306.05685" target="_blank">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a> · Willison (2023), <a href="https://simonwillison.net/2023/Apr/14/worst-that-can-happen/" target="_blank">Prompt Injection: What''s the Worst That Can Happen?</a>'
 video:
 categories: LLM/Agents
-extra: true
 tags:
 - 6LLMAgents
 - MultiAgent
