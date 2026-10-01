@@ -77,8 +77,7 @@ desc: "Information for 2026 Fall  UVa CS Machine Learning, Math Foundations and 
 + #### TA office hours and communication with TAs 
   - communication with TA via Course Slack Space / Slack Link Shared via Course maillist
   - instructor email: yanjun@virginia.edu
-  - instructor office hour TBD
-  - Prof Qi: Tue. 5pm-6pm
+  - instructor office hour: Thursday after class (from 4:45pm)
   - **Peng Wang** (pw7nc@virginia.edu): Fri 3pm-5pm (Rice Hall 204)
   - **Kefan Song** (ks8vf@virginia.edu): Wed 3pm-5pm (Rice 442)
   - **Giti Doolabi** (dye7jx@virginia.edu): Mon 3pm-5pm (Rice 442)
@@ -161,14 +160,13 @@ send mail to the instructor.
 
 + [Deep Learning, An MIT Press book in preparation, Ian Goodfellow, Yoshua Bengio and Aaron Courville](https://www.deeplearningbook.org/lecture_slides.html)
 
-+ [Stanford Machine Learning Course Youtube Videos (by Andrew Ng)](https://www.youtube.com/view_play_list?p=A89DCFA6ADACE599)
++ [Stanford Machine Learning Course Youtube Videos (by Andrew Ng)](https://www.youtube.com/playlist?list=PLA89DCFA6ADACE599)
 + [Yaser Abu-Mostafa : Caltech course: Learning from data](https://www.youtube.com/playlist?list=PLD63A284B7615313A)+ [book](https://work.caltech.edu/textbook.html)
 
 + Following books are great resources for advanced machine learning:
-  + [Elements of Statistical Learning](http://www.stanford.edu/~hastie/local.ftp/Springer/OLD//ESLII_print4.pdf) by by Hastie, Tibshirani and Friedman.
+  + [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) by by Hastie, Tibshirani and Friedman.
   + [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732), by Christopher Bishop.
   + [Yaser Abu-Mostafa:  Learning from data](https://work.caltech.edu/textbook.html)  
-  +[my Notes2Learn large scale machine Learning](http://www.cs.virginia.edu/yanjun/list2LearnLearning.htm)
   + [my Notes2 Learn Deep Learning](https://qdata.github.io/deep2Read/)
 
 
@@ -202,7 +200,7 @@ Power-based personal violence will not be tolerated.
 Everyone has a responsibility to do their part to maintain a safe community on Grounds.
 If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - www.virginia.edu/sexualviolence. 
 
-As your professor and as a person, know that I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am required by University policy and federal law to report what you tell me to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you would rather keep this information confidential, there are Confidential Employees you can talk to on Grounds (See http://www.virginia.edu/justreportit/confidential_resources.pdf). The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help. 
+As your professor and as a person, know that I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am required by University policy and federal law to report what you tell me to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you would rather keep this information confidential, there are Confidential Employees you can talk to on Grounds (See https://eocr.virginia.edu/resources). The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help. 
 
 ### This syllabus
 This syllabus is to be considered a reference document that can and will be adjusted through the course of the semester to address changing needs. This syllabus can be changed at any time without notification. It is up to the student to monitor this page for any changes. Final authority on any decision in this course rests with the professor, not with this document.

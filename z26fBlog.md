@@ -54,7 +54,7 @@ To get you prepared for the math foundations of the machine learning, I will hos
 Please review the following two notes to get yourself more prepare for the updated Q0. 
 
 [Notes1](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S0-L0-AlgbReview.pdf)
-[Notes2](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdfLinks to an external site)
+[Notes2](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf)
 
 
 -  TA will send our our course Slack invites! 
@@ -178,7 +178,7 @@ For course project:
 
 - [Neural Networks and Deep Learning](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L03-DNN/)
 - [Convolutional Neural Network (CNN)](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L04-CNN/)
-- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L06-PCA/)
+- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/contents/S2-Lzz-PCA/)
 
 
 #### course website also have slide decks on
