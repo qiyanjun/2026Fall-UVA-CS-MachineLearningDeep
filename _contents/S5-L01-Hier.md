@@ -8,6 +8,7 @@ video: <b>M1</b> <a href="https://youtu.be/mxrcPHWCZAI" target="_blank">Original
 notes: Manning, Raghavan & Schütze (2008), <a href="https://nlp.stanford.edu/IR-book/html/htmledition/hierarchical-clustering-1.html" target="_blank">Hierarchical Clustering (Introduction to Information Retrieval, Ch. 17)</a> · Pai (2021), <a href="https://towardsdatascience.com/hierarchical-clustering-explained-e59b13846da8/" target="_blank">Hierarchical Clustering Explained</a>
 morenotes: <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_linkage_comparison.html#sphx-glr-auto-examples-cluster-plot-linkage-comparison-py"> compare Hier clusterings</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/example-Hcluster.pdf" target="_blank">Hierarchical clustering worked example</a>
 categories: tabular
+extra: true
 tags:
 - 4Unsupervised
 ---
