@@ -1,5 +1,5 @@
 ---
-LOrder: 40
+LOrder: 60
 layout: post
 title: Scikit-learn 
 lectureVersion: current

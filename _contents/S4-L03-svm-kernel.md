@@ -1,5 +1,5 @@
 ---
-LOrder: 410
+LOrder: 460
 layout: post
 title: SVM, Kernel
 lecture:  S4-SVM-kerneltrick

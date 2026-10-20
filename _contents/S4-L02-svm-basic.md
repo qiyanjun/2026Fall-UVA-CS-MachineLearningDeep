@@ -1,5 +1,5 @@
 ---
-LOrder: 400
+LOrder: 450
 layout: post
 title: SVM
 lecture:  S4-SVM-basic

@@ -8,6 +8,7 @@ extraContent:
 notes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/Szz-content25.pdf">Review studentQs </a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/Szz-quiz25.pdf">Review Quiz</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/Szz-QA25.pdf">Review Q&amp;A</a> + <a href="https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master/en">[ML Cheatsheets]</a>
 morenotes: <a href="https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//z26fBlog/">course annoucement </a>
 video: <b>Review Lecture</b> <a href="https://youtu.be/fz5ExB0XP5E" target="_blank">Original</a> · <a href="https://youtu.be/GuirQX7zSuk" target="_blank">AI-Clone</a> · <a href="https://youtu.be/VLoVWzcFYpY" target="_blank">Author-Voice</a>  |  <b>Final Review</b> <i>No original recording</i> · <a href="https://youtu.be/n0R9aKYgVo0" target="_blank">AI-Clone</a>
+categories: review
 tags:
 - 1Basic
 ---

@@ -1,5 +1,5 @@
 ---
-LOrder: 150
+LOrder: 160
 layout: post
 title: Prob Review   
 lecture: S3-ProbReview

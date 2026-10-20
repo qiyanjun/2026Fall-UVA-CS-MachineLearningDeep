@@ -1,5 +1,5 @@
 ---
-LOrder: 300
+LOrder: 390
 layout: post
 title: Quick survey of recent deep learning
 lecture: S3-deepNNSurvey

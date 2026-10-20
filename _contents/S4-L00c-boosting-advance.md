@@ -1,5 +1,5 @@
 ---
-LOrder: 460
+LOrder: 440
 layout: post
 title: More on Boosting
 lecture: S4-DT-moreBoosting

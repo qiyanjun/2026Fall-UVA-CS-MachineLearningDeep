@@ -1,5 +1,5 @@
 ---
-LOrder: 440
+LOrder: 420
 layout: post
 title: DecisionTree and Bagging
 lecture: S4-DecisionTree

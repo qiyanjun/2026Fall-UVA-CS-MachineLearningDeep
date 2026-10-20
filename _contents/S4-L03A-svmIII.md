@@ -1,5 +1,5 @@
 ---
-LOrder: 420
+LOrder: 470
 layout: post
 title: SVM, Dual
 lecture: S4-SVM-optimDual

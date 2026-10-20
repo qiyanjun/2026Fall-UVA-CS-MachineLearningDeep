@@ -1,5 +1,5 @@
 ---
-LOrder: 50
+LOrder: 40
 layout: post
 title: Machine Learning in a Nutshell
 lecture: S0-L2-nutshell

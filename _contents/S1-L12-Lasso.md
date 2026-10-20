@@ -1,5 +1,5 @@
 ---
-LOrder: 120
+LOrder: 140
 layout: post
 title: Lasso and Elastic Net
 lecture: S1-L7-lrRegularized

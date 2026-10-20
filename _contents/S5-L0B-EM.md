@@ -1,5 +1,5 @@
 ---
-LOrder: 510
+LOrder: 520
 layout: post
 title: "Clustering: EM Algorithm"
 lecture: S5-EMextra

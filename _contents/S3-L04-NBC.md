@@ -1,5 +1,5 @@
 ---
-LOrder: 280
+LOrder: 260
 layout: post
 title: NaiveBC on Text 
 lecture: S3-NBCtext

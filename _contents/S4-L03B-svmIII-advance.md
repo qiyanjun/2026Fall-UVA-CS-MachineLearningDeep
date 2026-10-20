@@ -1,5 +1,5 @@
 ---
-LOrder: 430
+LOrder: 480
 layout: post
 title: convex optim with Dual
 lecture: S4-SVMoptimDual-Extra

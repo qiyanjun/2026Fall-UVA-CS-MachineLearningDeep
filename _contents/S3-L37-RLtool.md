@@ -1,5 +1,5 @@
 ---
-LOrder: 320
+LOrder: 400
 layout: post
 title: deep RL Gym
 lecture: S5_RL_Gyms

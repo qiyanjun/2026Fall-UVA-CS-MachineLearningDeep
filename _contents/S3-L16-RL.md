@@ -1,5 +1,5 @@
 ---
-LOrder: 310
+LOrder: 320
 layout: post
 title: Reinforcement Learning
 lecture: S5_RL22

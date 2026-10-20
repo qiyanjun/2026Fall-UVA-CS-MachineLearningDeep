@@ -1,5 +1,5 @@
 ---
-LOrder: 480
+LOrder: 490
 layout: post
 title: Clustering Hier
 lecture: S5-clustering1-Hier

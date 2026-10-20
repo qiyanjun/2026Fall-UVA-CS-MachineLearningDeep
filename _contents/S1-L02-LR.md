@@ -1,5 +1,5 @@
 ---
-LOrder: 60
+LOrder: 50
 layout: post
 title: Linear Regression
 lecture: S1-L3-LinearReg

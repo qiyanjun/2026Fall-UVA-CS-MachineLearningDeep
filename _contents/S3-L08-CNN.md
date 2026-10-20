@@ -1,5 +1,5 @@
 ---
-LOrder: 190
+LOrder: 290
 layout: post
 title: CNN 
 lecture: S2-deepImageCNN

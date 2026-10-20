@@ -78,7 +78,7 @@ Dear students:
   + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)) 
   + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf))
 
-- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L17-RL/) 
+- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L37-RLtool/) 
 
 
 Best of luck to your final exam!  
@@ -103,7 +103,7 @@ For next Tue's Q13, it will cover:
 
 Here are the two lectures for Quiz12 (next Tuesday!): 
 
-+ [RF and Boosting ](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L05-Boost/)
++ [RF and Boosting ](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L00b-Boost/)
 + [Hierarchical Clustering](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L01-Hier/)
 
 
@@ -115,7 +115,7 @@ Here are the two lectures for Quiz12 (next Tuesday!):
 The coming Quiz11 will cover the following: 
 
 - [SVM, Kernel](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L03-svm-kernel/)
-- [ Decision Tree + Bagging](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L04-DT/)
+- [ Decision Tree + Bagging](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L00a-DT/)
 
 
 
@@ -158,7 +158,7 @@ The Quiz 10, will cover the following course lectures and related:
 
 Next Tuesday’s Quiz9 will cover the following course contents: 
 
-- [deep learning on NLP] https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L01-textNN/ Links to an external site. 
+- [deep learning on NLP] https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L10-textNN/ Links to an external site. 
 - [Generative classification] https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L03-BC/ Links to an external site.
 For course project: 
 
@@ -177,8 +177,8 @@ For course project:
 #### Next Tuesday we will have Quiz8 to cover the following contents:
 
 - [Neural Networks and Deep Learning](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L03-DNN/)
-- [Convolutional Neural Network (CNN)](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L04-CNN/)
-- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/contents/S2-Lzz-PCA/)
+- [Convolutional Neural Network (CNN)](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L08-CNN/)
+- [PCA, Feature Selection](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/contents/S3-L09-PCA/)
 
 
 #### course website also have slide decks on
@@ -195,7 +195,7 @@ For course project:
 
 - Logistic Regression and MLP: [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L02-LoR/) .
 - Neural Networks and Deep Learning: [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L03-DNN/) .
-- Convolutional Neural Network (CNN): [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L04-CNN/) .
+- Convolutional Neural Network (CNN): [Links](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L08-CNN/) .
 
 
 #### On HW2:  

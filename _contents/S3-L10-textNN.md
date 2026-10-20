@@ -1,5 +1,5 @@
 ---
-LOrder: 260
+LOrder: 310
 layout: post
 title: Deep Learning on Text - from BOW to Attention
 lecture: S3-deepNNtext

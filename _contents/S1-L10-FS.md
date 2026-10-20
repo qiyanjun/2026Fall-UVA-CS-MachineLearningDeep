@@ -1,5 +1,5 @@
 ---
-LOrder: 230
+LOrder: 120
 layout: post
 title: Feature Selection 
 lecture: S1-L78-feaSelc

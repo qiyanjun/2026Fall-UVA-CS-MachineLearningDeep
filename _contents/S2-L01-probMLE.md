@@ -1,5 +1,5 @@
 ---
-LOrder: 160
+LOrder: 170
 layout: post
 title: ProbReview + MLE  
 lecture:  S2-L10-MLE
