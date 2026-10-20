@@ -12,7 +12,7 @@ Course website (Jekyll site, served via GitHub Pages) for UVA CS's Fall 2026 Mac
 ├── Gemfile                # Ruby/Jekyll dependencies (github-pages gem)
 ├── index.html             # Home page: renders the lecture schedule table
 ├── About.md               # "Syllabus" nav page: course info, prerequisites, staff, policies
-├── Assignments.md         # "Assignments" nav page: grading breakdown (details in Canvas)
+├── Assignments.md         # "Assignments" nav page: HWs, quizzes, grading breakdown
 ├── LecturesByDate.md      # "All-In-OnePage" nav page: every lecture's content in one long page
 ├── LecturesByTags.md      # "Topics-as-Tables" nav page: lectures grouped/indexed by topic tag
 ├── z26fBlog.md            # "Annoucements" nav page: dated course announcements/updates
@@ -56,7 +56,7 @@ Lectures are organized into 7 sections (`S0`–`S6`), reflected in the `_content
 |---|---|
 | [Live course site](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/) | Main entry point — lecture-by-lecture schedule table with dates, slides, videos, and notes |
 | [Syllabus](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/About/) (`About.md`) | Course description, learning goals, prerequisites, instructor/TA contacts & office hours, grading policy |
-| [Assignments](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/Assignments/) (`Assignments.md`) | Reference-only grading breakdown for HWs, quizzes and exams; all details are posted in Canvas |
+| [Assignments](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/Assignments/) (`Assignments.md`) | HW list with out/in dates and weights, quiz schedule, midterm/final exam info, grading breakdown |
 | [All-In-OnePage](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/LecturesByDate/) (`LecturesByDate.md`) | Every lecture's full content rendered on a single scrollable page, in schedule order |
 | [Topics-as-Tables](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/LecturesByTags/) (`LecturesByTags.md`) | Lectures indexed/grouped by topic tag, for topic-based lookup instead of date order |
 | [Annoucements](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep/z26fBlog/) (`z26fBlog.md`) | Dated log of course announcements and updates (also mirrored in Canvas) |
