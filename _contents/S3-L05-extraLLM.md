@@ -1,5 +1,5 @@
 ---
-LOrder: 220
+LOrder: 225
 layout: post
 title: Overview of GenAI model training  
 lecture: S3_Peng_LLM_train

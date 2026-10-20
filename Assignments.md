@@ -9,7 +9,7 @@ desc: "Information of Assignments for 2026 Fall  UVa CS 4774 Machine Learning"
 <hr>
 
 ### Five assignments (50%)
-+ Post in Canvas 
++ All assignments are posted in Canvas
 + Coding-centered homework: each assignment functions like a mini course project, and most will have a leaderboard to rank student submissions; extra credit will be given to top-ranked submissions.
 + You will receive grading of each HWs within 10 day of each due time. A release email will send to you about the grading. (If you don’t receive such emails in time, please do email  to <br>
 the specific email address posted in the Canvas announcement.
@@ -33,7 +33,7 @@ the specific email address posted in the Canvas announcement.
 </tr>
 <tr>
   <td>HW1</td>
-  <td>Out in Canvas </td>
+  <td>Posted in Canvas</td>
   <td>W2 (Sep 1)</td>
   <td>W4 (Sep 13)</td>
   <td>Coding-centered homework, functions like a mini course project; TBD leaderboard</td>
@@ -41,7 +41,7 @@ the specific email address posted in the Canvas announcement.
 </tr>
 <tr>
   <td>HW2</td>
-  <td>TBD</td>
+  <td>Posted in Canvas</td>
   <td>W4 (Sep 15)</td>
   <td>W6 (Sep 27)</td>
   <td>Coding-centered homework, functions like a mini course project; TBD leaderboard</td>
@@ -49,7 +49,7 @@ the specific email address posted in the Canvas announcement.
 </tr>
 <tr>
   <td>HW3</td>
-  <td>TBD</td>
+  <td>Posted in Canvas</td>
   <td>W8 (Oct 13)</td>
   <td>W10 (Oct 25)</td>
   <td>Coding-centered homework, functions like a mini course project; TBD leaderboard</td>
@@ -57,7 +57,7 @@ the specific email address posted in the Canvas announcement.
 </tr>
 <tr>
   <td>HW4</td>
-  <td>TBD</td>
+  <td>Posted in Canvas</td>
   <td>W10 (Oct 27)</td>
   <td>W12 (Nov 8)</td>
   <td>Coding-centered homework, functions like a mini course project; TBD leaderboard</td>
@@ -65,7 +65,7 @@ the specific email address posted in the Canvas announcement.
 </tr>
 <tr>
   <td>HW5</td>
-  <td>TBD</td>
+  <td>Posted in Canvas</td>
   <td>W12 (Nov 10)</td>
   <td>W14 (Nov 22)</td>
   <td>Coding-centered homework, functions like a mini course project; TBD leaderboard</td>
