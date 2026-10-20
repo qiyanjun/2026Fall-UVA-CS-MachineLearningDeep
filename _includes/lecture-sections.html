@@ -68,7 +68,7 @@
 {% if post.notebooks %}
 {% assign notebooks_parts = post.notebooks | split: ' · ' %}
 <section class="lecture-section">
-  <h3>Notebook Resources</h3>
+  <h3>Coding Resources</h3>
   <ul class="lecture-list">
     {% for part in notebooks_parts %}
       {% assign trimmed = part | strip %}

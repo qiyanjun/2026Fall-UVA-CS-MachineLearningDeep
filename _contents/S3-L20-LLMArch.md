@@ -16,6 +16,7 @@ tags:
 - Generative
 - Architecture
 - Training
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb" target="_blank">notebook/L15_Predicting_Movie_Reviews_with_BERT_on_TF_Hub.ipynb</a>'
 ---
 
 ### In this lecture, we cover:

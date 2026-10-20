@@ -5,13 +5,14 @@ title:  Algebra Review
 lecture: S0-L0-AlgbReview
 lectureVersion: current
 notes: 'Deisenroth, Faisal & Ong (2020), <a href="https://mml-book.github.io/book/mml-book.pdf" target="_blank">Mathematics for Machine Learning, Ch. 2: Linear Algebra</a> · Sanderson (2016), <a href="https://www.3blue1brown.com/topics/linear-algebra" target="_blank">Essence of Linear Algebra</a>'
-morenotes: <a href="https://www.khanacademy.org/math/multivariable-calculus">Khanacademy Math</a> +  <a href="http://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf">CMU study note</a> + <a href="https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks">Python Data Science Code tutorials</a>
+morenotes: <a href="https://www.khanacademy.org/math/multivariable-calculus">Khanacademy Math</a> + <a href="http://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf">CMU study note</a>
 video: 
 categories: prerequisite 
 background: true
 tags:
 - 1Basic
 - Background
+notebooks: '<a href="https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks" target="_blank">Python Data Science Handbook notebooks</a>'
 ---
 
 

@@ -7,7 +7,7 @@ lectureVersion: current
 extra: true
 video: <b>M1</b> <a href="https://youtu.be/HxnhWjkLSzs" target="_blank">Original</a> · <a href="https://youtu.be/ihx87UwnnxE" target="_blank">AI-Clone</a> · <a href="https://youtu.be/zsIsBFGVbGI" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/hMM45nKabtg" target="_blank">Original</a> · <a href="https://youtu.be/bqQ9aexqsRM" target="_blank">AI-Clone</a> · <a href="https://youtu.be/lkvj55QXzcM" target="_blank">Author-Voice</a>
 notes: 'Cortes & Vapnik (1995), <a href="https://homepages.math.uic.edu/~lreyzin/papers/cortes95.pdf" target="_blank">Support-Vector Networks</a> · Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 12: Support Vector Machines and Flexible Discriminants</a>'
-morenotes:  <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb"> PCA+SVM Notebook </a>
+morenotes: 
 categories: tabular
 tags:
 - 3Classification
@@ -16,6 +16,7 @@ tags:
 - Regularization
 - Optimization
 - 5Theory
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb" target="_blank">notebook/L14_PCA_face_IRIS.ipynb (PCA + SVM)</a>'
 ---
 
 

@@ -5,7 +5,7 @@ title: Overview of GenAI model training
 lecture: S3_Peng_LLM_train
 extraContent: 
 notes: 'Ouyang et al. (2022), <a href="https://arxiv.org/abs/2203.02155" target="_blank">Training Language Models to Follow Instructions with Human Feedback (InstructGPT)</a> · Rafailov et al. (2023), <a href="https://arxiv.org/abs/2305.18290" target="_blank">Direct Preference Optimization: Your Language Model is Secretly a Reward Model</a> · DeepSeek-AI (2025), <a href="https://arxiv.org/abs/2501.12948" target="_blank">DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</a>'
-morenotes: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9Ky858riqYbrN1R" target="_blank">DPO Colab Notebook</a> + <a href="https://colab.research.google.com/drive/1hydSFeV8hpTleZTp5EwpoDCjrqRp8JQ7" target="_blank">GRPO Colab Notebook</a> + <a href="https://huggingface.co/docs/trl/main/en/grpo_trainer" target="_blank">TRL GRPOTrainer docs</a> + <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Jurafsky & Martin, SLP3 Ch. 7-10</a> + <a href="https://arxiv.org/abs/2005.14165" target="_blank">Brown et al. (2020), GPT-3: Few-Shot Learners</a> + <a href="https://arxiv.org/abs/2201.11903" target="_blank">Wei et al. (2022), Chain-of-Thought Prompting</a> + <a href="https://arxiv.org/abs/2402.03300" target="_blank">Shao et al. (2024), DeepSeekMath (GRPO)</a> + <a href="https://arxiv.org/abs/2411.15124" target="_blank">Lambert et al. (2024), Tülu 3 (RLVR)</a> + <a href="https://arxiv.org/abs/2504.13837" target="_blank">Yue et al. (2025), Does RL Really Incentivize Reasoning?</a>'
+morenotes: '<a href="https://huggingface.co/docs/trl/main/en/grpo_trainer" target="_blank">TRL GRPOTrainer docs</a> + <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Jurafsky & Martin, SLP3 Ch. 7-10</a> + <a href="https://arxiv.org/abs/2005.14165" target="_blank">Brown et al. (2020), GPT-3: Few-Shot Learners</a> + <a href="https://arxiv.org/abs/2201.11903" target="_blank">Wei et al. (2022), Chain-of-Thought Prompting</a> + <a href="https://arxiv.org/abs/2402.03300" target="_blank">Shao et al. (2024), DeepSeekMath (GRPO)</a> + <a href="https://arxiv.org/abs/2411.15124" target="_blank">Lambert et al. (2024), Tülu 3 (RLVR)</a> + <a href="https://arxiv.org/abs/2504.13837" target="_blank">Yue et al. (2025), Does RL Really Incentivize Reasoning?</a>'
 video: 
 categories: LLM/Agents
 lectureVersion: current
@@ -14,6 +14,7 @@ tags:
 - Generative
 - Training
 - RL
+notebooks: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9Ky858riqYbrN1R" target="_blank">DPO Colab notebook</a> · <a href="https://colab.research.google.com/drive/1hydSFeV8hpTleZTp5EwpoDCjrqRp8JQ7" target="_blank">GRPO Colab notebook</a>'
 ---
 
 

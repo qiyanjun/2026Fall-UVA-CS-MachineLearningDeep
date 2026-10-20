@@ -15,6 +15,7 @@ tags:
 - Nonlinear
 - Deep
 - Discriminative
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb" target="_blank">notebook/L13_keras_mnist_convnet.ipynb</a>'
 ---
 
 
