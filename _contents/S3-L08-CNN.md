@@ -15,7 +15,7 @@ tags:
 - Nonlinear
 - Deep
 - Discriminative
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb" target="_blank">notebook/L13_keras_mnist_convnet.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb" target="_blank">notebook/L13_keras_mnist_convnet.ipynb</a> · <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121" target="_blank">Kaggle: COVID-19 diagnosis from images using DenseNet121 (Keras)</a>'
 ---
 
 
