@@ -8,7 +8,7 @@ desc: "Information of Assignments for 2026 Fall  UVa CS 4774 Machine Learning"
 
 <hr>
 
-**This page is a reference read only. All details for assignments, quizzes and exams are posted in Canvas.**
+**The dates and details on this page are just for reference. Exact dates and details are in Canvas.**
 
 <hr>
 
