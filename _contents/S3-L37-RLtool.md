@@ -2,7 +2,7 @@
 LOrder: 400
 layout: post
 title: deep RL Gym
-lecture: S5_RL_Gyms
+lecture: S3-L5z-RL_Gyms
 lectureVersion: current
 notes: 'Mnih et al. (2015), <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf" target="_blank">Human-level Control through Deep Reinforcement Learning</a> · Lambert et al. (2022), <a href="https://huggingface.co/blog/rlhf" target="_blank">Illustrating Reinforcement Learning from Human Feedback (RLHF)</a> · Shao et al. (2024), <a href="https://arxiv.org/abs/2402.03300" target="_blank">DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models</a>'
 morenotes: TA Speaker

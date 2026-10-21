@@ -2,7 +2,7 @@
 LOrder: 320
 layout: post
 title: Reinforcement Learning
-lecture: S5_RL22
+lecture: S3-L5a-RL22
 lectureVersion: current
 video: 
 notes: 'Sutton & Barto (2018), <a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Reinforcement Learning: An Introduction</a> · Weng (2018), <a href="https://lilianweng.github.io/posts/2018-02-19-rl-overview/" target="_blank">A (Long) Peek into Reinforcement Learning</a>'

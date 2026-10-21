@@ -128,8 +128,8 @@ The coming Quiz11 will cover the following:
 
 Here are two advanced readings on recent-LLM topics and advanced DNN topics. The aim to help you brainstorm your project ideas: 
 
-- 1. [Recent LLM-survey](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-25recentLLM-extra.pdf)
-- 2.  [A survey of 10 advanced DNN topics](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-deepNNSurvey.pdf) Links to an external site.
+- 1. [Recent LLM-survey](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S3-L0-25recentLLM-extra.pdf)
+- 2.  [A survey of 10 advanced DNN topics](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-Laa-deepNNSurvey.pdf) Links to an external site.
 
 I will try to cover these advanced topics in a condensed form next Thursday.
 
@@ -182,8 +182,8 @@ For course project:
 
 
 #### course website also have slide decks on
-- [Keras](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-Keras.pdf)
-- [PyTorch](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S2-L0-pytorch.pdf)
+- [Keras](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S3-L0nouse-Keras.pdf)
+- [PyTorch](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Lectures/S3-L0-pytorch.pdf)
 - Huggingface: [slide deck huggingface](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S2-L05-hugginface/)
 
 

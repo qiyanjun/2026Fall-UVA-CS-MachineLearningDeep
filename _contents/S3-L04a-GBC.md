@@ -2,7 +2,7 @@
 LOrder: 270
 layout: post
 title: Gaussian GBC 
-lecture: S3-GaussianGBC
+lecture: S3-Laa-GaussianGBC
 lectureVersion: current
 extraContent:  
 video: <b>Extra M4</b> <a href="https://youtu.be/uD2_ZOhyiw8" target="_blank">Original</a> · <a href="https://youtu.be/bQ9Pod49REM" target="_blank">AI-Clone</a> · <a href="https://youtu.be/26l5m6NA0u0" target="_blank">Author-Voice</a>

@@ -2,7 +2,7 @@
 LOrder: 260
 layout: post
 title: NaiveBC on Text 
-lecture: S3-NBCtext
+lecture: S3-La0-NBCtext
 lectureVersion: current
 video: <b>M1</b> <a href="https://youtu.be/fPv3nD3uwWw" target="_blank">Original</a> · <a href="https://youtu.be/McyumBcLJGo" target="_blank">AI-Clone</a> · <a href="https://youtu.be/x2r_wDVNdNY" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/kfXHwam-RPs" target="_blank">Original</a> · <a href="https://youtu.be/Jl1DLWYrKhc" target="_blank">AI-Clone</a> · <a href="https://youtu.be/d9eVee89l-o" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/uoB3olc_eRw" target="_blank">Original</a> · <a href="https://youtu.be/1CWoG6fyb5M" target="_blank">AI-Clone</a> · <a href="https://youtu.be/IhnfSuY78Rk" target="_blank">Author-Voice</a>  |  <b>Extra M4</b> <a href="https://youtu.be/qMNRD3uJRFs" target="_blank">Original</a> · <a href="https://youtu.be/SfYRp3t9Ias" target="_blank">AI-Clone</a> · <a href="https://youtu.be/HWdiWIqJNAk" target="_blank">Author-Voice</a>
 extraContent:   

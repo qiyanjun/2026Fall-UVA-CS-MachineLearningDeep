@@ -2,7 +2,7 @@
 LOrder: 250
 layout: post
 title:  Generative Classification
-lecture: S3-GenerativeBayesClassify
+lecture: S3-La1-GenerativeBayesClassify
 lectureVersion: current
 extraContent:  
 video: <b>M1</b> <a href="https://youtu.be/Nhw1jx11zrs" target="_blank">Original</a> · <a href="https://youtu.be/KmFUJ_u40Js" target="_blank">AI-Clone</a> · <a href="https://youtu.be/Age2nNAi9Ss" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/XS-1RUZ_T6U" target="_blank">Original</a> · <a href="https://youtu.be/gHMxGix_n2M" target="_blank">AI-Clone</a> · <a href="https://youtu.be/9TxsBAIPASM" target="_blank">Author-Voice</a>  |  <b>Extra M3</b> <a href="https://youtu.be/-mgSZa-Lyiw" target="_blank">Original</a> · <a href="https://youtu.be/GAtjymTs4Y4" target="_blank">AI-Clone</a> · <a href="https://youtu.be/vdhbpzezNNk" target="_blank">Author-Voice</a>

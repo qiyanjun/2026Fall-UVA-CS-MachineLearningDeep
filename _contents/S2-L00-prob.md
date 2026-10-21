@@ -2,7 +2,7 @@
 LOrder: 160
 layout: post
 title: Prob Review   
-lecture: S3-ProbReview
+lecture: S2-L0-ProbReview
 lectureVersion: current
 extraContent:  
 video: <b>M1</b> <a href="https://youtu.be/Sjgzi8aKQO4" target="_blank">Original</a> · <a href="https://youtu.be/0Xm-wLUKa-U" target="_blank">AI-Clone</a> · <a href="https://youtu.be/ctaFJ10J7l0" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/Ac6pwhJR-t4" target="_blank">Original</a> · <a href="https://youtu.be/ON2NqdQgs_c" target="_blank">AI-Clone</a> · <a href="https://youtu.be/acrXzXnjYCo" target="_blank">Author-Voice</a>
