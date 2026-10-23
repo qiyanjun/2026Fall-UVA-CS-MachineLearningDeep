@@ -7,7 +7,7 @@ lectureVersion: next
 video: <b>M1</b> <a href="https://youtu.be/foOw7tTDZq0" target="_blank">Original</a> · <a href="https://youtu.be/gj92q2R5foQ" target="_blank">AI-Clone</a> · <a href="https://youtu.be/BFacOv9zWPE" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/wwg3-8g-8no" target="_blank">Original</a> · <a href="https://youtu.be/c_0ym5SRYLs" target="_blank">AI-Clone</a> · <a href="https://youtu.be/JBwTZ09_78o" target="_blank">Author-Voice</a>
 extraContent: 
 notes: 'Karpathy, Li & Johnson (2016), <a href="https://cs231n.github.io/convolutional-networks/" target="_blank">CS231n: Convolutional Neural Networks for Visual Recognition</a> · Olah (2014), <a href="https://colah.github.io/posts/2014-07-Conv-Nets-Modular/" target="_blank">Conv Nets: A Modular Perspective</a>'
-# morenotes: <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> Keras notebook</a> + <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-L14b-PCA-extra.pdf"> [PCA extra slides] </a>
+# morenotes: <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_pytorch_mnist_convnet.ipynb"> PyTorch notebook</a> + <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> Keras version (same model)</a> + <a href="https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"> PyTorch ResNet-18 transfer-learning tutorial</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-L14b-PCA-extra.pdf"> [PCA extra slides] </a>
 morenotes: <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-L14b-PCA-extra.pdf"> [PCA extra slides] </a>
 categories: 2D (Vision)
 tags:
@@ -15,15 +15,14 @@ tags:
 - Nonlinear
 - Deep
 - Discriminative
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb" target="_blank">notebook/L13_keras_mnist_convnet.ipynb</a> · <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121" target="_blank">Kaggle: COVID-19 diagnosis from images using DenseNet121 (Keras)</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_pytorch_mnist_convnet.ipynb" target="_blank">notebook/L13_pytorch_mnist_convnet.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb" target="_blank">notebook/L13_keras_mnist_convnet.ipynb (Keras version, same model)</a> · <a href="https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html" target="_blank">PyTorch tutorial: Transfer learning with ResNet-18 (Run in Google Colab on the page)</a>'
 ---
 
 
-<!-- Keras not used in 2026
-# Notebooks to run and experienc: 
-- <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> L13 Keras notebook</a>  
-- <a href="https://www.kaggle.com/code/shawon10/covid-19-diagnosis-from-images-using-densenet121"> another Keras Kaggle notebook</a>
--->
+# Notebooks to run and experiment with:
+- <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_pytorch_mnist_convnet.ipynb"> L13 PyTorch notebook</a>  
+- <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L13_keras_mnist_convnet.ipynb"> L13 Keras version (same model)</a>  
+- <a href="https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"> PyTorch ResNet-18 transfer-learning tutorial</a>
 
 
 
