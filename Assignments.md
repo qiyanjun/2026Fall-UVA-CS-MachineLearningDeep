@@ -55,15 +55,15 @@ the specific email address posted in the Canvas announcement.
   <td>HW3</td>
   <td>Posted in Canvas</td>
   <td>W8 (Oct 13)</td>
-  <td>W10 (Oct 25)</td>
+  <td>W11 (Nov 1)</td>
   <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
   <td>10%</td>
 </tr>
 <tr>
   <td>HW4</td>
   <td>Posted in Canvas</td>
-  <td>W10 (Oct 27)</td>
-  <td>W12 (Nov 8)</td>
+  <td>W11 (Nov 3)</td>
+  <td>W13 (Nov 15)</td>
   <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
   <td>10%</td>
 </tr>
@@ -71,7 +71,7 @@ the specific email address posted in the Canvas announcement.
   <td>HW5</td>
   <td>Posted in Canvas</td>
   <td>W12 (Nov 10)</td>
-  <td>W14 (Nov 22)</td>
+  <td>W15 (Dec 1)</td>
   <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
   <td>10%</td>
 </tr>
