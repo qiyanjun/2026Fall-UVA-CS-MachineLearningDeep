@@ -2,7 +2,7 @@
 LOrder: 390
 layout: post
 title: Quick survey of recent deep learning
-lecture: S2-Laa-deepNNSurvey
+lecture: S2-Laa-Old20deepNNSurvey
 lectureVersion: current
 extraContent: S3-L0-25recentLLM-extra
 video: <b>M1</b> <a href="https://youtu.be/tjIJVfwSrgs" target="_blank">Original</a> · <a href="https://youtu.be/VlRvDEgGlio" target="_blank">AI-Clone</a> · <a href="https://youtu.be/ERmB14NBze4" target="_blank">Author-Voice</a>  |  <b>M2</b> <a href="https://youtu.be/Z2Pq6QokCco" target="_blank">Original</a> · <a href="https://youtu.be/RKjZQ0sVkH8" target="_blank">AI-Clone</a> · <a href="https://youtu.be/uej_07mCf3U" target="_blank">Author-Voice</a>  |  <b>M3</b> <a href="https://youtu.be/l58pIDazkQU" target="_blank">Original</a> · <a href="https://youtu.be/akDRFnuW8I8" target="_blank">AI-Clone</a> · <a href="https://youtu.be/q36MqvNWXq8" target="_blank">Author-Voice</a>  |  <b>M4</b> <a href="https://youtu.be/gjXxOVly83s" target="_blank">Original</a> · <a href="https://youtu.be/Mo0qGBHNO3k" target="_blank">AI-Clone</a> · <a href="https://youtu.be/O4BzakYswuA" target="_blank">Author-Voice</a>

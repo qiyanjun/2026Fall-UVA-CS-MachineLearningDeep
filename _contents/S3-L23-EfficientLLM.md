@@ -7,6 +7,7 @@ lectureVersion: current
 extraContent:
 notes: Hinton, Vinyals & Dean (2015), <a href="https://arxiv.org/abs/1503.02531" target="_blank">Distilling the Knowledge in a Neural Network</a> · Kwon et al. (2023), <a href="https://arxiv.org/abs/2309.06180" target="_blank">Efficient Memory Management for Large Language Model Serving with PagedAttention</a> · Leviathan et al. (2023), <a href="https://arxiv.org/abs/2211.17192" target="_blank">Fast Inference from Transformers via Speculative Decoding</a>
 video:
+extra: true
 categories: LLM/Agents
 tags:
 - 6LLMAgents
