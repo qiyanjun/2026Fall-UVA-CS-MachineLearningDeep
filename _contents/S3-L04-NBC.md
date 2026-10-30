@@ -18,7 +18,7 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 
 - Notebook to run:  
 
-<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/Lzz_naiveBayes_text.ipynb">L16 text NBC notebook</a> 
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/Lzz_naiveBayes_text.ipynb">Text NBC notebook</a> 
 
 
 # Study Guide: Naïve Bayes Classifier for Text Classification
