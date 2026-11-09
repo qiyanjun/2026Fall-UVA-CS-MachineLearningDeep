@@ -5,8 +5,8 @@ title: Transformer NN Training
 lecture: S3-L18b-TransformerTrain
 lectureVersion: next
 extraContent:
-notes: Radford et al. (2019), <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank">Language Models are Unsupervised Multitask Learners (GPT-2)</a> · Kaplan et al. (2020), <a href="https://arxiv.org/abs/2001.08361" target="_blank">Scaling Laws for Neural Language Models</a> · Hoffmann et al. (2022), <a href="https://arxiv.org/abs/2203.15556" target="_blank">Training Compute-Optimal Large Language Models (Chinchilla)</a> · Hu et al. (2021), <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA: Low-Rank Adaptation of Large Language Models</a>
-morenotes: <a href="https://github.com/karpathy/nanoGPT" target="_blank">nanoGPT</a> + <a href="https://arxiv.org/abs/1904.09751" target="_blank">Holtzman et al. (2019), The Curious Case of Neural Text Degeneration (nucleus sampling)</a> + <a href="https://arxiv.org/abs/2203.02155" target="_blank">Ouyang et al. (2022), InstructGPT</a>
+notes: 'Radford et al. (2019), <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank">Language Models are Unsupervised Multitask Learners (GPT-2)</a> · Kaplan et al. (2020), <a href="https://arxiv.org/abs/2001.08361" target="_blank">Scaling Laws for Neural Language Models</a> · Hoffmann et al. (2022), <a href="https://arxiv.org/abs/2203.15556" target="_blank">Training Compute-Optimal Large Language Models (Chinchilla)</a> · Hu et al. (2021), <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA: Low-Rank Adaptation of Large Language Models</a>'
+morenotes: '<a href="https://github.com/karpathy/nanoGPT" target="_blank">nanoGPT</a> + <a href="https://arxiv.org/abs/1904.09751" target="_blank">Holtzman et al. (2019), The Curious Case of Neural Text Degeneration (nucleus sampling)</a> + <a href="https://arxiv.org/abs/2203.02155" target="_blank">Ouyang et al. (2022), InstructGPT</a>'
 video:
 categories: LLM/Agents
 tags:

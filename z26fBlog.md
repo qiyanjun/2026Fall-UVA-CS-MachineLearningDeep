@@ -78,7 +78,7 @@ Dear students:
   + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)) 
   + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf))
 
-- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L37-RLtool/) 
+- I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L16a-RLtool/) 
 
 
 Best of luck to your final exam!  
