@@ -1,7 +1,8 @@
 ---
 LOrder: 540
 layout: post
-title: Final Review and Final Exam
+exam: true
+title: Final Review
 lecture: S6-review
 lectureVersion: current
 extraContent:   

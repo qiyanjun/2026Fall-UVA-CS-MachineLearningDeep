@@ -30,7 +30,7 @@ tags:
   + Encoder-only, decoder-only, and encoder-decoder architectures (BERT, GPT, T5)
   + BERT as a denoising autoencoder, layer-wise pre-training, and supervised fine-tuning
 
-*(Self-attention, Transformers, and the BERT/GPT family of pretrained models are covered in depth later in this section, in "LLM Architecture and Training.")*
+*(Self-attention, Transformers, and the BERT/GPT family of pretrained models are covered in depth later in this section, in "Transformer NN Architecture" and "Transformer NN Training.")*
 
 
 # Study Guide: Seq2Seq Models and Attention

@@ -1,7 +1,7 @@
 ---
 LOrder: 330
 layout: post
-title: Transformer NN Architecture and Training
+title: Transformer NN Architecture
 lecture: S3-L18a-TransformerArch
 lectureVersion: current
 extraContent:
@@ -41,7 +41,7 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
   + Encoder-decoder (Transformer, T5): cross-attention from decoder queries to encoder keys and values
   + Decoder-only (GPT): masked self-attention, no encoder and no cross-attention, trained with next-token cross-entropy
 
-*(The roadmap also lists pretraining a GPT, generating text, and post-training. Those slides are not in this deck. For RL post-training, see the "Reinforcement Learning" lecture.)*
+*(The roadmap also lists pretraining a GPT, generating text, and post-training. Those topics are covered in the next lecture, "Transformer NN Training". For RL post-training in more depth, see the extra "Reinforcement Learning" lecture.)*
 
 
 # Study Guide: Transformer Basic Architectures and Training

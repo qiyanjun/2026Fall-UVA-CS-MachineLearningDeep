@@ -1,5 +1,5 @@
 ---
-LOrder: 340
+LOrder: 375
 layout: post
 title: Multimodal and Vision-Language Models
 lecture:
