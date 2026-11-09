@@ -19,46 +19,111 @@ tags:
 notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb" target="_blank">notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb</a>'
 ---
 
-### In this lecture, we cover:
-- Recap: self-attention and the Transformer block (Q/K/V, multi-head attention, residual + layernorm, feed-forward sublayer)
-- Decoder-only (GPT-style) vs. encoder-decoder (T5-style) vs. encoder-only (BERT-style) architectures, and why decoder-only dominates modern LLMs
-- Tokenization (BPE / SentencePiece) and why vocabulary choice matters
-- Positional information: absolute, RoPE, ALiBi, and why long-context models need better position encodings
-- The pretraining objective: next-token prediction at scale, and why a simple objective yields broad capability
-- Scaling laws (Kaplan et al., Chinchilla): how loss scales with parameters, data, and compute, and what "compute-optimal" training means
-- Mixture-of-Experts (MoE) as a way to scale parameter count without proportionally scaling compute
-- The three-stage training pipeline overview: pretraining -> supervised fine-tuning (SFT) -> RL post-training (RLHF/RLVR) — see the "deep RL Gym" lecture for the RL post-training stages in depth
 
-# Study Guide: LLM Architecture and Training
+### In this lecture, we cover:
+- Recap: word vectors, the attention trick in Seq2Seq, and why bag-of-words fails
+  + In BoW + logistic regression, "not" only adds its own weight and cannot flip the meaning of "good"
+  + Goal: context-dependent word vectors built from every word in the sentence, with learned attention weights
+- Self-attention basics
+  + Query, key, and value: q = x W<sub>q</sub>, k = x W<sub>k</sub>, v = x W<sub>v</sub>
+  + Attention scores, softmax, and the output as a weighted sum of values
+  + Matrix form, one token per row (as in PyTorch): C = softmax(Q K<sup>T</sup> / √D) V
+  + Why we divide by √D, and how to read an attention heatmap
+- Transformer block basics
+  + Multi-head self-attention: different heads for different types of relevance, combined by W<sub>O</sub>
+  + Self-attention has no sense of word order, so we add positional encodings (hand-crafted or learned)
+  + Residual connections, layer norm, and the feed-forward (FC) sublayer
+  + Counting the parameters of one layer
+- Masks and model families
+  + Encoder-only (BERT): the key-padding mask, masked-token pretraining, and adapting to classification with [CLS] or mean pooling
+  + Autoregressive decoding: predicting one token at a time from START until an END token
+  + The causal mask, combined causal + padding masks, and masked scaled dot-product attention in code
+  + Encoder-decoder (Transformer, T5): cross-attention from decoder queries to encoder keys and values
+  + Decoder-only (GPT): masked self-attention, no encoder and no cross-attention, trained with next-token cross-entropy
+
+*(The roadmap also lists pretraining a GPT, generating text, and post-training. Those slides are not in this deck. For RL post-training, see the "Reinforcement Learning" lecture.)*
+
+
+# Study Guide: Transformer Basic Architectures and Training
+
+---
 
 ## Quiz: Short-Answer Questions
 
-1. Why do most modern LLMs use a decoder-only Transformer architecture rather than the original encoder-decoder design?
-2. What problem do RoPE and ALiBi solve that fixed absolute positional embeddings do not?
-3. Explain "next-token prediction" as a pretraining objective, and why such a simple objective produces broad downstream capability.
-4. What do scaling laws describe, and what is meant by a "compute-optimal" model (Chinchilla-style)?
-5. How does a Mixture-of-Experts layer let a model have many more parameters without a proportional increase in inference compute?
-6. What are the three broad stages of the modern LLM training pipeline, and what does each stage optimize for?
+**Instructions:** Provide a concise answer (2-3 sentences) for each of the following questions based on the provided course material.
+
+1. Why can a bag-of-words logistic regression not tell "the movie was good" from "the movie was not good"?
+2. In self-attention, how are the query, key, and value vectors for a token computed, and which parts are learned?
+3. Write the matrix form of self-attention and give the shape of each matrix for a sequence of T tokens with dimension D.
+4. Why are attention scores divided by √D before the softmax?
+5. What does multi-head self-attention add over a single head?
+6. Why does a Transformer need positional encodings?
+7. Name two ways BERT can turn its encoder outputs into a single vector for classification.
+8. What is a key-padding mask, and why must masks be applied before the softmax rather than after?
+9. What does the causal mask do, and why is it needed for a decoder?
+10. In a 6 × 6 causal mask, how many entries are −∞?
+11. How does cross-attention differ from self-attention in an encoder-decoder Transformer?
+12. How does a decoder-only model like GPT differ from the original Transformer decoder?
+
+---
 
 ## Answer Key
 
-1. Decoder-only models are trained with a single, simple causal (left-to-right) next-token objective that works directly for open-ended generation and can be trained on almost any text without needing paired input/output structure, which scales more easily than the encoder-decoder setup originally designed for sequence-to-sequence tasks like translation.
-2. Fixed absolute positional embeddings are learned for a specific maximum sequence length and generalize poorly beyond it. RoPE (rotary position embeddings) encodes relative position directly into the attention computation, and ALiBi biases attention scores by distance; both extrapolate better to longer contexts than training-length-bound absolute embeddings.
-3. Next-token prediction asks the model to predict the next token given all previous tokens, using cross-entropy loss over the vocabulary. Because natural text encodes an enormous range of facts, reasoning patterns, and styles, a model that gets good at predicting text implicitly learns much of that underlying structure, which transfers to downstream tasks.
-4. Scaling laws are empirical power-law relationships between a model's loss and the amount of model parameters, training data, and compute used. A compute-optimal model is one where, for a fixed compute budget, parameters and training tokens are balanced according to these laws to minimize loss, rather than simply making the model as large as possible.
-5. An MoE layer replaces a single dense feed-forward block with many parallel "expert" feed-forward blocks and a router that activates only a small subset (e.g., top-2) of experts per token. Total parameter count grows with the number of experts, but per-token compute only grows with the number of *activated* experts, decoupling capacity from inference cost.
-6. Pretraining (self-supervised next-token prediction on massive raw text, building general language and world knowledge), Supervised Fine-Tuning / SFT (training on curated instruction-response pairs to make the model follow instructions), and RL post-training (RLHF or RLVR, aligning the model's behavior with human preferences or verifiable task correctness — see the "deep RL Gym" lecture).
+1. **In BoW, each word adds its own fixed weight to the score, whatever the other words are.** "not" can only add its own (small) weight, so it cannot flip the meaning of "good". Bigram features such as "not good" help, but the vocabulary explodes.
+
+2. **Each token's input vector x<sub>t</sub> is multiplied by three matrices: q<sub>t</sub> = x<sub>t</sub> W<sub>q</sub>, k<sub>t</sub> = x<sub>t</sub> W<sub>k</sub>, v<sub>t</sub> = x<sub>t</sub> W<sub>v</sub>.** The matrices W<sub>q</sub>, W<sub>k</sub>, and W<sub>v</sub> (each D × D) are the only learned parameters of self-attention.
+
+3. **C = softmax(Q K<sup>T</sup> / √D) V, with the softmax over each row.** X, Q, K, V, and C are T × D. The score matrix S = Q K<sup>T</sup> / √D and the attention matrix A are T × T, and each row of A sums to 1. With a batch, every tensor gets a leading B.
+
+4. **If q and k have D independent entries with mean 0 and variance 1, q · k has variance D, so scores grow like √D.** Large scores push the softmax toward a one-hot vector, gradients through the softmax almost vanish, and training stalls. Dividing by √D brings the score variance back to 1.
+
+5. **Each head has its own query, key, and value projections, so different heads can capture different types of relevance between tokens.** Each of h heads uses D/h dimensions, and the head outputs are combined with an output matrix W<sub>O</sub>.
+
+6. **Self-attention has no position information, so on its own it treats the input as an unordered set of tokens.** A positional vector p<sub>i</sub>, either hand-crafted or learned from data, is added to each input x<sub>i</sub> so that each position is unique.
+
+7. **(A) The [CLS] token: BERT puts [CLS] at the start of every input, and its final output vector represents the whole sequence; a small linear + softmax head is added and everything is fine-tuned with cross-entropy.** (B) Mean pooling: average the output vectors over the real tokens, using a masked mean (h * mask).sum(1) / mask.sum(1) so the pads are skipped.
+
+8. **Sequences in a batch are right-padded to the same length, and a key-padding mask stops real tokens from attending to &lt;pad&gt; by setting those score columns to −∞, since exp(−∞) = 0.** Masking after the softmax would leave rows that no longer sum to 1.
+
+9. **The causal mask lets query position t look only at keys i ≤ t, by setting the scores of later positions to −∞.** At generation time, position t + 1 does not exist yet, so the model must be trained without seeing the future.
+
+10. **15.** The −∞ entries are the ones above the diagonal: 6 × 5 / 2 = 15.
+
+11. **In self-attention, queries, keys, and values all come from the same sequence.** In cross-attention, the queries come from the decoder and the keys and values come from the encoder outputs. It is not causal and uses the encoder's padding mask. It is the attention trick from Seq2Seq, without an RNN.
+
+12. **GPT keeps only the decoder: masked (causal) self-attention, with no encoder and no cross-attention.** It uses learned position embeddings and is trained with next-token cross-entropy loss at every position.
+
+---
+
+## Essay Questions
+
+**Instructions:** Prepare a detailed, essay-format response for each of the following prompts. (Answers not provided).
+
+1. **Walk through self-attention step by step for the sentence "the movie was not good".** Describe how the queries, keys, and values are computed, how the attention matrix is formed and normalized, and how the new vector for "good" can come to mean "not good".
+
+2. **Describe the parts of one Transformer block (multi-head self-attention, positional encoding, residual connections, layer norm, and the feed-forward sublayer).** Explain what problem each part addresses, and count the parameters of one layer with D = 64.
+
+3. **Compare the three Transformer families: encoder-only (BERT), encoder-decoder (Transformer, T5), and decoder-only (GPT).** For each, describe which kinds of attention and masks it uses, its training task, and the applications it suits.
+
+---
 
 ## Glossary of Key Terms
 
 | Term | Definition |
 |------|------------|
-| **Self-Attention** | A mechanism where each token's representation is updated as a weighted combination of all other tokens' representations, with weights computed from Query/Key dot products. |
-| **Causal (Masked) Attention** | Self-attention restricted so a token can only attend to itself and earlier tokens, required for autoregressive generation. |
-| **Tokenization / BPE** | The process of splitting text into subword units; Byte-Pair Encoding merges frequent character/subword pairs to build a fixed vocabulary. |
-| **RoPE (Rotary Position Embedding)** | A relative positional encoding scheme that rotates query/key vectors as a function of position, improving length generalization. |
-| **Scaling Laws** | Empirical power-law relationships between model loss and model size, dataset size, and compute. |
-| **Chinchilla-optimal** | A compute allocation that balances model size and training tokens (roughly proportionally) to minimize loss for a fixed compute budget. |
-| **Mixture-of-Experts (MoE)** | An architecture where a router activates a sparse subset of "expert" sub-networks per token, decoupling parameter count from per-token compute. |
-| **Pretraining** | Self-supervised training on large-scale raw text using next-token prediction. |
-| **Supervised Fine-Tuning (SFT)** | Fine-tuning a pretrained model on curated instruction/response pairs. |
+| **Attention Matrix (A)** | The T × T matrix softmax(Q K<sup>T</sup> / √D). Row t shows how much output t takes from each position i, and each row sums to 1. |
+| **Autoregressive Decoding** | Generating one token at a time, where each step takes everything produced so far and predicts one more token, until an END token. |
+| **BERT** | An encoder-only Transformer, pretrained by predicting masked tokens (about 15% masked) and then fine-tuned to classify or tag. |
+| **Causal Mask** | A mask that lets query position t attend only to keys i ≤ t, by setting later scores to −∞ before the softmax. |
+| **[CLS] Token** | A special token BERT puts at the start of every input. Its final output vector represents the whole sequence for classification. |
+| **Cross-Attention** | Attention in which decoder queries attend to the encoder's keys and values. |
+| **Decoder-only Transformer** | A Transformer with masked self-attention, no encoder, and no cross-attention, such as GPT, trained with next-token cross-entropy. |
+| **Key-Padding Mask** | A mask that sets the score columns of &lt;pad&gt; tokens to −∞ so no real token attends to padding. |
+| **Layer Norm** | Normalizing each vector by subtracting its mean and dividing by its standard deviation, followed by a learned scale and shift. |
+| **Mean Pooling** | Averaging output vectors over the real tokens (a masked mean that skips pads) to get one vector for the sequence. |
+| **Multi-head Self-attention** | Running several attention heads in parallel, each with its own projections and D/h dimensions, and combining them with W<sub>O</sub>. |
+| **Positional Encoding** | A vector p<sub>i</sub>, hand-crafted or learned, added to each input so self-attention knows token positions. |
+| **Query, Key, Value** | The three projections of each token, x W<sub>q</sub>, x W<sub>k</sub>, x W<sub>v</sub>. Query-key dot products give the scores, and values are mixed by the attention weights. |
+| **Residual Connection** | Adding a sublayer's input to its output (x + c) before the layer norm. |
+| **Scaled Dot-Product Attention** | C = softmax(Q K<sup>T</sup> / √D) V. Dividing by √D keeps the score variance near 1. |
+| **Self-Attention** | Attention that maps a sequence to itself, so each token's new vector is a weighted sum of the value vectors of all tokens. |
