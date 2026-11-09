@@ -5,7 +5,7 @@ title: Transformer NN Training
 lecture: S3-L18b-TransformerTrain
 lectureVersion: next
 extraContent:
-notes: Radford et al. (2019), <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank">Language Models are Unsupervised Multitask Learners (GPT-2)</a> · Kaplan et al. (2020), <a href="https://arxiv.org/abs/2001.08361" target="_blank">Scaling Laws for Neural Language Models</a> · Hoffmann et al. (2022), <a href="https://arxiv.org/abs/2203.15556" target="_blank">Training Compute-Optimal Large Language Models (Chinchilla)</a>
+notes: Radford et al. (2019), <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank">Language Models are Unsupervised Multitask Learners (GPT-2)</a> · Kaplan et al. (2020), <a href="https://arxiv.org/abs/2001.08361" target="_blank">Scaling Laws for Neural Language Models</a> · Hoffmann et al. (2022), <a href="https://arxiv.org/abs/2203.15556" target="_blank">Training Compute-Optimal Large Language Models (Chinchilla)</a> · Hu et al. (2021), <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA: Low-Rank Adaptation of Large Language Models</a>
 morenotes: <a href="https://github.com/karpathy/nanoGPT" target="_blank">nanoGPT</a> + <a href="https://arxiv.org/abs/1904.09751" target="_blank">Holtzman et al. (2019), The Curious Case of Neural Text Degeneration (nucleus sampling)</a> + <a href="https://arxiv.org/abs/2203.02155" target="_blank">Ouyang et al. (2022), InstructGPT</a>
 video:
 categories: LLM/Agents
@@ -14,6 +14,7 @@ tags:
 - Deep
 - Generative
 - Training
+- FineTuning
 ---
 
 
@@ -38,6 +39,9 @@ tags:
 - Post-training: from a pretrained model to an assistant
   + Supervised fine-tuning (SFT) on instruction-response pairs, with the loss only on response tokens
   + Preference tuning: RLHF and DPO (overview; see the extra "Reinforcement Learning" lecture for more)
+- Fine-tuning LLMs
+  + Full fine-tuning vs. parameter-efficient fine-tuning (PEFT): adapters, prefix/prompt tuning, and LoRA (low-rank update matrices)
+  + Decision framework: when to reach for prompting, RAG, or fine-tuning (and when to combine them)
 
 
 # Study Guide: Transformer NN Training
@@ -55,6 +59,8 @@ tags:
 5. What are learning-rate warmup and gradient clipping, and why are they used when training Transformers?
 6. How do temperature and top-k sampling change the next-token distribution at generation time?
 7. In supervised fine-tuning, why is the loss usually computed only on the response tokens?
+8. How does LoRA reduce the cost of fine-tuning compared to updating all model weights?
+9. Given a task, what factors would push you toward prompting alone, RAG, or fine-tuning?
 
 ---
 
@@ -74,6 +80,10 @@ tags:
 
 7. **The model should learn to produce responses, not to predict the user's prompt.** Masking the prompt tokens out of the loss puts all of the training signal on the answer.
 
+8. **LoRA freezes the original weight matrices and adds small trainable low-rank matrices (A and B, with rank r much smaller than the original dimensions) to selected weight matrices.** Only these low-rank matrices are trained, so the number of trainable parameters, and the memory and compute needed for fine-tuning, is much smaller than when updating the full weight matrices.
+
+9. **Prompting alone fits simple tasks with rarely changing data and no training budget; RAG fits tasks that need up-to-date or proprietary knowledge that cannot fit in a prompt or in the model's weights; fine-tuning fits tasks that need consistent formatting or behavior, or a lasting skill or style shift that instructions and examples cannot reliably specify.** These approaches are often combined, for example fine-tuning a model to use retrieved context well.
+
 ---
 
 ## Glossary of Key Terms
@@ -89,4 +99,6 @@ tags:
 | **Temperature** | A scale τ applied to the logits (logits / τ) before the softmax when sampling. |
 | **Top-p (Nucleus) Sampling** | Sampling from the smallest set of tokens whose total probability is at least p. |
 | **Supervised Fine-Tuning (SFT)** | Further training a pretrained model on instruction-response pairs. |
+| **PEFT (Parameter-Efficient Fine-Tuning)** | A family of fine-tuning methods that train a small number of additional parameters instead of the full model. |
+| **LoRA (Low-Rank Adaptation)** | A PEFT method that adds trainable low-rank matrices to frozen weight matrices. |
 | **RLHF / DPO** | Ways to tune a model toward human preferences: RLHF trains a reward model and uses RL; DPO optimizes directly on preference pairs. |
