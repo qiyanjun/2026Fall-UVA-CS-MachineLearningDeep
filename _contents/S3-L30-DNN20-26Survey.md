@@ -1,7 +1,7 @@
 ---
 LOrder: 390
 layout: post
-title: Quick survey of recent deep learning
+title: Quick survey of recent deep learning from 2020 to 2026
 lecture: S3-L30-DNN20-26Survey
 lectureVersion: current
 extraContent: S3-L0-25recentLLM-extra

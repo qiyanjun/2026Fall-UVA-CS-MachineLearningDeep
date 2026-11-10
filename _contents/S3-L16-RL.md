@@ -1,7 +1,7 @@
 ---
 LOrder: 320
 layout: post
-title: Reinforcement Learning
+title: Reinforcement Learning and for Post Training LLMs
 lecture: S3-L19-RL-RLHF-GRPO
 extra: true
 lectureVersion: next
