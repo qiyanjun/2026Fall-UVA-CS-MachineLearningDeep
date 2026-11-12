@@ -2,9 +2,9 @@
 LOrder: 320
 layout: post
 title: Reinforcement Learning and for Post Training LLMs
-lecture: S3-L19-RL-RLHF-GRPO
+lecture: S3-L19b-RL-RLHF-GRPO
 extra: true
-lectureVersion: next
+lectureVersion: current
 video: 
 notes: 'Sutton & Barto (2018), <a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Reinforcement Learning: An Introduction</a> · Weng (2018), <a href="https://lilianweng.github.io/posts/2018-02-19-rl-overview/" target="_blank">A (Long) Peek into Reinforcement Learning</a>'
 categories: structured
@@ -12,6 +12,22 @@ tags:
 - RL
 ---
 
+### In this lecture, we cover:
+- What RL is: learning to interact with an environment to maximize future rewards over many steps, compared with supervised and unsupervised learning
+- History and successes: Thorndike, Bellman, Samuel, Watkins; TD-Gammon, Atari, robot locomotion, AlphaGo / AlphaGo Zero, and deep RL
+- Defining an RL problem
+  + Elements of RL: policy, reward function, value function
+  + Markov decision processes: states, actions, transition probabilities, rewards, and the discount factor γ
+  + Evaluating a policy on a small grid world and the "robot in a room" example
+- Solving an RL problem
+  + Dynamic programming: policy evaluation and policy improvement, the Bellman equation (needs a full model)
+  + Monte Carlo methods: averaging sample returns from episodes, first-visit MC, and ε-greedy exploration
+  + Temporal-difference learning: learn from experience like MC and from successor values like DP
+  + Q-learning (off-policy) and Sarsa (on-policy), with a worked Q-learning example on the grid world
+  + Training an agent in a Gym environment (CartPole, MountainCar) with Q-learning
+- Challenges: many states and actions, episodes that end without reward, narrow paths to reward, state representation, and designing rewards (what to accomplish, not how)
+
+*(The deep RL Gym tutorial covers the hands-on tooling, and RL post-training for LLMs (RLHF, DPO, GRPO) is introduced in "Transformer NN Training" and "Overview of GenAI model training".)*
 
 
 # Reinforcement Learning Study Guide

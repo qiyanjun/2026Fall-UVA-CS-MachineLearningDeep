@@ -7,6 +7,7 @@ lectureVersion: current
 extraContent:
 notes: 'Yao et al. (2022), <a href="https://arxiv.org/abs/2210.03629" target="_blank">ReAct: Synergizing Reasoning and Acting in Language Models</a> · Weng (2023), <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank">LLM Powered Autonomous Agents</a>'
 video:
+extra: true
 categories: LLM/Agents
 tags:
 - 6LLMAgents

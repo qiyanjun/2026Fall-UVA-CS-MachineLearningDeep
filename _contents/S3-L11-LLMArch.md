@@ -2,7 +2,7 @@
 LOrder: 330
 layout: post
 title: Transformer NN Architecture
-lecture: S3-L18a-TransformerArch
+lecture: S3-L18-TransformerArch
 lectureVersion: current
 extraContent:
 notes: Vaswani et al. (2017), <a href="https://arxiv.org/abs/1706.03762" target="_blank">Attention Is All You Need</a> · Alammar (2018), <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">The Illustrated Transformer</a>
@@ -32,19 +32,21 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 - Transformer block basics
   + Multi-head self-attention: different heads for different types of relevance, combined by W<sub>O</sub>
   + Self-attention has no sense of word order, so we add positional encodings (hand-crafted or learned)
+  + Learned position embeddings as a lookup table P (max_len × D, e.g. `nn.Embedding(max_len, D)`): position i reads row i, so the input is x<sub>i</sub> + p<sub>i</sub>; BERT has 512 rows, GPT-2 has 1024, and there is no row for positions ≥ max_len
+  + Absolute positional embeddings: swapping two words changes their inputs, so the outputs change too
   + Residual connections, layer norm, and the feed-forward (FC) sublayer
   + Counting the parameters of one layer
 - Masks and model families
-  + Encoder-only (BERT): the key-padding mask, masked-token pretraining, and adapting to classification with [CLS] or mean pooling
+  + Encoder-only (BERT): the key-padding mask (in three lines of PyTorch on a toy batch of B = 2 sentences, L = 5), masked-token pretraining, and adapting to classification with [CLS] or mean pooling
   + Autoregressive decoding: predicting one token at a time from START until an END token
   + The causal mask, combined causal + padding masks, and masked scaled dot-product attention in code
   + Encoder-decoder (Transformer, T5): cross-attention from decoder queries to encoder keys and values
   + Decoder-only (GPT): masked self-attention, no encoder and no cross-attention, trained with next-token cross-entropy
 
-*(The roadmap also lists pretraining a GPT, generating text, and post-training. Those topics are covered in the next lecture, "Transformer NN Training". For RL post-training in more depth, see the extra "Reinforcement Learning" lecture.)*
+*(The roadmap also lists pretraining a GPT, generating text, and post-training. Pretraining and post-training are covered in the next lecture, "Transformer NN Training"; generating text, the KV cache, and fast inference are covered in "Transformer Inference - Decoding and Efficient Inference". For RL post-training in more depth, see the extra "Reinforcement Learning" lecture.)*
 
 
-# Study Guide: Transformer Basic Architectures and Training
+# Study Guide: Transformer Basic Architectures
 
 ---
 
@@ -57,9 +59,9 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 3. Write the matrix form of self-attention and give the shape of each matrix for a sequence of T tokens with dimension D.
 4. Why are attention scores divided by √D before the softmax?
 5. What does multi-head self-attention add over a single head?
-6. Why does a Transformer need positional encodings?
+6. Why does a Transformer need positional encodings? What is the limit of a learned position-embedding table?
 7. Name two ways BERT can turn its encoder outputs into a single vector for classification.
-8. What is a key-padding mask, and why must masks be applied before the softmax rather than after?
+8. What is a key-padding mask, and why must masks be applied before the softmax rather than after? Write the PyTorch lines that apply it.
 9. What does the causal mask do, and why is it needed for a decoder?
 10. In a 6 × 6 causal mask, how many entries are −∞?
 11. How does cross-attention differ from self-attention in an encoder-decoder Transformer?
@@ -79,11 +81,11 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 
 5. **Each head has its own query, key, and value projections, so different heads can capture different types of relevance between tokens.** Each of h heads uses D/h dimensions, and the head outputs are combined with an output matrix W<sub>O</sub>.
 
-6. **Self-attention has no position information, so on its own it treats the input as an unordered set of tokens.** A positional vector p<sub>i</sub>, either hand-crafted or learned from data, is added to each input x<sub>i</sub> so that each position is unique.
+6. **Self-attention has no position information, so on its own it treats the input as an unordered set of tokens.** A positional vector p<sub>i</sub>, either hand-crafted or learned from data, is added to each input x<sub>i</sub> so that each position is unique. A learned table has max_len rows (512 in BERT, 1024 in GPT-2), so it has no vector for positions ≥ max_len.
 
 7. **(A) The [CLS] token: BERT puts [CLS] at the start of every input, and its final output vector represents the whole sequence; a small linear + softmax head is added and everything is fine-tuned with cross-entropy.** (B) Mean pooling: average the output vectors over the real tokens, using a masked mean (h * mask).sum(1) / mask.sum(1) so the pads are skipped.
 
-8. **Sequences in a batch are right-padded to the same length, and a key-padding mask stops real tokens from attending to &lt;pad&gt; by setting those score columns to −∞, since exp(−∞) = 0.** Masking after the softmax would leave rows that no longer sum to 1.
+8. **Sequences in a batch are right-padded to the same length, and a key-padding mask stops real tokens from attending to &lt;pad&gt; by setting those score columns to −∞, since exp(−∞) = 0.** Masking after the softmax would leave rows that no longer sum to 1. In PyTorch: `key_mask = mask.unsqueeze(1)` (shape B × 1 × L, broadcast down every query row), `scores = scores.masked_fill(key_mask == 0, float("-inf"))`, then `attn = torch.softmax(scores, dim=-1)`.
 
 9. **The causal mask lets query position t look only at keys i ≤ t, by setting the scores of later positions to −∞.** At generation time, position t + 1 does not exist yet, so the model must be trained without seeing the future.
 
@@ -122,7 +124,8 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 | **Layer Norm** | Normalizing each vector by subtracting its mean and dividing by its standard deviation, followed by a learned scale and shift. |
 | **Mean Pooling** | Averaging output vectors over the real tokens (a masked mean that skips pads) to get one vector for the sequence. |
 | **Multi-head Self-attention** | Running several attention heads in parallel, each with its own projections and D/h dimensions, and combining them with W<sub>O</sub>. |
-| **Positional Encoding** | A vector p<sub>i</sub>, hand-crafted or learned, added to each input so self-attention knows token positions. |
+| **Positional Encoding** | A vector p<sub>i</sub>, hand-crafted (e.g., sinusoidal) or learned, added to each input so self-attention knows token positions. |
+| **Learned Position Embedding** | A trainable lookup table P with max_len rows × D columns; position i reads row i. Rows start random and are trained by backprop. |
 | **Query, Key, Value** | The three projections of each token, x W<sub>q</sub>, x W<sub>k</sub>, x W<sub>v</sub>. Query-key dot products give the scores, and values are mixed by the attention weights. |
 | **Residual Connection** | Adding a sublayer's input to its output (x + c) before the layer norm. |
 | **Scaled Dot-Product Attention** | C = softmax(Q K<sup>T</sup> / √D) V. Dividing by √D keeps the score variance near 1. |
