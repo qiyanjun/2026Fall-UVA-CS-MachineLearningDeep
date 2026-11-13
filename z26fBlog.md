@@ -14,8 +14,8 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - We share a few code examples showcasing course lecture contents in code, please check out [Here](https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/tree/main/notebook)
 - Please slack DM TAs or me for any questions or concerns. (we are super slow in emails and much faster with Slack DMs!)  
 - For sick day reschedule (with doctor note) and SDAC issues, please email to: yanjun@virginia.edu 
-- I have included all past quiz and their answers in ([Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz25.pdf)) 
-- I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)))
+- I have included all past quiz and their answers in ([Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-quizzes-2025.pdf)) 
+- I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-student-questions-2025.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-sessions-2025.pdf)))
 
 
 # 2026 Fall Course Annoucement: 
@@ -74,9 +74,9 @@ Dear students:
 -  You can treat Q14 / Q15 as study guides...
 
 - We have prepared three review documents to help you prepare for final exam: 
-  + all past quiz and their answers in [Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-quiz25.pdf)) 
-  + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)) 
-  + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-content25.pdf))
+  + all past quiz and their answers in [Quiz Review](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-quizzes-2025.pdf)) 
+  + all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-sessions-2025.pdf)) 
+  + summary of all past your weekly questions ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-student-questions-2025.pdf))
 
 - I have also uploaded the wonderful lecture on RL gym from TA Kefan at [Here](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S3-L16a-RLtool/) 
 
@@ -225,7 +225,7 @@ If you struggle with HW1, please contact TA ASAP
 Grades will be released by next Tuesday class time
 We have posted its guide from TA in Canvas 
 
-- Here is the review of Q4 and recent QA on L5-L8 [Review-Part2](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf)
+- Here is the review of Q4 and recent QA on L5-L8 [Review-Part2](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-sessions-2025.pdf)
 
 
 
@@ -250,7 +250,7 @@ This week please cover the following two sessions / Quiz 5 will cover these topi
 
 1. Included all past quiz and their answers in 
 
-https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//notebook/Szz-QA25.pdf 
+https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-sessions-2025.pdf 
 
 2. This week's reading includes the following two: 
 
