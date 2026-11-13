@@ -26,6 +26,7 @@ collections:
 # Not part of the site
 exclude:
   - CLAUDE.md
+  - CLAUDE.local.md
   - Gemfile
   - Gemfile.lock
   - vendor

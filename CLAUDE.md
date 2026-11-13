@@ -31,6 +31,8 @@ that kramdown turned into a table (see pipes below); literal `**` in the page te
   is schedule row L21). Notebooks and quiz forms are named after the **deck** number.
 - The "WE ARE HERE" row is placed before the first post whose `lectureVersion` is not `current`
   (currently `lectureVersion: next` in `S3-L20-DecoderInference.md`).
+- A unified naming rule (post, deck and notebooks share one stem, e.g. `S3-L21-DecoderInference`) is
+  planned for the next term. Until it is adopted, keep current names.
 - Do not change the schedule table or slot arrays in `index.html` unless asked. Canvas is the source of
   truth for HW/quiz/exam details; `Assignments.md` keeps its reference tables.
 
@@ -68,19 +70,16 @@ Rendered by `_layouts/post.html` → `_includes/lecture-sections.html`. Do not e
   `NotImplementedError`, the notebook still runs top to bottom) and `...-solutions.ipynb`. Publish a
   solutions file only after the homework it overlaps is past due.
 - Notebook text must not name the course, semester or lecture numbers.
-- The instructor archive `../2026Fall-Quiz-build/ML-quiz-archive/26-course-ml-auto-db-materials/26-27-notebook/`
-  keeps identical copies of every notebook here (plus unpublished solutions); copy changes there too.
+- An instructor archive keeps identical copies of every notebook here (plus unpublished solutions);
+  copy changes there too (location in `CLAUDE.local.md`).
 - Build or refactor notebooks with the `notebook-builder` skill (one source file → both versions,
   checked by executing them).
 
 ## Related places
 
-- Slide sources (PPTX, newer than the PDFs here at times): Dropbox
-  `UVA_myTeachDocs/2026-27-ML-allDocs/2026-Fall-ML/L<nn>-*/`. The PDFs in `Lectures/` are what students see.
-- Homeworks, exams, quiz forms and the question database: `../2026Fall-Quiz-build/ML-quiz-archive/26-course-ml-auto-db-materials/`
-  (practice quizzes are built with the `quiz-builder` skill in `26-Quiz-forms/quiz-builder-for-uva-ml4774/`).
-- Course plugins (quiz-builder, assignment-builder, exam-question-builder, notebook-builder):
-  `../2026Fall-Quiz-build/course-improver-skills/`.
+Private locations (slide sources, instructor archive, homeworks, quiz forms, course plugins, the
+planned-rename table) are listed in `CLAUDE.local.md`, which is not committed. This repo is public:
+never write private paths or links to private repos in committed files.
 
 ## Commits
 
