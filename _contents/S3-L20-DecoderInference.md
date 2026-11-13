@@ -5,7 +5,7 @@ title: Transformer Inference - Decoding and Efficient Inference
 lecture: S3-L20-Decoder_Inference
 lectureVersion: next
 extraContent:
-notes: 'Holtzman et al. (2020), <a href="https://arxiv.org/abs/1904.09751" target="_blank">The Curious Case of Neural Text Degeneration</a> · Dao et al. (2022), <a href="https://arxiv.org/abs/2205.14135" target="_blank">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a> · Kwon et al. (2023), <a href="https://arxiv.org/abs/2309.06180" target="_blank">Efficient Memory Management for Large Language Model Serving with PagedAttention</a> · Leviathan et al. (2023), <a href="https://arxiv.org/abs/2211.17192" target="_blank">Fast Inference from Transformers via Speculative Decoding</a>'
+notes: 'Holtzman et al. (2020), <a href="https://arxiv.org/abs/1904.09751" target="_blank">The Curious Case of Neural Text Degeneration</a> · Dao et al. (2022), <a href="https://arxiv.org/abs/2205.14135" target="_blank">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a> · Hinton, Vinyals & Dean (2015), <a href="https://arxiv.org/abs/1503.02531" target="_blank">Distilling the Knowledge in a Neural Network</a> · Kwon et al. (2023), <a href="https://arxiv.org/abs/2309.06180" target="_blank">Efficient Memory Management for Large Language Model Serving with PagedAttention</a> · Leviathan et al. (2023), <a href="https://arxiv.org/abs/2211.17192" target="_blank">Fast Inference from Transformers via Speculative Decoding</a>'
 morenotes: '<a href="https://arxiv.org/abs/2305.13245" target="_blank">Ainslie et al. (2023), GQA</a> + <a href="https://arxiv.org/abs/2405.04434" target="_blank">DeepSeek-AI (2024), DeepSeek-V2 (MLA)</a> + <a href="https://arxiv.org/abs/2309.17453" target="_blank">Xiao et al. (2024), StreamingLLM</a> + <a href="https://arxiv.org/abs/2306.14048" target="_blank">Zhang et al. (2023), H2O</a> + <a href="https://www.usenix.org/conference/osdi22/presentation/yu" target="_blank">Yu et al. (2022), Orca (continuous batching)</a>'
 video:
 categories: LLM/Agents
@@ -35,6 +35,11 @@ tags:
   + Compressing K and V: multi-head latent attention (MLA, DeepSeek)
   + Changing the attention range: sliding-window attention and StreamingLLM (keep the first tokens too); pruning the KV cache (Scissorhands, H2O)
   + Mixture-of-experts: cuts compute per token, but not hosting memory
+- Smaller models
+  + Quantization: lower precision for weights and activations (FP16 → INT8 / INT4); post-training quantization (PTQ) vs. quantization-aware training (QAT)
+  + Knowledge distillation: train a small student to match a large teacher's output distribution
+  + Pruning and sparsity: remove redundant weights or attention heads with limited quality loss
+  + Small language models (SLMs) and on-device deployment: what is given up, and when a smaller model is the right engineering choice
 - Faster decoding and serving
   + Speculative decoding: a small draft model guesses, the large model verifies; when it pays (acceptance rate, light load, predictable text)
   + Prompt caching: reuse a shared prefix, put what changes last, and how providers price it
@@ -64,6 +69,9 @@ tags:
 10. Your GPU cannot hold a model. Does switching to a mixture-of-experts (MoE) model of the same total size help?
 11. How does speculative decoding speed up generation without changing the output, and why can it get slower at peak load?
 12. Every request begins with the same 3,000-token prompt, except for a timestamp on line 1. What is wasted, and what is the fix?
+13. What is the difference between post-training quantization and quantization-aware training?
+14. How does knowledge distillation let a smaller model approach a larger model's quality?
+15. Give a scenario where deploying a smaller, less capable model is the better engineering decision.
 
 ---
 
@@ -93,6 +101,12 @@ tags:
 
 12. **The timestamp on line 1 makes every prefix different, so the 3,000 shared tokens are recomputed (prefilled) for every request and the prompt cache never hits.** Put what changes last: move the timestamp to the end so the shared prefix can be cached and reused.
 
+13. **Post-training quantization (PTQ) converts an already-trained model's weights to lower precision after the fact; it is cheap but can lose some accuracy.** Quantization-aware training (QAT) simulates low-precision arithmetic during training or fine-tuning, so the model learns to compensate and usually keeps more accuracy at the same bit-width.
+
+14. **The student is trained on the teacher's soft output probabilities, not only the hard labels.** These soft targets carry extra information (how confident the teacher is across several plausible answers), so the student can copy much of the teacher's behavior with far fewer parameters.
+
+15. **A support chatbot inside a mobile app with a tight latency budget and no reliable network is better served by a small, quantized, on-device model.** It answers instantly and offline at almost no cost per query; here latency, connectivity, and cost matter more than the last few points of quality.
+
 ---
 
 ## Essay Questions
@@ -103,7 +117,7 @@ tags:
 
 2. **Explain where the memory and time go when serving an LLM to many users.** Compare prefill and decode, compute the KV cache size for a model of your choice, and explain how the weights, the cache, memory bandwidth, and batching determine tokens per second and cost per million tokens.
 
-3. **Compare the methods for making attention and serving cheaper (FlashAttention, MQA / GQA, MLA, sliding windows, StreamingLLM, KV cache pruning, speculative decoding, prompt caching, continuous batching, PagedAttention).** For each, say what it changes, whether it changes the model's outputs, and which symptom (slow first word, slow words, idle GPU, out of memory, high bill) it fixes.
+3. **Compare the methods for making attention and serving cheaper (FlashAttention, MQA / GQA, MLA, sliding windows, StreamingLLM, KV cache pruning, speculative decoding, prompt caching, continuous batching, PagedAttention, quantization, distillation, pruning).** For each, say what it changes, whether it changes the model's outputs, and which symptom (slow first word, slow words, idle GPU, out of memory, high bill) it fixes.
 
 ---
 
@@ -124,6 +138,10 @@ tags:
 | **Multi-head Latent Attention (MLA)** | Compressing keys and values into a smaller latent vector to shrink the KV cache. |
 | **Sliding-Window Attention** | Each token attends only to the most recent W tokens. |
 | **StreamingLLM** | A sliding window that also keeps the first few tokens ("attention sinks"). |
+| **Quantization (PTQ / QAT)** | Storing weights and activations in fewer bits; done after training (post-training) or simulated during training (quantization-aware). |
+| **Knowledge Distillation** | Training a smaller student model to mimic a larger teacher model's output distribution. |
+| **Pruning** | Removing redundant weights, neurons, or attention heads from a trained model to reduce its size. |
+| **Small Language Model (SLM)** | A compact language model that trades some capability for lower latency, memory, and deployment cost. |
 | **Mixture-of-Experts (MoE)** | A model that activates only a few expert sub-networks per token: less compute, same hosting memory. |
 | **Speculative Decoding** | A small draft model guesses several tokens, which the large model verifies in one pass. |
 | **Prompt Caching** | Reusing the KV cache of a shared prompt prefix across requests. |

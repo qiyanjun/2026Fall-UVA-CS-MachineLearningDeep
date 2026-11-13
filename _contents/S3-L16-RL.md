@@ -27,7 +27,7 @@ tags:
   + Training an agent in a Gym environment (CartPole, MountainCar) with Q-learning
 - Challenges: many states and actions, episodes that end without reward, narrow paths to reward, state representation, and designing rewards (what to accomplish, not how)
 
-*(The deep RL Gym tutorial covers the hands-on tooling, and RL post-training for LLMs (RLHF, DPO, GRPO) is introduced in "Transformer NN Training" and "Overview of GenAI model training".)*
+*(The deep RL Gym tutorial covers the hands-on tooling, and RL post-training for LLMs (RLHF, DPO, GRPO) is introduced in "Transformer Post-training" and "Overview of GenAI model training".)*
 
 
 # Reinforcement Learning Study Guide

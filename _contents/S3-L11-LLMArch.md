@@ -43,7 +43,7 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
   + Encoder-decoder (Transformer, T5): cross-attention from decoder queries to encoder keys and values
   + Decoder-only (GPT): masked self-attention, no encoder and no cross-attention, trained with next-token cross-entropy
 
-*(The roadmap also lists pretraining a GPT, generating text, and post-training. Pretraining and post-training are covered in the next lecture, "Transformer NN Training"; generating text, the KV cache, and fast inference are covered in "Transformer Inference - Decoding and Efficient Inference". For RL post-training in more depth, see the extra "Reinforcement Learning" lecture.)*
+*(The roadmap also lists pretraining a GPT, generating text, and post-training. Pretraining and post-training are covered in the next two lectures, "Transformer Pretraining" and "Transformer Post-training"; generating text, the KV cache, and fast inference are covered in "Transformer Inference - Decoding and Efficient Inference". For RL post-training in more depth, see the extra "Reinforcement Learning" lecture.)*
 
 
 # Study Guide: Transformer Basic Architectures
