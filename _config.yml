@@ -22,3 +22,11 @@ collections:
   contents:
     sort_by: LOrder
     output: true
+
+# Not part of the site
+exclude:
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
