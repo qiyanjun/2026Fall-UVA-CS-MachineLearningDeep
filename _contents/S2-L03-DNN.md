@@ -35,6 +35,11 @@ Answer each question in 2-3 sentences based on the provided source material.
 8. What problem can occur with gradient magnitudes during training, and why is divergence considered the worse outcome?
 9. What is "Dropout" and how does it function as a regularization technique?
 10. Explain the concept of Batch Normalization and its benefits for the training process.
+11. What role does the bias term play in a neuron?
+12. Show that logistic regression is a special case of softmax for two classes. Why is softmax over-parameterized?
+13. How is the binary cross-entropy loss derived from the Bernoulli likelihood, and what is the gradient of softmax + cross-entropy with respect to the scores z<sub>i</sub>?
+14. In the lecture's backpropagation example (z<sub>1</sub> = x<sub>1</sub>w<sub>1</sub> + x<sub>2</sub>w<sub>3</sub> + b<sub>1</sub>, h<sub>1</sub> = sigmoid(z<sub>1</sub>), ŷ = h<sub>1</sub>w<sub>5</sub> + h<sub>2</sub>w<sub>6</sub> + b<sub>3</sub>, E = (y − ŷ)<sup>2</sup>), how do you compute ∂E/∂w<sub>5</sub> and ∂E/∂w<sub>1</sub>?
+15. How should a network trained with dropout make predictions at test time?
 
 ---
 
@@ -60,6 +65,16 @@ Answer each question in 2-3 sentences based on the provided source material.
 
 10. **Batch Normalization is a technique that standardizes the activations of a prior layer, which stabilizes and speeds up training.** It improves gradient flow, allows for higher learning rates, reduces dependence on initialization, and acts as a form of regularization.
 
+11. **The bias term b adds a constant to the weighted sum, z = wᵀ · x + b, by attaching a weight to a constant input of +1.** Without it, y = σ(w<sub>1</sub>x<sub>1</sub> + ... + w<sub>n</sub>x<sub>n</sub>), so z is always 0 at the origin; with the bias w<sub>0</sub>, the activation (and the decision boundary) can shift away from the origin.
+
+12. **For two classes, softmax gives y<sub>1</sub> = e<sup>z<sub>1</sub></sup> / (e<sup>z<sub>1</sub></sup> + e<sup>z<sub>0</sub></sup>) = 1 / (1 + e<sup>−(z<sub>1</sub> − z<sub>0</sub>)</sup>), which is the logistic (sigmoid) function of z<sub>1</sub> − z<sub>0</sub>.** Adding the same constant to both z<sub>1</sub> and z<sub>0</sub> has no effect, because the probabilities must add to 1; the logistic binary case avoids these redundant parameters.
+
+13. **Model y with a Bernoulli distribution, p(y \| x) = ŷ<sup>y</sup>(1 − ŷ)<sup>1−y</sup>, and take the negative log-likelihood: E = −{y log ŷ + (1 − y) log(1 − ŷ)}.** This is the cross-entropy loss, also called "deviance". For K classes with a softmax output, E = −Σ<sub>j</sub> y<sub>j</sub> ln ŷ<sub>j</sub>, and its gradient is ∂E/∂z<sub>i</sub> = ŷ<sub>i</sub> − y<sub>true,i</sub>: the error between the predicted output and the true label.
+
+14. **Treat the network as a chain of differentiable functions f<sub>4</sub>(f<sub>3</sub>(f<sub>2</sub>(f<sub>1</sub>(·)))) and multiply local gradients with the chain rule.** For the top layer, ∂E/∂w<sub>5</sub> = ∂E/∂ŷ · ∂ŷ/∂w<sub>5</sub> = −2(y − ŷ) · h<sub>1</sub>. For the lower layer, ∂E/∂w<sub>1</sub> = ∂E/∂ŷ · ∂ŷ/∂h<sub>1</sub> · ∂h<sub>1</sub>/∂z<sub>1</sub> · ∂z<sub>1</sub>/∂w<sub>1</sub> = −2(y − ŷ) · w<sub>5</sub> · h<sub>1</sub>(1 − h<sub>1</sub>) · x<sub>1</sub>, using the sigmoid derivative σ(1 − σ). The factor ∂E/∂ŷ is already computed from the layer above and is reused, which is why backpropagation works backward layer by layer (as in the Module IV binary-classification walk-through x → W<sub>1</sub> → z<sub>1</sub> → h<sub>1</sub> → w<sub>2</sub> → z<sub>2</sub> → ŷ).
+
+15. **Ideally, the noise from dropout is integrated out at test time.** A Monte Carlo approximation does many forward passes with different dropout masks and averages all the predictions, consistent with viewing dropout as training a large ensemble of models that share parameters (each binary mask is one model).
+
 ---
 
 ## Essay Questions
@@ -70,7 +85,7 @@ Consider the following questions to synthesize the concepts from the course mate
 
 2. **Describe the complete process of training a neural network for multi-class classification using Mini-batch Stochastic Gradient Descent (SGD) and backpropagation.** Detail the roles of the forward pass, the Softmax layer, the cross-entropy loss function, the backward pass, and the weight update step.
 
-3. **Compare and contrast the four primary activation functions presented in the material:** sigmoid, tanh, softplus, and rectify (ReLU). Discuss their mathematical forms, their derivatives, and the potential implications of these properties on the training process.
+3. **Compare and contrast the activation functions presented on the lecture's activation-functions slide:** Sigmoid, tanh, ReLU max(0, x), Leaky ReLU max(0.1x, x), Maxout, and ELU. Discuss their mathematical forms, their derivatives, and the potential implications of these properties on the training process.
 
 4. **Discuss the importance of proper network initialization and regularization in deep learning.** Using the concepts of Xavier initialization, Batch Normalization, and Dropout, explain how practitioners can avoid common training pitfalls like poor gradient flow and overfitting.
 
@@ -84,11 +99,14 @@ Consider the following questions to synthesize the concepts from the course mate
 |------|------------|
 | **Activation Function** | A function applied to the output of a neuron (the weighted sum of inputs) to introduce non-linearity into the network. Also known as a transfer function. Examples include Sigmoid, tanh, and ReLU. |
 | **Backpropagation** | An algorithm for training neural networks by using the chain rule to efficiently compute the gradients of the loss function with respect to all the weights and biases in the network. It involves a forward pass to compute outputs and loss, and a backward pass to propagate gradients. |
+| **Backpropagation chain rule** | Each block passes back its gradient times its local gradient (output w.r.t. input); for lower layers the gradients from the layers above are already computed and reused. |
 | **Batch Normalization** | A technique to normalize the activations of a prior layer, which improves gradient flow, allows higher learning rates, and acts as a form of regularization. |
 | **Bias Term (b)** | A constant value added to the product of inputs and weights in a neuron. It allows the activation function to be shifted to the left or right, which is critical for learning. |
 | **Cross-Entropy Loss** | A loss function used for classification tasks. It measures the performance of a classification model whose output is a probability value between 0 and 1. Also known as negative log-likelihood or deviance. |
 | **Deep Neural Network (DNN)** | A neural network with many hidden layers between the input and output layers. |
+| **Bernoulli likelihood** | p(y \| x) = ŷ<sup>y</sup>(1 − ŷ)<sup>1−y</sup>; its negative log gives the binary cross-entropy loss −{y log ŷ + (1 − y) log(1 − ŷ)}. |
 | **Dropout** | A regularization technique where randomly selected neurons are ignored ("dropped out") during training. This prevents units from co-adapting too much and helps prevent overfitting. |
+| **Dropout at test time** | Ideally integrate out the dropout noise; a Monte Carlo approximation averages the predictions of many forward passes with different dropout masks. |
 | **Feed-Forward Neural Network** | A type of neural network where connections between the nodes do not form a cycle. Information moves in only one direction: from the input nodes, through the hidden nodes, and to the output nodes. The Multi-Layer Perceptron (MLP) is a feed-forward network. |
 | **Loss Function** | A function that computes a single number representing the "cost" or "error" associated with the network's prediction (ŷ) versus the true label (y). The goal of training is to minimize this value. |
 | **Multi-Layer Perceptron (MLP)** | A class of feed-forward artificial neural network. An MLP consists of at least three layers of nodes: an input layer, one or more hidden layers, and an output layer. |
@@ -97,6 +115,7 @@ Consider the following questions to synthesize the concepts from the course mate
 | **Rectified Linear Unit (ReLU)** | An activation function defined as h(x) = max(0, x). It is computationally efficient and has become a default activation function for many types of neural networks. Variations include Leaky ReLU. |
 | **Sigmoid Function** | An activation function that squashes its input value into a range between 0 and 1. Its formula is h(x) = 1 / (1 + exp(-x)). |
 | **Softmax Function** | A function that converts a vector of K real numbers into a probability distribution of K possible outcomes. It is often used as the last activation function of a neural network to normalize the output for multi-class classification. |
+| **Softmax + cross-entropy gradient** | For a softmax output layer with cross-entropy loss, ∂E/∂z<sub>i</sub> = ŷ<sub>i</sub> − y<sub>true,i</sub>. For two classes, softmax reduces to the logistic (sigmoid) function of z<sub>1</sub> − z<sub>0</sub>. |
 | **Stochastic Gradient Descent (SGD)** | An iterative optimization algorithm used to find the minimum of a loss function. In each iteration, it estimates the gradient based on a single training example or a small "mini-batch" of examples to update the network's weights. |
 | **Sum of Squared Errors (SSE)** | A loss function used for regression tasks that measures the sum of the squared differences between the predicted values and the actual values. |
 | **tanh Function** | An activation function that squashes its input value into a range between -1 and 1. Its formula is h(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x)). |

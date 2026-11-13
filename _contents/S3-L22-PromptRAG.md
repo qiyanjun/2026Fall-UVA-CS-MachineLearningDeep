@@ -21,7 +21,7 @@ tags:
 - Retrieval-Augmented Generation (RAG): embeddings, vector databases / nearest-neighbor search, chunking strategies, the retrieve-then-generate pipeline
 - Why RAG helps with hallucination and stale knowledge, and its limitations (retrieval quality, context-window budget)
 
-*(Fine-tuning, including LoRA and when to choose prompting, RAG, or fine-tuning, is covered in the "Transformer Post-training" lecture.)*
+*(Fine-tuning, including LoRA and QLoRA, is covered in the "Transformer Post-training" lecture.)*
 
 # Study Guide: Prompting and RAG
 

@@ -3,9 +3,9 @@ LOrder: 300
 layout: post
 title: PCA, Feature Selection
 lecture: S2-L14-dimReduce
-extraContent: 
+extraContent: S2-L14b-PCA-extra
 notes: 'Hastie, Tibshirani & Friedman (2009), <a href="https://web.stanford.edu/~hastie/ElemStatLearn/" target="_blank">The Elements of Statistical Learning, Ch. 14.5: Principal Components, Curves and Surfaces</a> · Powell & Lehe, <a href="https://setosa.io/ev/principal-component-analysis/" target="_blank">Principal Component Analysis Explained Visually</a>'
-morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a> + <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=24">Great PCA Video</a> + <a href="https://github.com/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/Lectures/S2-L14b-PCA-extra.pdf"> [PCA extra slides] </a>
+morenotes: <a href="https://umap-learn.readthedocs.io/en/latest/"> UMAP </a> + <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=24">Great PCA Video</a>
 video: <b>M1</b> <a href="https://youtu.be/-Fk4b1PPoEA" target="_blank">Original</a> · <a href="https://youtu.be/gqmuIEyMWEg" target="_blank">AI-Clone</a> · <a href="https://youtu.be/7w4nlUhMH9Y" target="_blank">Author-Voice</a>
 categories: tabular
 lectureVersion: current
@@ -15,6 +15,21 @@ tags:
 notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L14_PCA_face_IRIS.ipynb" target="_blank">notebook/L14_PCA_face_IRIS.ipynb</a>'
 ---
 
+### In this lecture, we cover:
+- Why reduce dimensions: the curse of dimensionality; simpler models that are cheaper, need fewer examples, are less sensitive to noise, easier to explain, and generalize better
+  + High-dimensional examples: QSAR drug screening (139,351 binary features), leukemia diagnosis, text categorization with >100,000 bag-of-words features, and movie reviews to revenues as text regression (1.7k samples, >3k n-gram count features)
+- Feature selection (choose a subset of the original features)
+  + Filtering: univariate (e.g., a t-test of one feature's two class-conditional densities) and multivariate (group correlation, Markov-blanket information-theoretic filters); fast and generic, but not tuned to the learner
+  + Wrapper: the learner is a black box that scores subsets; search strategies: forward selection / backward elimination, beam search, GSFS, PTA(l,r), floating search
+  + Embedded: one model whose training selects the features internally; no method is universally better
+- Feature extraction (map to new features, h = Uᵀx with K &lt; P)
+  + Linear: PCA (preserve information / maximum variance) vs. LDA (best class discrimination); also projection pursuit, ICA, Isomap, LLE
+  + PCA: principal components, explained variance, scree plots; notebook on face images and Iris
+  + Non-linear: autoencoders (encoder h = f(x), decoder r = g(f(x))), autoencoders vs. PCA, denoising autoencoders, applications (watermark removal, colorization), Word2vec
+  + t-SNE for visualization: perplexity, and how (not) to read a t-SNE plot
+- Advanced Read (S2-L14b-PCA-extra): PCA algebra (eigenvectors of XᵀX, eigenvalue = variance), choosing how many PCs, when PCA fails for classification, Eigenfaces
+
+<!-- end of cover list -->
 
 - Notebook to try: 
 
@@ -47,6 +62,12 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 8. List two criteria used to determine how many principal components should be retained after performing PCA.
 9. Explain a scenario where the direction of maximum variance found by PCA might not be optimal for a classification task.
 10. Briefly outline the process of using the "Eigenfaces" technique for face recognition.
+11. Name three search strategies a wrapper method can use to explore feature subsets, and say what PTA(l,r) does.
+12. How does a univariate filter such as the t-test judge a single feature, and what is the main criticism of filter methods?
+13. Besides PCA, name linear and non-linear feature-extraction methods listed in the lecture, and state how LDA's goal differs from PCA's.
+14. Give two ways a neural-network autoencoder is more flexible than PCA, and explain how a denoising autoencoder is trained.
+15. What can and cannot be read from a t-SNE plot?
+16. Why is the movie-review revenue prediction task a good case for dimensionality reduction?
 
 ---
 
@@ -71,6 +92,18 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 9. **The direction of maximum variance is not always good for classification.** For example, with two distinct classes represented as ellipsoidal Gaussian densities, the first principal component may capture the overall data trend, while the second, less significant component may be the one that best discriminates between the two classes.
 
 10. **The Eigenfaces technique first computes the principal components ("eigenfaces") from a set of training face images.** All training images are then projected into this new, lower-dimensional "face space." A novel image is classified by projecting it into the same space and finding the nearest neighboring training face based on the distance between their low-dimensional coefficients.
+
+11. **Wrapper searches include forward selection or backward elimination, beam search (keep the k best paths at each step), GSFS, PTA(l,r), and floating search.** PTA(l,r), "plus l, take away r," runs sequential forward selection l times and then sequential backward selection r times at each step. GSFS tries all subsets of g features at each step (more trainings per step, fewer steps), and floating search alternates SFS and SBS steps as long as it finds better subsets than those of the same size found so far.
+
+12. **A univariate filter scores one feature at a time, e.g., a t-test asks how well the feature's class-conditional densities P(Xᵢ\|Y=1) and P(Xᵢ\|Y=-1) separate the two classes.** Filters are usually fast and generic (universal), but that is also the criticism: the selected feature set is not optimized for the learner that will be used. They are often used as a pre-processing step for other methods.
+
+13. **Besides PCA, the lecture lists LDA, projection pursuit, ICA, and manifold methods such as Isomap and LLE (plus autoencoders as a non-linear extractor).** PCA seeks a projection that preserves as much information in the data as possible, while LDA seeks a projection that best discriminates the classes. ICA makes features as independent as possible, and Isomap and LLE embed data onto lower-dimensional manifolds.
+
+14. **Autoencoders can learn nonlinear dependencies, can use convolutional layers, and can use transfer learning, whereas PCA approximates inputs by linear combinations of a smaller set of vectors.** A denoising autoencoder is trained to minimize the loss between the clean x and g(f(x+w)), where w is random noise. This makes the encoder-decoder resist small perturbations of the input; the architecture is the same, only the training data differ.
+
+15. **In a t-SNE plot, close proximity is highly informative: points near each other are similar.** Unlike PCA, the X and Y axes mean nothing, distances (and distant proximity) are not meaningful, and you cannot rationalize distances or add more data to an existing projection. The result also depends on the perplexity setting.
+
+16. **It is a text-regression problem with about 1.7k reviews but more than 3k features (e.g., counts of an n-gram in the text).** With far more features than examples, the curse of dimensionality applies, so selecting or extracting fewer features helps the model generalize.
 
 ---
 
@@ -109,5 +142,11 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 | **Filtering Approach** | A feature selection method that ranks features or feature subsets as a pre-processing step, independently of the learning algorithm (predictor) being used. |
 | **Principal Component Analysis (PCA)** | An unsupervised linear feature extraction method that approximates a high-dimensional dataset with a lower-dimensional linear subspace. It seeks a projection that preserves as much of the information (variance) in the data as possible. |
 | **Principal Components (PCs)** | The new, more informative, uncorrelated features found by PCA, which correspond to the eigenvectors of the data's covariance matrix. The first PC explains the most variance, the second PC explains the next most, and so on. |
+| **Denoising Autoencoder** | An autoencoder trained to reconstruct the clean input x from a noisy input x+w, minimizing the loss between x and g(f(x+w)); it resists small input perturbations. Applications include watermark removal and (with black-and-white input) image colorization. |
+| **Floating Search** | A wrapper search that takes one step of SFS (or SBS), then SBS (or SFS) as long as it finds better subsets than those of the same size found so far. |
+| **Linear Discriminant Analysis (LDA)** | A linear feature extraction method that seeks a projection that best discriminates the classes, unlike PCA, which preserves information. |
+| **PTA(l,r)** | "Plus l, take away r": a wrapper search that at each step runs sequential forward selection l times, then sequential backward selection r times. |
+| **t-SNE** | T-distributed Stochastic Neighbour Embedding: a non-linear 2-D embedding for visualization. Nearby points are informative, but axes and distances carry no meaning; results depend on perplexity. |
+| **Word2vec** | Embeds words from a large text corpus into a vector space so that words with common contexts are close together. |
 | **Wrapper Approach** | A feature selection method that uses a predictor (treated as a "black box") to assess and score different subsets of features based on their predictive power. |
 

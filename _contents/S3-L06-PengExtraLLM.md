@@ -18,11 +18,6 @@ notebooks: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9
 ---
 
 
-- Notebooks to try:
-
-<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9Ky858riqYbrN1R"> DPO Notebook </a> + <a href="https://colab.research.google.com/drive/1hydSFeV8hpTleZTp5EwpoDCjrqRp8JQ7"> GRPO Notebook </a>
-
-
 # Study Guide: How Are Large Language Models Trained?
 
 

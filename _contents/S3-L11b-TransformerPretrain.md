@@ -21,8 +21,10 @@ tags:
 - Training stages
   + Why pretraining: layer-wise pretraining on unlabeled data, then supervised fine-tuning (SFT) on labeled data
   + Encoder-only (BERT): masked-LM pretraining (15% of tokens picked: 80% [MASK], 10% random, 10% kept), then fine-tuning with a task head on [CLS] or mean pooling
-  + Decoder-only (GPT): the pipeline from base model to chat/reasoning model: (1) pretraining, (2) SFT, (3) preference tuning, (4) RL with verifiable rewards
+  + BERT's full recipe (Devlin et al., 2019): pretrained on BooksCorpus (800M words) + Wikipedia (2.5B words) with WordPiece tokens, on sentence pairs A, B with masked LM plus next-sentence prediction (IsNext / NotNext, 50/50); Adam with peak LR 1e-4, 10k warm-up steps and linear decay, 1M steps × 256 sequences; fine-tuning with LR 2e-5 to 5e-5, batch 16/32, 2–4 epochs
+  + Decoder-only (GPT): the pipeline from base model to chat/reasoning model: (1) pretraining, (2) SFT, (3) preference tuning, (4) RL with verifiable rewards; prompting / in-context learning is not a training stage (it changes the input, not the weights)
   + Each stage through the course's four questions: data, loss, optimization, and what is learned
+  + The big picture from "Large Language Models: A Survey" (2024): LLM capabilities (basic, emerging, augmented), a timeline of representative LLMs (GPT, BERT, GPT-2, GPT-3, Codex, InstructGPT, GPT-4, DPO, Claude, Gemini, ...), and how LLMs are built (data cleaning, tokenization, positional encoding, architecture, pretraining, fine-tuning and instruction tuning, alignment, decoding, cost-effective training and adaptation)
 - Training tactics
   + A language model is the chain rule: P(x<sub>1</sub>, ..., x<sub>T</sub>) = ∏ P(x<sub>t</sub> \| x<sub>&lt;t</sub>); the output layer is a softmax (multi-class logistic regression) over the vocabulary
   + Tokens: characters, words, or subwords; byte-pair encoding (BPE)
@@ -30,12 +32,15 @@ tags:
   + Next-token cross-entropy = maximum likelihood; why next-word prediction is implicit multi-task learning
   + Optimizers: why one learning rate is not enough, Adam by hand (momentum + per-weight step size), AdamW (decoupled weight decay)
   + Learning-rate warmup then cosine decay, and a PyTorch training loop with its common bugs (shape errors, training on &lt;pad&gt;, masks applied after the softmax)
-  + Counting the parameters of a whole GPT: N × (12D² + 9D) for the layers, plus embeddings and the output layer
 - Pretraining and pretrained GPT models
-  + Scale (data, parameters, compute) and scaling laws (Kaplan et al., 2020): test loss falls as a power law
-  + GPT-1 → GPT-2 → GPT-3: the same decoder with more of everything; GPT-2 as an unsupervised multitask learner; the rough compute price of GPT-3
+  + Scale: data (Llama-3 saw ∼15 trillion tokens), parameters (0.1B (2018) → 175B (2020) → 405B (2024)), and compute (thousands of GPUs for months)
+  + Scaling laws (Kaplan et al., 2020): test loss falls as a power law in compute, data, and parameters; why more parameters don't overfit here (the data grows with the model and is seen about once)
+  + GPT-1 → GPT-2 → GPT-3: the same decoder with more of everything; GPT-2 as an unsupervised multitask learner; the rough compute price of GPT-3 175B (~$4.5M)
+  + How much data pretraining used in 2024: Llama 3 on about 15T multilingual tokens (vs. 1.8T for Llama 2); DeepSeek-V3 (a 671B mixture-of-experts model, 37B activated per token) on 14.8 trillion tokens
+  + How big is 15T tokens? Printed at 1,000 tokens per page and 100 sheets per cm, the stack would be ~1,500 km (1,000 miles) thick
+  + Open-source LLMs: what people actually download on Hugging Face (30-day counts as of Oct 31, 2026), led by two embedding models and then GPT-2; not a quality ranking
 
-*(Turning a pretrained base model into an assistant (SFT, LoRA/QLoRA, RLHF, DPO) is covered in the next lecture, "Transformer Post-training".)*
+*(Turning a pretrained base model into an assistant (SFT, LoRA/QLoRA, RLHF, DPO) is covered in "Transformer Post-training".)*
 
 
 # Study Guide: Transformer Pretraining
@@ -52,6 +57,9 @@ tags:
 4. Why do we use subword tokenization (such as BPE) instead of whole words or single characters?
 5. How does Adam differ from SGD with a single learning rate, and what does AdamW change?
 6. What are learning-rate warmup and decay, and why are they used when training Transformers?
+7. Besides masked language modeling, what second pretraining task does BERT use, and on what data is it pretrained?
+8. How much text were Llama 3 and DeepSeek-V3 pretrained on, and how big is that?
+9. Classical bias–variance says more parameters eventually overfit. Why does an LLM's test loss keep falling as parameters grow?
 
 ---
 
@@ -69,6 +77,22 @@ tags:
 
 6. **Warmup starts with a small learning rate and increases it linearly over the first steps, while gradients are noisy and Adam's running averages are unsettled; decay (e.g., cosine) takes smaller steps near the end.** Debug with a fixed learning rate first, then add the schedule.
 
+7. **BERT also uses next-sentence prediction: given a sentence pair A, B, it predicts IsNext or NotNext, with the two cases 50/50.** It is pretrained on BooksCorpus (800M words) and Wikipedia (2.5B words) with WordPiece tokens, adding the next-sentence cross-entropy to the masked-LM loss.
+
+8. **Llama 3 was pretrained on about 15T multilingual tokens (vs. 1.8T for Llama 2), and DeepSeek-V3 on 14.8 trillion tokens.** Printed at 1,000 tokens per page and 100 sheets per cm, 15T tokens would make a stack about 1,500 km (1,000 miles) thick.
+
+9. **The training data grows along with the model and is seen only about once, so there is little to memorize.** As a result, test loss keeps falling as a power law in parameters, data, and compute (Kaplan et al., 2020), and the lesson is to scale data and parameters together.
+
+---
+
+## Essay Questions
+
+**Instructions:** Prepare a detailed, essay-format response for each of the following prompts. (Answers not provided).
+
+1. **Compare how an encoder-only model (BERT) and a decoder-only model (GPT) are pretrained.** For each, describe the data, the training targets, the mask, the loss, the optimizer and schedule, and what the pretrained weights are then used for.
+
+2. **Explain why next-token prediction on web-scale text works so well.** Discuss the chain rule and maximum likelihood, why next-word prediction is implicit multi-task learning, and how scale (data, parameters, compute) and scaling laws shaped GPT-1 → GPT-2 → GPT-3 and the models of 2024.
+
 ---
 
 ## Glossary of Key Terms
@@ -81,4 +105,5 @@ tags:
 | **Teacher Forcing** | Training on the true previous tokens instead of the model's own outputs, so all positions are trained in one pass. |
 | **Adam / AdamW** | Gradient descent with momentum and a per-weight step size; AdamW decouples weight decay from the adaptive scaling. |
 | **Warmup and Decay** | Increasing the learning rate from near zero over the first steps, then lowering it (e.g., cosine) toward the end. |
+| **Next-Sentence Prediction (NSP)** | BERT's second pretraining task: predict whether sentence B follows sentence A (IsNext / NotNext, 50/50). |
 | **Scaling Laws** | Test loss falls as a power law in data, parameters, and compute: straight lines on log-log axes. |
