@@ -16,7 +16,7 @@ tags:
 - Generative
 - Architecture
 - Training
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb" target="_blank">notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand.ipynb" target="_blank">notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb" target="_blank">notebook/L17_Predicting_Movie_Reviews_with_BERT_PyTorch.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand.ipynb" target="_blank">notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand-solutions.ipynb" target="_blank">notebook/L18-LLMArchTraining-notebook-gpt-components-by-hand-solutions.ipynb</a>'
 ---
 
 

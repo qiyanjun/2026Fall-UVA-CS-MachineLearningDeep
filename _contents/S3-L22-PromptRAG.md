@@ -6,6 +6,7 @@ lecture:
 lectureVersion: current
 extraContent:
 notes: 'Wei et al. (2022), <a href="https://arxiv.org/abs/2201.11903" target="_blank">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> · Lewis et al. (2020), <a href="https://arxiv.org/abs/2005.11401" target="_blank">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L21-PromptRAG-notebook-prompting-retrieval-rag.ipynb" target="_blank">notebook/L21-PromptRAG-notebook-prompting-retrieval-rag.ipynb</a>'
 video:
 categories: LLM/Agents
 tags:
