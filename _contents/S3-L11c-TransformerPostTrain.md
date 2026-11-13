@@ -7,7 +7,7 @@ lectureVersion: current
 extraContent:
 notes: 'Hu et al. (2021), <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA: Low-Rank Adaptation of Large Language Models</a>'
 morenotes: '<a href="https://arxiv.org/abs/2203.02155" target="_blank">Ouyang et al. (2022), InstructGPT</a> + <a href="https://arxiv.org/abs/2305.18290" target="_blank">Rafailov et al. (2023), DPO</a> + <a href="https://arxiv.org/abs/2305.14314" target="_blank">Dettmers et al. (2023), QLoRA</a>'
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_DPO.ipynb" target="_blank">notebook/L19b_DPO.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_Reasoning_Models_using_GRPO.ipynb" target="_blank">notebook/L19b_Reasoning_Models_using_GRPO.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_DPO.ipynb" target="_blank">notebook/L19b_DPO.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_Reasoning_Models_using_GRPO.ipynb" target="_blank">notebook/L19b_Reasoning_Models_using_GRPO.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19-RL-RLHF-GRPO-notebook-policy-gradient-to-grpo.ipynb" target="_blank">notebook/L19-RL-RLHF-GRPO-notebook-policy-gradient-to-grpo.ipynb</a>'
 video:
 categories: LLM/Agents
 tags:
