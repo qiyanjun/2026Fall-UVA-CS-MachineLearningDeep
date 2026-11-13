@@ -103,7 +103,7 @@ For next Tue's Q13, it will cover:
 
 Here are the two lectures for Quiz12 (next Tuesday!): 
 
-+ [RF and Boosting ](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L00b-Boost/)
++ [RF and Boosting ](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S4-L00a-DT/)
 + [Hierarchical Clustering](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//contents/S5-L01-Hier/)
 
 
