@@ -5,6 +5,7 @@ title: Reinforcement Learning and for Post Training LLMs
 lecture: S3-L19b-RL-RLHF-GRPO
 extra: true
 lectureVersion: current
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_DPO.ipynb" target="_blank">notebook/L19b_DPO.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L19b_Reasoning_Models_using_GRPO.ipynb" target="_blank">notebook/L19b_Reasoning_Models_using_GRPO.ipynb</a>'
 video: 
 notes: 'Sutton & Barto (2018), <a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank">Reinforcement Learning: An Introduction</a> · Weng (2018), <a href="https://lilianweng.github.io/posts/2018-02-19-rl-overview/" target="_blank">A (Long) Peek into Reinforcement Learning</a>'
 categories: structured
