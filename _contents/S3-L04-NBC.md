@@ -52,9 +52,9 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 
 5. Using log probabilities is a technique for underflow prevention. Multiplying many small probability values (which are between 0 and 1) can result in a number too small for standard floating-point representation. By summing the logs of the probabilities instead—since log(xy) = log(x) + log(y)—this numerical instability is avoided while preserving the ability to find the most probable class.
 
-6. For the Multivariate Bernoulli model, Maximum Likelihood Estimation (MLE) is used to estimate the parameter P(word_i = true | class_j). This is calculated as the fraction of documents belonging to class j in which word i appears. It is the relative frequency of a binary event (the word's presence).
+6. For the Multivariate Bernoulli model, Maximum Likelihood Estimation (MLE) is used to estimate the parameter P(word_i = true \| class_j). This is calculated as the fraction of documents belonging to class j in which word i appears. It is the relative frequency of a binary event (the word's presence).
 
-7. In the Multinomial model, a "mega-document" for a specific class is created by conceptually concatenating all training documents belonging to that class. The frequency of a word w in this mega-document is then used to calculate the probability P(w | class) via MLE, which simplifies to the relative frequency of w across all words in all documents of that class.
+7. In the Multinomial model, a "mega-document" for a specific class is created by conceptually concatenating all training documents belonging to that class. The frequency of a word w in this mega-document is then used to calculate the probability P(w \| class) via MLE, which simplifies to the relative frequency of w across all words in all documents of that class.
 
 8. A primary strategy is to train the model with an explicit symbol for an unknown word, such as <UNK>. During preprocessing, words not in a pre-chosen vocabulary (or rare words) in the training corpus can be replaced with <UNK>, allowing the model to learn a probability for it.
 
@@ -74,7 +74,7 @@ notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-
 
 3. Discuss the statement: "Naive Bayes is Not So Naive." Elaborate on the strengths of the Naïve Bayes classifier that make it a powerful and dependable baseline for text classification, referencing its performance in competitions like KDD-CUP 97, its robustness to certain types of features, and its computational efficiency.
 
-4. Describe the mathematical foundation of the Naïve Bayes classifier, starting from Bayes' rule (argmax P(C|X)). Explain how the "naïve" assumption of conditional independence simplifies the P(X|C) term and makes computation tractable, especially for high-dimensional data like text.
+4. Describe the mathematical foundation of the Naïve Bayes classifier, starting from Bayes' rule (argmax P(C\|X)). Explain how the "naïve" assumption of conditional independence simplifies the P(X\|C) term and makes computation tractable, especially for high-dimensional data like text.
 
 5. What is a generative model in the context of classification? Explain how both the Multinomial and Multivariate Bernoulli Naïve Bayes classifiers can be viewed as generative models that approximate how a text document is produced, given a class label.
 

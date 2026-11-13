@@ -53,7 +53,7 @@ This guide is designed to review and reinforce key concepts related to the bias-
 
 6. A linear classification model is a global model that is stable but can be inaccurate, exhibiting high bias and low variance. In contrast, a 1-Nearest Neighbor model is a local model that is accurate on training data but unstable, exhibiting low bias and high variance.
 
-7. Under L2 loss, the best theoretical estimator to minimize EPE is the conditional mean (also called conditional expectation). This is expressed as f̂(x) = E(Y | X = x).
+7. Under L2 loss, the best theoretical estimator to minimize EPE is the conditional mean (also called conditional expectation). This is expressed as f̂(x) = E(Y \| X = x).
 
 8. To reduce high variance, one can choose a simpler classifier, regularize the parameters, get more training data, or use a smaller set of features.
 

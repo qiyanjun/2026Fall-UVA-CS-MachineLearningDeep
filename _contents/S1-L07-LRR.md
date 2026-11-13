@@ -47,7 +47,7 @@ Answer the following questions in 2-3 sentences each, based on the provided sour
 
 3. **Ridge regression adds an L2 penalty, which is proportional to the sum of the squared coefficient weights (λ Σ βj²).** This penalty shrinks the coefficients towards zero, with the effect becoming stronger as λ increases. However, it does not set the coefficients exactly to zero.
 
-4. **LASSO regression uses an L1 penalty, proportional to the sum of the absolute values of the weights (λ Σ |βj|).** Its key advantage is that it performs both shrinkage and variable selection simultaneously, as the penalty can force some coefficients to be exactly zero, creating a more interpretable and sparse model.
+4. **LASSO regression uses an L1 penalty, proportional to the sum of the absolute values of the weights (λ Σ \|βj\|).** Its key advantage is that it performs both shrinkage and variable selection simultaneously, as the penalty can force some coefficients to be exactly zero, creating a more interpretable and sparse model.
 
 5. **The regularization parameter λ controls the strength of the penalty; λ=0 corresponds to standard least squares, while a large λ pushes coefficients towards zero.** The optimal value is chosen to ensure good generalization ability on new data and is typically determined using k-fold cross-validation.
 

@@ -58,7 +58,7 @@ notebooks: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9
 
 1. **An LLM is a classifier over the next token, run in a loop to generate text.** At each step it outputs a softmax distribution over a vocabulary of about 100,000 tokens (a discriminative step); sampling a token, appending it, and repeating turns that classifier into a generative model of whole pieces of text.
 
-2. **The pretraining loss is the average negative log-likelihood of each true next token, L(θ) = −(1/N) Σ log pθ(xₜ | x<ₜ), so minimizing it is exactly maximum likelihood on the corpus.** It is self-supervised because the labels are free: the "correct" next word is already in the text, so no human annotation is needed.
+2. **The pretraining loss is the average negative log-likelihood of each true next token, L(θ) = −(1/N) Σ log pθ(xₜ \| x<ₜ), so minimizing it is exactly maximum likelihood on the corpus.** It is self-supervised because the labels are free: the "correct" next word is already in the text, so no human annotation is needed.
 
 3. **Temperature divides the logits by τ before the softmax, pₜ(i) ∝ exp(zₜ,ᵢ/τ), making the distribution sharper (τ < 1) or flatter (τ > 1).** As τ → 0 sampling becomes greedy (always the arg-max token); as τ → ∞ the distribution becomes uniform. τ > 0 is why ChatGPT answers differently each time.
 
@@ -68,11 +68,11 @@ notebooks: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9
 
 6. **Any two of:** (a) costly supervision — someone must write a full, high-quality response for every prompt; (b) every token counts the same, so a typo is penalized like a factual error; (c) a ceiling — the model can only copy the demonstrator; (d) judging is easier than writing, so a score is far cheaper to obtain than a demonstration.
 
-7. **Both steps follow the gradient of log pθ(y | x).** In SFT, y is a human-written label with weight 1; in policy gradient, y is the model's own sampled response and the step is weighted by its reward R(x, y), so good samples are pushed up and bad ones pushed down.
+7. **Both steps follow the gradient of log pθ(y \| x).** In SFT, y is a human-written label with weight 1; in policy gradient, y is the model's own sampled response and the step is weighted by its reward R(x, y), so good samples are pushed up and bad ones pushed down.
 
 8. **The Bradley–Terry model gives each response a hidden score r_φ(x, y) and models the probability that humans prefer y_w over y_l as σ(r_φ(x, y_w) − r_φ(x, y_l)).** It is trained by minimizing the log loss on observed comparisons, which is logistic regression where the "score" is a difference of two learned scores and the label is "w beats l."
 
-9. **The KL-regularized RLHF objective has a closed-form optimum, which lets the reward be rewritten as β log(πθ(y|x)/π_ref(y|x)) + const, a policy's implicit reward.** Plugging this into the Bradley–Terry loss cancels the constant, so the policy can be trained directly on fixed preference pairs (offline) — the policy is the reward model.
+9. **The KL-regularized RLHF objective has a closed-form optimum, which lets the reward be rewritten as β log(πθ(y\|x)/π_ref(y\|x)) + const, a policy's implicit reward.** Plugging this into the Bradley–Terry loss cancels the constant, so the policy can be trained directly on fixed preference pairs (offline) — the policy is the reward model.
 
 10. **Âᵢ = (rᵢ − mean(r₁,…,r_G)) / (std(r₁,…,r_G) + ε), and the same Âᵢ is applied to every token of response oᵢ.** If all responses are correct or all are wrong, every advantage is 0 and the question produces no gradient; learning happens only where the model sometimes succeeds.
 
@@ -84,7 +84,7 @@ notebooks: '<a href="https://colab.research.google.com/drive/1i7aDdW-RHNNPgCCHW9
 
 1. **Trace the full training pipeline from base model to reasoning model** (pretraining → SFT → preference alignment → RL with verifiable rewards). For each stage, answer the course's four questions: What is the data? What is the loss? How is it optimized? What does the model learn?
 
-2. **Explain the lecture's claim that "every stage trains the same network by gradient descent on log pθ(text)."** Using the update θ ← θ + α Σ w(y) ∇θ log pθ(y | x), describe where y comes from and what the weight w(y) is for pretraining, SFT, RLHF, DPO, and GRPO.
+2. **Explain the lecture's claim that "every stage trains the same network by gradient descent on log pθ(text)."** Using the update θ ← θ + α Σ w(y) ∇θ log pθ(y \| x), describe where y comes from and what the weight w(y) is for pretraining, SFT, RLHF, DPO, and GRPO.
 
 3. **Compare supervised learning with reinforcement learning** in terms of feedback, data distribution, granularity, and objective. Then explain the two stability tricks used whenever the training data is self-generated (PPO clipping and the KL penalty), and relate the KL penalty to L2 regularization.
 

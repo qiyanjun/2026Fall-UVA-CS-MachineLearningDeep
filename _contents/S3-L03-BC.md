@@ -48,17 +48,17 @@ This study guide provides a review of the core concepts related to Generative Ba
 
 1. The three major types of classification approaches are Discriminative classifiers, which directly estimate a decision boundary (e.g., SVM); Generative classifiers, which build a statistical model for the data (e.g., Naïve Bayes); and Instance-based classifiers, which use observations directly without a model (e.g., K-nearest neighbors).
 
-2. The goal of a Bayes Classifier during testing is to predict the class for a given sample x. Specifically, it seeks to find the class c that maximizes the posterior probability p(c | x1, x2, ..., xp).
+2. The goal of a Bayes Classifier during testing is to predict the class for a given sample x. Specifically, it seeks to find the class c that maximizes the posterior probability p(c \| x1, x2, ..., xp).
 
-3. A generative model builds a statistical model for each class, modeling the class-conditional probability P(X|C) and the prior probability P(C). A discriminative model, in contrast, directly estimates the posterior probability P(C|X) or learns a direct mapping from inputs to class labels without modeling the underlying data distribution.
+3. A generative model builds a statistical model for each class, modeling the class-conditional probability P(X\|C) and the prior probability P(C). A discriminative model, in contrast, directly estimates the posterior probability P(C\|X) or learns a direct mapping from inputs to class labels without modeling the underlying data distribution.
 
-4. The core assumption is that all input attributes (features) are conditionally independent of one another, given the class. This assumption is crucial because it simplifies the problem of estimating the joint probability P(X1, ..., Xp | C) by allowing it to be calculated as the product of individual conditional probabilities P(Xi | C).
+4. The core assumption is that all input attributes (features) are conditionally independent of one another, given the class. This assumption is crucial because it simplifies the problem of estimating the joint probability P(X1, ..., Xp \| C) by allowing it to be calculated as the product of individual conditional probabilities P(Xi \| C).
 
 5. The assumption dramatically reduces the number of parameters. Instead of estimating a parameter for every possible combination of attribute values (multiplicative complexity), the model only needs to estimate parameters for each attribute conditioned on the class (additive complexity), making it feasible to train with much less data.
 
-6. The learning phase for a discrete Naïve Bayes Classifier involves estimating probabilities from the training data using frequencies (maximum likelihood estimates). For each class ci, the model estimates the prior probability P(C=ci), and for every attribute value xjk, it estimates the conditional probability P(Xj=xjk | C=ci).
+6. The learning phase for a discrete Naïve Bayes Classifier involves estimating probabilities from the training data using frequencies (maximum likelihood estimates). For each class ci, the model estimates the prior probability P(C=ci), and for every attribute value xjk, it estimates the conditional probability P(Xj=xjk \| C=ci).
 
-7. The MAP rule is a decision principle used to select the most probable class for a new instance. In Generative Bayes Classifiers, it means choosing the class cj that maximizes the product of the class-conditional probability P(x1, ..., xp | cj) and the prior probability P(cj).
+7. The MAP rule is a decision principle used to select the most probable class for a new instance. In Generative Bayes Classifiers, it means choosing the class cj that maximizes the product of the class-conditional probability P(x1, ..., xp \| cj) and the prior probability P(cj).
 
 8. If a specific combination of an attribute value and a class never appears in the training data, its maximum likelihood probability estimate will be zero. This "zero probability" can then nullify the entire posterior probability calculation for that class, regardless of the evidence from other attributes.
 

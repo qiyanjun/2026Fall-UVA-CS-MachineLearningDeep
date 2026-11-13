@@ -24,7 +24,7 @@ tags:
   + Decoder-only (GPT): the pipeline from base model to chat/reasoning model: (1) pretraining, (2) SFT, (3) preference tuning, (4) RL with verifiable rewards
   + Each stage through the course's four questions: data, loss, optimization, and what is learned
 - Training tactics
-  + A language model is the chain rule: P(x<sub>1</sub>, ..., x<sub>T</sub>) = ∏ P(x<sub>t</sub> | x<sub>&lt;t</sub>); the output layer is a softmax (multi-class logistic regression) over the vocabulary
+  + A language model is the chain rule: P(x<sub>1</sub>, ..., x<sub>T</sub>) = ∏ P(x<sub>t</sub> \| x<sub>&lt;t</sub>); the output layer is a softmax (multi-class logistic regression) over the vocabulary
   + Tokens: characters, words, or subwords; byte-pair encoding (BPE)
   + Next-token prediction: targets are the inputs shifted by one, teacher forcing, and all T positions trained in parallel thanks to the causal mask
   + Next-token cross-entropy = maximum likelihood; why next-word prediction is implicit multi-task learning
@@ -61,7 +61,7 @@ tags:
 
 2. **The target at position t is the token at position t + 1: the targets are the inputs shifted left by one.** The causal mask stops position t from seeing any token after t, so all T predictions can be computed in parallel from the true prefix (teacher forcing), with no step-by-step loop.
 
-3. **The loss is ℒ(θ) = −(1/N) ∑ log p<sub>θ</sub>(x<sub>t</sub> | x<sub>&lt;t</sub>), the negative log-likelihood of the text under the chain rule.** Maximizing ∏ p<sub>θ</sub>(x<sub>t</sub> | x<sub>&lt;t</sub>) is the same as minimizing −∑ log p<sub>θ</sub>(x<sub>t</sub> | x<sub>&lt;t</sub>), and the labels are free because the next word is already in the text.
+3. **The loss is ℒ(θ) = −(1/N) ∑ log p<sub>θ</sub>(x<sub>t</sub> \| x<sub>&lt;t</sub>), the negative log-likelihood of the text under the chain rule.** Maximizing ∏ p<sub>θ</sub>(x<sub>t</sub> \| x<sub>&lt;t</sub>) is the same as minimizing −∑ log p<sub>θ</sub>(x<sub>t</sub> \| x<sub>&lt;t</sub>), and the labels are free because the next word is already in the text.
 
 4. **Whole words give a huge vocabulary and cannot handle unseen words, while characters give very long sequences.** Subword units keep the vocabulary at a fixed size (about 32K to 200K), split rare words into pieces, and never fall back to an unknown token.
 

@@ -65,14 +65,14 @@ This study guide is designed to reinforce your understanding of fundamental conc
 ### Norm (of Vector)
 - **Concept**: Measure of "length" of a vector.
 - **Common Norms**: L1, L2 (Euclidean), L∞.
-- **L2 Norm (Euclidean)**: ||x|| = √(x^T x).
+- **L2 Norm (Euclidean)**: \|\|x\|\| = √(x^T x).
 - **General Definition**: Understand the properties a function must satisfy to be a norm.
 
 ### Matrix Inversion
 - **Notation**: A^(-1) or inv A.
 - **Definition**: AA^(-1) = I = A^(-1)A.
 - **Nonsingular vs. Singular**: Differentiate between matrices that have an inverse and those that don't.
-- **Determinant Condition**: An inverse exists if and only if |A| ≠ 0.
+- **Determinant Condition**: An inverse exists if and only if \|A\| ≠ 0.
 - **Properties**: (AB)^(-1) = B^(-1)A^(-1); (A^T)^(-1) = (A^(-1))^T; (A^(-1))^(-1) = A.
 - **Special Cases**: Inverse of diagonal matrices, orthogonal matrices (A^(-1) = A^T).
 - **Pseudo-inverse (Extra)**: Basic understanding of its existence for non-square matrices.
@@ -131,9 +131,9 @@ This study guide is designed to reinforce your understanding of fundamental conc
    - Matrix multiplication is generally not commutative (AB ≠ BA).
    - Matrices must be conformable for multiplication to occur.
 
-6. **Vector Norm**: A norm of a vector ||x|| is a measure of its "length." The L2 norm, also known as the Euclidean norm, represents the straight-line distance from the origin to the vector's endpoint (calculated as the square root of the sum of the squared elements).
+6. **Vector Norm**: A norm of a vector \|\|x\|\| is a measure of its "length." The L2 norm, also known as the Euclidean norm, represents the straight-line distance from the origin to the vector's endpoint (calculated as the square root of the sum of the squared elements).
 
-7. **Matrix Inverse Definition and Condition**: The inverse of an n × n matrix A is the matrix A^(-1) such that AA^(-1) = I = A^(-1)A, where I is the identity matrix. A crucial condition for an inverse to exist is that the determinant of A (|A|) must not be zero.
+7. **Matrix Inverse Definition and Condition**: The inverse of an n × n matrix A is the matrix A^(-1) such that AA^(-1) = I = A^(-1)A, where I is the identity matrix. A crucial condition for an inverse to exist is that the determinant of A (\|A\|) must not be zero.
 
 8. **Nonsingular vs. Singular Matrix**: A "nonsingular" matrix is an n × n matrix that has an inverse. A "singular" matrix is an n × n matrix that does not have an inverse.
 

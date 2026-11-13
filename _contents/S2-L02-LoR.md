@@ -40,15 +40,15 @@ tags:
 
 ## Answer Key
 
-1. **The primary goal of a Bayes classifier is to predict the class of a new data sample x.** It achieves this by finding the class C that maximizes the posterior probability p(C | x), a principle known as the Maximum A Posteriori (MAP) rule.
+1. **The primary goal of a Bayes classifier is to predict the class of a new data sample x.** It achieves this by finding the class C that maximizes the posterior probability p(C \| x), a principle known as the Maximum A Posteriori (MAP) rule.
 
 2. **Discriminative classifiers, such as logistic regression and neural networks, directly estimate a decision rule or boundary to separate classes.** In contrast, generative classifiers, like Naïve Bayes, build a statistical model of how the data for each class is generated and use that model to make predictions.
 
 3. **Maximum Likelihood Estimation (MLE) is a method for estimating the unknown parameters of a model.** The core principle is to choose the set of parameters that are most likely to have produced the observed data set. This is achieved by maximizing the joint probability, or likelihood, of the observed samples.
 
-4. **The "log-odds," or "logit" function, is the natural logarithm of the odds P(y|x) / (1-P(y|x)).** In logistic regression, this logit is modeled as a linear function of the input features (x), forming the core representation of the model: ln[p/(1-p)] = β₀ + β₁x₁ + ... + βₚxₚ.
+4. **The "log-odds," or "logit" function, is the natural logarithm of the odds P(y\|x) / (1-P(y\|x)).** In logistic regression, this logit is modeled as a linear function of the input features (x), forming the core representation of the model: ln[p/(1-p)] = β₀ + β₁x₁ + ... + βₚxₚ.
 
-5. **Logistic regression is suitable for target variables coded as 0 or 1.** The Bernoulli distribution, which models binary outcomes like a coin flip, is used to conceptually model this target variable. The probability parameter p of the Bernoulli distribution is not fixed but is instead modeled as a function of the input features, p = p(y=1|x).
+5. **Logistic regression is suitable for target variables coded as 0 or 1.** The Bernoulli distribution, which models binary outcomes like a coin flip, is used to conceptually model this target variable. The probability parameter p of the Bernoulli distribution is not fixed but is instead modeled as a function of the input features, p = p(y=1\|x).
 
 6. **The decision boundary in logistic regression is the point where the log-odds equation equals zero, which corresponds to a probability of 0.5.** Because the log-odds are modeled as a linear function of the features, the resulting decision boundary is also linear.
 

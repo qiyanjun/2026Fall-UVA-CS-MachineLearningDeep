@@ -93,7 +93,7 @@ The output decreases exponentially as the distance from the center increases, cr
 
 **Provide the general mathematical form of a Gaussian RBF, specifically φⱼ(x).**
 
-φⱼ(x) = exp(-λⱼ||x - μⱼ||²)
+φⱼ(x) = exp(-λⱼ\|\|x - μⱼ\|\|²)
 
 ## III. Parametric vs. Non-Parametric Models
 

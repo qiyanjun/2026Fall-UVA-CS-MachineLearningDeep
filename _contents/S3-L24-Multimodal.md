@@ -33,7 +33,7 @@ tags:
 3. Describe the LLaVA-style approach to building a vision-language model: what pieces are combined, and what's new about the design versus a plain LLM?
 4. What is the difference between "bolting a vision encoder onto a frozen LLM" and training a natively multimodal model end to end?
 5. Give an example of a task that plain visual question answering accuracy doesn't capture well, and explain why grounding matters there.
-6. How could an LLM agent use a VLM's vision capability as a "tool" in an agent loop (recall the Agents and Tool Use lecture)?
+6. How could an LLM agent use a VLM's vision capability as a "tool" in an agent loop (this is developed further in the next lecture, "Agents and Tool Use")?
 
 ## Answer Key
 

@@ -56,7 +56,7 @@ This guide provides a comprehensive review of the concepts presented in the sour
 
 5. **What is the role of the dual formulation in making the kernel trick possible for SVMs?** The dual formulation of the SVM optimization problem is crucial because it expresses the objective function in terms of the dot product of input samples (xi * Txj). This structure allows the dot product to be directly replaced by a kernel function K(xi, xj), enabling the model to learn a non-linear boundary without ever computing in the high-dimensional space.
 
-6. **Name two types of non-linear kernel functions mentioned in the text and describe their mathematical form.** The text mentions the Polynomial kernel, with the form K(x, z) = (1 + xTz)^d, and the Radial Basis Function (RBF) kernel, with the form K(x, z) = exp(-r ||x-z||^2). The RBF kernel is noted to have a feature space with an infinite number of dimensions.
+6. **Name two types of non-linear kernel functions mentioned in the text and describe their mathematical form.** The text mentions the Polynomial kernel, with the form K(x, z) = (1 + xTz)^d, and the Radial Basis Function (RBF) kernel, with the form K(x, z) = exp(-r \|\|x-z\|\|^2). The RBF kernel is noted to have a feature space with an infinite number of dimensions.
 
 7. **According to the practical guide for LIBSVM, why is scaling features before applying an SVM considered very important?** Feature scaling is very important for two main reasons. First, it prevents attributes in greater numeric ranges from dominating those in smaller numeric ranges. Second, it helps to avoid numerical difficulties that can occur during the calculation process.
 
@@ -76,7 +76,7 @@ This guide provides a comprehensive review of the concepts presented in the sour
 
 3. Based on the "Practical Guide to Support Vector Classification," outline a comprehensive pipeline for a machine learning project using LIBSVM. Your pipeline should cover feature preprocessing (for categorical, scaled, and missing data), model selection (including the roles of C and kernel choice), and the use of k-folds cross-validation.
 
-4. Elaborate on the argument that SVMs are resistant to overfitting. Connect the concepts of structural risk minimization, the role of the ½||w||² term, the maximization of the margin, and the sparsity of support vectors to build a cohesive explanation for why this powerful classifier can generalize well.
+4. Elaborate on the argument that SVMs are resistant to overfitting. Connect the concepts of structural risk minimization, the role of the ½\|\|w\|\|² term, the maximization of the margin, and the sparsity of support vectors to build a cohesive explanation for why this powerful classifier can generalize well.
 
 5. Explain why the kernel function can be thought of as a "similarity measure." How does this conceptual view connect to Mercer's condition and the underlying mathematical mechanism of computing a dot product in a transformed feature space?
 

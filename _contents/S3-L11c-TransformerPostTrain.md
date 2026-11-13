@@ -58,7 +58,7 @@ tags:
 
 3. **Each matrix adds D·r + r·D = 2 × 768 × 4 = 6,144 parameters.** With 2 matrices in each of 12 layers, the total is 24 × 6,144 = 147,456, about 1% of one 768 × 768 matrix per adapted matrix.
 
-4. **RLHF fits a reward model to human preference pairs ("A is better than B") and then uses RL to raise the reward of the model's answers.** DPO skips the reward model and the RL loop: its loss, −log σ(β[log p<sub>θ</sub>(y<sub>w</sub>|x)/p<sub>ref</sub>(y<sub>w</sub>|x) − log p<sub>θ</sub>(y<sub>l</sub>|x)/p<sub>ref</sub>(y<sub>l</sub>|x)]), raises the preferred answer and lowers the rejected one relative to the frozen SFT model, and trains like SFT.
+4. **RLHF fits a reward model to human preference pairs ("A is better than B") and then uses RL to raise the reward of the model's answers.** DPO skips the reward model and the RL loop: its loss, −log σ(β[log p<sub>θ</sub>(y<sub>w</sub>\|x)/p<sub>ref</sub>(y<sub>w</sub>\|x) − log p<sub>θ</sub>(y<sub>l</sub>\|x)/p<sub>ref</sub>(y<sub>l</sub>\|x)]), raises the preferred answer and lowers the rejected one relative to the frozen SFT model, and trains like SFT.
 
 5. **Prompting alone fits simple tasks with rarely changing data and no training budget; RAG fits tasks that need up-to-date or proprietary knowledge; fine-tuning fits tasks that need consistent formatting or behavior, or a lasting skill or style shift.** These approaches are often combined, for example fine-tuning a model to use retrieved context well.
 

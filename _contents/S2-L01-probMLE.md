@@ -55,7 +55,7 @@ The following questions are designed for longer-form, essay-style answers to tes
 
 3. The principle of Maximum Likelihood Estimation is to select the set of model parameters (θ) that are most likely to have produced the observed data. This is achieved by assuming a particular model and finding the parameter values that maximize the joint probability (the likelihood) of the observed sample set.
 
-4. Working with the log-likelihood function is convenient because it converts the joint probability, which is a product of individual probabilities, into a sum. This transformation from Π P(Zi|θ) to Σ log(P(Zi|θ)) simplifies the mathematical process of finding the maximum, particularly when taking derivatives.
+4. Working with the log-likelihood function is convenient because it converts the joint probability, which is a product of individual probabilities, into a sum. This transformation from Π P(Zi\|θ) to Σ log(P(Zi\|θ)) simplifies the mathematical process of finding the maximum, particularly when taking derivatives.
 
 5. The MLE for the parameter p in a Bernoulli distribution is the sample proportion of positive outcomes. It is calculated as p̂ = x/n, where x is the number of successes (e.g., heads) observed in n trials.
 
