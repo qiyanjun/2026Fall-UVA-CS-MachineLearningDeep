@@ -103,20 +103,22 @@ the specific email address posted in the Canvas announcement.
 **Quiz Resources**: posted in Canvas
 
 
-|INDEX | Quiz |
+|INDEX | Quiz topics (keywords) |
 |------|----------------------------|
-| Q1   | Posted in Canvas |
-| Q2   | Posted in Canvas |
-| Q3   | Posted in Canvas |
-| Q4   | Posted in Canvas |
-| Q5   | Posted in Canvas |
-| Q6   | Posted in Canvas |
-| Q7   | Posted in Canvas |
-| Q8   | Posted in Canvas |
-| Q9   | Posted in Canvas |
-| Q10   | Posted in Canvas |
-| Q11   | Posted in Canvas |
-| Q12   | Posted in Canvas |
+| Q0   | Algebra review (ungraded PreQuiz) |
+| Q1   | ML intro, ML in a nutshell |
+| Q2   | Linear regression, GD / SGD |
+| Q3   | LR with basis expansion, model selection |
+| Q4   | Regularization, KNN |
+| Q5   | Bias-variance, MLE |
+| Q6   | CNN, PCA |
+| Q7   | Text DNN (BOW to RNN), Seq2Seq, attention |
+| Q8   | Transformer architecture |
+| Q9   | Transformer pretraining and post-training |
+| Q10  | LLM inference, prompting / RAG, multimodal |
+| Q11  | Decision trees, bagging / random forest, boosting |
+| Q13  | Makeup: nonlinear regression (basis), model selection |
+| Q14  | Makeup: logistic regression, NN basics |
 
 
 <hr>
