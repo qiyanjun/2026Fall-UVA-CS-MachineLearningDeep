@@ -71,7 +71,7 @@ the specific email address posted in the Canvas announcement.
   <td>HW5</td>
   <td>Posted in Canvas</td>
   <td>W12 (Nov 10)</td>
-  <td>W15 (Dec 1)</td>
+  <td>W16 (Dec 11)</td>
   <td><b>A course-assistant agent: RAG, harness and evaluation.</b> Build retrieval over the course's lecture notes (TF-IDF, embeddings, a hybrid, and a learned reranker), generate answers with prompting and small open LLMs, wrap the retriever in an agent loop with retries, evidence checks and context compaction, and evaluate the agent (pass@k, refusals, token cost). Bonus on defending against prompt injection. Leaderboard. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
