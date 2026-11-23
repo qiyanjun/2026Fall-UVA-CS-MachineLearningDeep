@@ -40,7 +40,7 @@ the specific email address posted in the Canvas announcement.
   <td>Posted in Canvas</td>
   <td>W2 (Sep 1)</td>
   <td>W4 (Sep 13)</td>
-  <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
+  <td><b>Basics of regression.</b> Implement linear regression from scratch in NumPy (closed-form normal equation, gradient descent, SGD and mini-batch SGD), study how learning rate and batch size affect convergence, then fit nonlinear data with basis expansion and choose the polynomial degree. Includes short theory questions and a leaderboard on held-out RMSE. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ the specific email address posted in the Canvas announcement.
   <td>Posted in Canvas</td>
   <td>W4 (Sep 15)</td>
   <td>W6 (Sep 27)</td>
-  <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
+  <td><b>Regularization, model selection and k-NN.</b> Tune polynomial regression by validation loss; implement ridge regression from scratch and compare it with lasso and elastic net (cross-validated λ, regularization paths, low vs. high dimension); then build a k-NN classifier, pick k by cross-validation and plot decision boundaries to discuss bias-variance. Two leaderboards (regression RMSE and k-NN accuracy), plus an extra-credit task on real data pulled from a public API. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ the specific email address posted in the Canvas announcement.
   <td>Posted in Canvas</td>
   <td>W8 (Oct 13)</td>
   <td>W11 (Nov 1)</td>
-  <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
+  <td><b>Neural networks and CNNs in PyTorch.</b> Classify a synthetic shape-image dataset with an MLP and a CNN written in PyTorch, visualize weights and feature maps, and compare both with logistic regression and PCA + logistic regression to see why convolution helps. Includes by-hand neural-network questions and a leaderboard on test accuracy. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ the specific email address posted in the Canvas announcement.
   <td>Posted in Canvas</td>
   <td>W11 (Nov 3)</td>
   <td>W13 (Nov 15)</td>
-  <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
+  <td><b>A character-level mini-GPT and an attention text classifier.</b> Build a causal self-attention block from scratch, train it by next-character prediction, generate text and compare it with a character Markov-model baseline. Then build a self-attention sentiment classifier and compare it with a bag-of-words baseline on reviews that use negation ("not good"). Two leaderboards. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ the specific email address posted in the Canvas announcement.
   <td>Posted in Canvas</td>
   <td>W12 (Nov 10)</td>
   <td>W15 (Dec 1)</td>
-  <td>Coding-centered homework, functions like a mini course project; details posted in Canvas</td>
+  <td><b>A course-assistant agent: RAG, harness and evaluation.</b> Build retrieval over the course's lecture notes (TF-IDF, embeddings, a hybrid, and a learned reranker), generate answers with prompting and small open LLMs, wrap the retriever in an agent loop with retries, evidence checks and context compaction, and evaluate the agent (pass@k, refusals, token cost). Bonus on defending against prompt injection. Leaderboard. Details posted in Canvas.</td>
   <td>10%</td>
 </tr>
 </table>
