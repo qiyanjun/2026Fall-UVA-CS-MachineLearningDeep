@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Annoucements
-desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
+title: Announcements
+desc: "Important Announcements for 2026 Fall UVa CS -ML-Undergraduate"
 ---
 <hr>
 
@@ -18,11 +18,11 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 - I have included all past reviews on course readings in ([Review Content](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-student-questions-2025.pdf)) + ([Review-QA](https://qiyanjun.github.io/2026Fall-UVA-CS-MachineLearningDeep//Reviews/review-sessions-2025.pdf)))
 
 
-# 2026 Fall Course Annoucement: 
+# 2026 Fall Course Announcement: 
 
 
 
-## For Fall-2026, we sent the main course announcements via Canvas Annoucements! 
+## For Fall-2026, we sent the main course announcements via Canvas Announcements! 
 
 
 ## Aug 31 on TA office hours and communication with TAs
