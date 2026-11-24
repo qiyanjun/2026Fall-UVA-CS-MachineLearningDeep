@@ -22,6 +22,8 @@ desc: "Important Annoucements for 2026 Fall UVa CS -ML-Undergraduate"
 
 
 
+## For Fall-2026, we sent the main course announcements via Canvas Annoucements! 
+
 
 ## Aug 31 on TA office hours and communication with TAs
 
