@@ -12,13 +12,13 @@ tags:
 - 2Regression
 - Nonlinear
 - Local
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">notebook/L5_Poly_Regression.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">notebook/L5-RBF-regressionLR.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L05_Poly_Regression.ipynb" target="_blank">notebook/L05_Poly_Regression.ipynb</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L05-RBF-regressionLR.ipynb" target="_blank">notebook/L05-RBF-regressionLR.ipynb</a>'
 ---
 
 
 - Notebooks to run (opens in Google Colab):
 
-<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5_Poly_Regression.ipynb" target="_blank">L5 Polynomial Regression notebook</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L5-RBF-regressionLR.ipynb" target="_blank">L5 RBF Regression notebook</a>
+<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L05_Poly_Regression.ipynb" target="_blank">L5 Polynomial Regression notebook</a> · <a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L05-RBF-regressionLR.ipynb" target="_blank">L5 RBF Regression notebook</a>
 
 
 # Understanding Linear Regression with Basis Functions Expansion 

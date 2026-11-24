@@ -13,7 +13,7 @@ tags:
 - 2Regression
 - Linear
 - 1Basic
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L3_plot_ols.ipynb" target="_blank">notebook/L3_plot_ols.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L03_plot_ols.ipynb" target="_blank">notebook/L03_plot_ols.ipynb</a>'
 ---
 
 

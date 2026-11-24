@@ -12,7 +12,7 @@ categories: tabular
 tags:
 - 2Regression
 - ModelSelection
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L6_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L6_Hyperparameters_and_Model_Validation.ipynb</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L06_Hyperparameters_and_Model_Validation.ipynb" target="_blank">notebook/L06_Hyperparameters_and_Model_Validation.ipynb</a>'
 ---
 
 

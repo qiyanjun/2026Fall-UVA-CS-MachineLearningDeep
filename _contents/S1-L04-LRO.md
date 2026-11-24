@@ -12,7 +12,7 @@ categories: tabular
 tags:
 - 2Regression
 - Optimization
-notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L4_stochastic_gradient_descent.ipynb" target="_blank">notebook/L4_stochastic_gradient_descent.ipynb</a> · <a href="https://colab.research.google.com/github/dtnewman/gradient_descent/blob/master/stochastic_gradient_descent.ipynb" target="_blank">SGD notebook (dtnewman/gradient_descent)</a>'
+notebooks: '<a href="https://colab.research.google.com/github/qiyanjun/2026Fall-UVA-CS-MachineLearningDeep/blob/main/notebook/L04_stochastic_gradient_descent.ipynb" target="_blank">notebook/L04_stochastic_gradient_descent.ipynb</a> · <a href="https://colab.research.google.com/github/dtnewman/gradient_descent/blob/master/stochastic_gradient_descent.ipynb" target="_blank">SGD notebook (dtnewman/gradient_descent)</a>'
 ---
 
 
